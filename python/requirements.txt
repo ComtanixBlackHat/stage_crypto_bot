@@ -1,0 +1,5 @@
+websocket-client
+aiohttp
+flask
+flask_sqlalchemy
+flask_migrate
