@@ -1,87 +1,67 @@
-from flask import Blueprint, request, jsonify
+from flask import Blueprint, request, jsonify, render_template 
 from app import db
-from app.models import Transaction
+from app.models import User
+from flask_bcrypt import Bcrypt
+from flask_jwt_extended import create_access_token, jwt_required, get_jwt_identity
 
-transaction_routes = Blueprint('transaction_routes', __name__)
+bcrypt = Bcrypt()
+user_routes = Blueprint('user_routes', __name__)
 
-# Create - Add a new transaction
-@transaction_routes.route('/transaction', methods=['POST'])
-def create_transaction():
+# Render Registration Page
+@user_routes.route('/register', methods=['GET'])
+def register_page():
+    return render_template('register.html')
+
+# Handle User Registration (POST)
+@user_routes.route('/register', methods=['POST'])
+def register_user():
+    data = request.form  # Use request.form for form data from POST request
+
+    # Check if the required data is provided
+    if not data.get('username') or not data.get('email') or not data.get('password'):
+        return jsonify({'message': 'Missing required fields'}), 400
+
+    # Hash the password before saving it
+    hashed_password = bcrypt.generate_password_hash(data['password']).decode('utf-8')
+
+    # Create a new user
+    new_user = User(
+        username=data['username'],
+        email=data['email'],
+        password_hash=hashed_password
+    )
+
+    # Add the new user to the database
+    db.session.add(new_user)
+    db.session.commit()
+
+    return jsonify({'message': 'User registered successfully'}), 201
+
+# Login User API
+@user_routes.route('/login', methods=['POST'])
+def login_user():
     data = request.get_json()
-    try:
-        new_transaction = Transaction(
-            position_id=data['position_id'],
-            amount=data['amount'],
-            price=data['price'],
-            type=data['type'],
-            timestamp=data.get('timestamp', datetime.utcnow())
-        )
-        db.session.add(new_transaction)
-        db.session.commit()
-        return jsonify({'message': 'Transaction created successfully'}), 201
-    except Exception as e:
-        return jsonify({'error': str(e)}), 400
 
-# Read - Get all transactions
-@transaction_routes.route('/transactions', methods=['GET'])
-def get_transactions():
-    transactions = Transaction.query.all()
-    return jsonify([{
-        'id': transaction.id,
-        'position_id': transaction.position_id,
-        'amount': transaction.amount,
-        'price': transaction.price,
-        'type': transaction.type,
-        'timestamp': transaction.timestamp
-    } for transaction in transactions])
+    # Check if the required data is provided
+    if not data.get('username') or not data.get('password'):
+        return jsonify({'message': 'Missing required fields'}), 400
 
-# Read - Get a single transaction by ID
-@transaction_routes.route('/transaction/<int:id>', methods=['GET'])
-def get_transaction(id):
-    transaction = Transaction.query.get(id)
-    if transaction:
-        return jsonify({
-            'id': transaction.id,
-            'position_id': transaction.position_id,
-            'amount': transaction.amount,
-            'price': transaction.price,
-            'type': transaction.type,
-            'timestamp': transaction.timestamp
-        })
-    else:
-        return jsonify({'error': 'Transaction not found'}), 404
+    # Find the user by username
+    user = User.query.filter_by(username=data['username']).first()
 
-# Update - Update a transaction by ID
-@transaction_routes.route('/transaction/<int:id>', methods=['PUT'])
-def update_transaction(id):
-    data = request.get_json()
-    transaction = Transaction.query.get(id)
-    if transaction:
-        try:
-            transaction.amount = data.get('amount', transaction.amount)
-            transaction.price = data.get('price', transaction.price)
-            transaction.type = data.get('type', transaction.type)
-            transaction.timestamp = data.get('timestamp', transaction.timestamp)
-            
-            db.session.commit()
-            return jsonify({'message': 'Transaction updated successfully'}), 200
-        except Exception as e:
-            db.session.rollback()
-            return jsonify({'error': str(e)}), 400
-    else:
-        return jsonify({'error': 'Transaction not found'}), 404
+    # If user not found or password is incorrect
+    if not user or not bcrypt.check_password_hash(user.password_hash, data['password']):
+        return jsonify({'message': 'Invalid username or password'}), 401
 
-# Delete - Delete a transaction by ID
-@transaction_routes.route('/transaction/<int:id>', methods=['DELETE'])
-def delete_transaction(id):
-    transaction = Transaction.query.get(id)
-    if transaction:
-        try:
-            db.session.delete(transaction)
-            db.session.commit()
-            return jsonify({'message': 'Transaction deleted successfully'}), 200
-        except Exception as e:
-            db.session.rollback()
-            return jsonify({'error': str(e)}), 400
-    else:
-        return jsonify({'error': 'Transaction not found'}), 404
+    # Create an access token (JWT)
+    access_token = create_access_token(identity=user.id)
+
+    return jsonify({
+        'message': 'Login successful',
+        'access_token': access_token
+    }), 200
+
+# Render Login Page
+@user_routes.route('/login', methods=['GET'])
+def login_page():
+    return render_template('login.html')

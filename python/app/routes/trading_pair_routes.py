@@ -97,3 +97,5 @@ def delete_trading_pair(id):
             return jsonify({'error': str(e)}), 400
     else:
         return jsonify({'error': 'Trading pair not found'}), 404
+
+

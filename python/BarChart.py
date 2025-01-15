@@ -3,10 +3,10 @@ import asyncio
 import websockets
 import json
 import threading
-from util.Util import UTIL 
-from util.Constant import CONSTANT , BaseURL
-from exchanges.kerkaren.webSocketClient import KrakenOHLCClient
-from exchanges.binancne.websocketClient import BinanceOHLCClient
+from app.util.Util import UTIL 
+from app.util.Constant import CONSTANT , BaseURL
+from app.exchanges.kerkaren.webSocketClient import KrakenOHLCClient
+from app.exchanges.binancne.websocketClient import BinanceOHLCClient
 
 connected_clients = {}
 

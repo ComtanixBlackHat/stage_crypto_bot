@@ -1,8 +1,9 @@
 from app import create_app
 
-# Create the Flask app
+
 app = create_app()
 
-# Run the application
-if __name__ == '__main__':
-    app.run(debug=True, host='0.0.0.0', port=5000)
+if __name__ == "__main__":
+    # Start the scheduler to monitor wallet balances and rebalance
+    # start_scheduler()
+    app.run(debug=True)
