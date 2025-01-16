@@ -18,7 +18,7 @@
     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#createModal">Create Trading Pair</button>
 
     <!-- Modal -->
-    <div class="modal fade" id="createModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <!-- <div class="modal fade" id="createModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -57,8 +57,46 @@
                 </div>
             </div>
         </div>
+    </div> -->
+    <div class="modal fade" id="createModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Create Trading Pair</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="createForm">
+                        <div class="form-group">
+                            <label for="symbol">Symbol</label>
+                            <select id="symbol-select" class="form-control" style="width: 300px;" required>
+                                <option value="">Select Symbol</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="initial_capital">Initial Capital</label>
+                            <input type="number" class="form-control" id="initial_capital" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="take_profit_percentage">Take Profit Percentage</label>
+                            <input type="number" class="form-control" id="take_profit_percentage" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="rebuy_percentage">Rebuy Percentage</label>
+                            <input type="number" class="form-control" id="rebuy_percentage" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="trade_usage_percentage">Trade Usage Percentage</label>
+                            <input type="number" class="form-control" id="trade_usage_percentage" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Save Trading Pair</button>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
-
     <!-- Trading Pairs Table -->
     <h2 class="mt-5">Trading Pairs</h2>
     <table class="table table-bordered" id="tradingPairsTable">
@@ -113,6 +151,45 @@
     
     
     
+    });
+
+
+    $('#createForm').submit(function(event) {
+        event.preventDefault(); // Prevent the default form submission
+
+        // Get form data
+        const symbol = $('#symbol-select').val();
+        const initialCapital = $('#initial_capital').val();
+        const takeProfitPercentage = $('#take_profit_percentage').val();
+        const rebuyPercentage = $('#rebuy_percentage').val();
+        const tradeUsagePercentage = $('#trade_usage_percentage').val();
+
+        // Send a POST request to create a new trading pair
+        fetch('/api/create_trading_pair', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                symbol: symbol,
+                initial_capital: initialCapital,
+                take_profit_percentage: takeProfitPercentage,
+                rebuy_percentage: rebuyPercentage,
+                trade_usage_percentage: tradeUsagePercentage
+            })
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                alert('Trading Pair Created Successfully!');
+                $('#createModal').modal('hide'); // Close the modal
+            } else {
+                alert('Error creating trading pair: ' + data.error);
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+        });
     });
 </script>
 

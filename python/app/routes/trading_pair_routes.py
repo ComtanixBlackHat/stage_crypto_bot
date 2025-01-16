@@ -1,29 +1,53 @@
 from flask import Blueprint, request, jsonify
 from app import db
 from app.models import TradingPair
-
+from app.controllers.crud.tradingpair import TradingPairCrud
 trading_pair_routes = Blueprint('trading_pair_routes', __name__)
 
 # Create - Add a new trading pair
 @trading_pair_routes.route('/trading_pair', methods=['POST'])
 def create_trading_pair():
+
+    # Get JSON data from request
     data = request.get_json()
+
+    # Validate data
+    required_fields = ['symbol', 'initial_capital', 'take_profit_percentage', 
+                       'rebuy_percentage', 'trade_usage_percentage']
+    if not all(field in data for field in required_fields):
+        return jsonify({"error": "Missing required fields"}), 400
+
+    # Create a new trading pair
     try:
-        new_pair = TradingPair(
-            name=data['name'],
-            initial_capital=data['initial_capital'],
-            current_capital=data['current_capital'],
-            rebuy_price=data['rebuy_price'],
-            take_profit_percentage=data['take_profit_percentage'],
-            rebuy_percentage=data['rebuy_percentage'],
-            trade_usage_percentage=data['trade_usage_percentage'],
-            user_id=data['user_id']
-        )
-        db.session.add(new_pair)
-        db.session.commit()
-        return jsonify({'message': 'Trading pair created successfully'}), 201
+
+        TradingPairCrud.create_trading_pair(name= data['symbol'],
+                                             initial_capital=data['initial_capital'] , 
+                                             current_capital=data['initial_capital'] , 
+                                             current_stage= 0, 
+                                             take_profit_percentage=data['take_profit_percentage'] , 
+                                             rebuy_percentage= data['rebuy_percentage'], 
+        #                                      trade_usage_percentage= data['trade_usage_percentage']
+                                                )
+        # new_trading_pair = TradingPair(
+        #     name=data['symbol'],
+        #     initial_capital=data['initial_capital'],
+        #     current_capital=data['initial_capital'],  # Initial capital is the current capital
+        #     currentStage=0,  # You can modify this based on your logic
+        #     take_profit_percentage=data['take_profit_percentage'],
+        #     rebuy_percentage=data['rebuy_percentage'],
+        #     trade_usage_percentage=data['trade_usage_percentage'],
+        #     status="Active",  # Default status
+        #     user_id=1  # Assuming a static user_id for now; you can modify this based on your logic
+        # )
+
+        # db.session.add(new_trading_pair)
+        # db.session.commit()
+
+        return jsonify({"success": True}), 201
+
     except Exception as e:
-        return jsonify({'error': str(e)}), 400
+        db.session.rollback()
+        return jsonify({"error": str(e)}), 500
 
 # Read - Get all trading pairs
 @trading_pair_routes.route('/trading_pairs', methods=['GET'])

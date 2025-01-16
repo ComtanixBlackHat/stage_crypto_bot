@@ -14,3 +14,6 @@ FLUSH PRIVILEGES;
 sudo apt update
 sudo apt install -y libmysqlclient-dev
 sudo apt install -y build-essential libssl-dev libffi-dev python3-dev python3-pip libmysqlclient-dev pkg-config
+sudo apt install redis-server
+sudo systemctl enable redis
+sudo systemctl start redis

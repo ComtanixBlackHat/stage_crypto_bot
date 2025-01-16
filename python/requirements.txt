@@ -6,3 +6,4 @@ flask_migrate
 mysqlclient
 flask_bcrypt
 flask_jwt_extended
+redis
