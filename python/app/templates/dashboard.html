@@ -165,7 +165,7 @@
         const tradeUsagePercentage = $('#trade_usage_percentage').val();
 
         // Send a POST request to create a new trading pair
-        fetch('/api/create_trading_pair', {
+        fetch('/api/trading_pairs', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

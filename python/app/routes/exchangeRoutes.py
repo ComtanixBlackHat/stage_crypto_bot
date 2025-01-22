@@ -44,3 +44,39 @@ def send_order_route(exchanges):
 
     except Exception as e:
         return jsonify({"error": str(e)}), 500
+
+
+@kraken_routes.route('/OHLC/<exchange>', methods=['POST'])
+def get_chart(exchange):
+    """
+    API endpoint to fetch OHLC data from Kraken.
+    Query parameters:
+        pair (str): The trading pair (default: "XBTUSD").
+        interval (int): Timeframe in minutes (default: 60).
+
+    Returns:
+        JSON: OHLC data or an error message.
+    """
+    pair = request.args.get('pair', 'XBTUSD')
+    interval = request.args.get('interval', 60)
+
+    try:
+        # Ensure interval is an integer
+        interval = int(interval)
+    except ValueError:
+        return jsonify({"error": "Invalid interval, must be an integer."}), 400
+
+    if exchange.lower() == 'kraken':
+        # Fetch data from Kraken
+        response = Kraken.get_current_kraken_chart(pair, interval)  # Call the appropriate method from Kraken class
+        # if "error" in response:
+        #     return jsonify(response), 400
+        return jsonify({
+            "exchange": exchange,
+            "pair": pair,
+            "interval": interval,
+            "ohlc_data": response
+        })
+    else:
+        # Unsupported exchange
+        return jsonify({"error": "Unsupported exchange"}), 400

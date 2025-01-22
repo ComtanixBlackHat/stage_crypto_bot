@@ -2,23 +2,17 @@ import redis
 import json
 
 class RedisUtility:
-    def __init__(self, host="localhost", port=6379, db=0, password=None):
-        """
-        Initialize a connection to the Redis database.
-        :param host: Redis server hostname.
-        :param port: Redis server port.
-        :param db: Redis database index.
-        :param password: Redis server password (if required).
-        """
-        self.client = redis.StrictRedis(
-            host=host,
-            port=port,
-            db=db,
-            password=password,
-            decode_responses=True  # Decodes bytes to strings automatically
-        )
+    # Static Redis client
+    _client = redis.StrictRedis(
+        host="localhost",
+        port=6379,
+        db=0,
+        password=None,
+        decode_responses=True  # Decodes bytes to strings automatically
+    )
 
-    def set_key(self, key, value, expire=None):
+    @staticmethod
+    def set_key(key, value, expire=None):
         """
         Set a key-value pair in Redis.
         :param key: Key name.
@@ -27,135 +21,151 @@ class RedisUtility:
         """
         if isinstance(value, (dict, list)):
             value = json.dumps(value)  # Serialize JSON-compatible data
-        self.client.set(key, value, ex=expire)
+        RedisUtility._client.set(key, value, ex=expire)
 
-    def get_key(self, key):
+    @staticmethod
+    def get_key(key):
         """
         Get the value of a key.
         :param key: Key name.
         :return: Value of the key or None if key does not exist.
         """
-        value = self.client.get(key)
+        value = RedisUtility._client.get(key)
         try:
             return json.loads(value)  # Deserialize JSON if applicable
         except (TypeError, json.JSONDecodeError):
             return value
 
-    def delete_key(self, key):
+    @staticmethod
+    def delete_key(key):
         """
         Delete a key from Redis.
         :param key: Key name.
         :return: Number of keys deleted (0 or 1).
         """
-        return self.client.delete(key)
+        return RedisUtility._client.delete(key)
 
-    def increment_key(self, key, amount=1):
+    @staticmethod
+    def increment_key(key, amount=1):
         """
         Increment the value of a key by a given amount.
         :param key: Key name.
         :param amount: Amount to increment (default: 1).
         :return: New value of the key.
         """
-        return self.client.incr(key, amount)
+        return RedisUtility._client.incr(key, amount)
 
-    def decrement_key(self, key, amount=1):
+    @staticmethod
+    def decrement_key(key, amount=1):
         """
         Decrement the value of a key by a given amount.
         :param key: Key name.
         :param amount: Amount to decrement (default: 1).
         :return: New value of the key.
         """
-        return self.client.decr(key, amount)
+        return RedisUtility._client.decr(key, amount)
 
-    def set_hash(self, name, mapping):
+    @staticmethod
+    def set_hash(name, mapping):
         """
         Set multiple fields in a hash.
         :param name: Hash name.
         :param mapping: Dictionary of fields and values to store.
         """
-        self.client.hset(name, mapping=mapping)
+        RedisUtility._client.hset(name, mapping=mapping)
 
-    def get_hash(self, name):
+    @staticmethod
+    def get_hash(name):
         """
         Get all fields and values of a hash.
         :param name: Hash name.
         :return: Dictionary of fields and values.
         """
-        return self.client.hgetall(name)
+        return RedisUtility._client.hgetall(name)
 
-    def delete_hash_field(self, name, field):
+    @staticmethod
+    def delete_hash_field(name, field):
         """
         Delete a field from a hash.
         :param name: Hash name.
         :param field: Field name.
         :return: Number of fields removed (0 or 1).
         """
-        return self.client.hdel(name, field)
+        return RedisUtility._client.hdel(name, field)
 
-    def push_to_list(self, name, value):
+    @staticmethod
+    def push_to_list(name, value):
         """
         Push a value to a Redis list (right push).
         :param name: List name.
         :param value: Value to push.
         """
-        self.client.rpush(name, value)
+        RedisUtility._client.rpush(name, value)
 
-    def pop_from_list(self, name):
+    @staticmethod
+    def pop_from_list(name):
         """
         Pop a value from a Redis list (left pop).
         :param name: List name.
         :return: Popped value.
         """
-        return self.client.lpop(name)
+        return RedisUtility._client.lpop(name)
 
-    def get_list(self, name):
+    @staticmethod
+    def get_list(name):
         """
         Get all elements of a Redis list.
         :param name: List name.
         :return: List of values.
         """
-        return self.client.lrange(name, 0, -1)
+        return RedisUtility._client.lrange(name, 0, -1)
 
-    def set_add(self, name, value):
+    @staticmethod
+    def set_add(name, value):
         """
         Add a value to a Redis set.
         :param name: Set name.
         :param value: Value to add.
         """
-        self.client.sadd(name, value)
+        RedisUtility._client.sadd(name, value)
 
-    def get_set(self, name):
+    @staticmethod
+    def get_set(name):
         """
         Get all members of a Redis set.
         :param name: Set name.
         :return: Set of values.
         """
-        return self.client.smembers(name)
+        return RedisUtility._client.smembers(name)
 
-    def delete_set_member(self, name, value):
+    @staticmethod
+    def delete_set_member(name, value):
         """
         Remove a member from a Redis set.
         :param name: Set name.
         :param value: Member to remove.
         """
-        self.client.srem(name, value)
+        RedisUtility._client.srem(name, value)
 
-    def key_exists(self, key):
+    @staticmethod
+    def key_exists(key):
         """
         Check if a key exists in Redis.
         :param key: Key name.
         :return: True if key exists, False otherwise.
         """
-        return self.client.exists(key) > 0
+        return RedisUtility._client.exists(key) > 0
 
-    def flush_db(self):
+    @staticmethod
+    def flush_db():
         """
         Delete all keys in the current database.
         """
-        self.client.flushdb()
+        RedisUtility._client.flushdb()
 
-    def flush_all(self):
+    @staticmethod
+    def flush_all():
         """
         Delete all keys in all databases.
         """
-        self.client.flushall()
+        RedisUtility._client.flushall()

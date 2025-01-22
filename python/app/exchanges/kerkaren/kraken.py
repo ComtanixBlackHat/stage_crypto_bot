@@ -82,3 +82,58 @@ class Kraken:
             return {"symbols": symbols}
         except requests.exceptions.RequestException as e:
             return {"error": str(e)}
+
+
+    @staticmethod
+    def get_current_kraken_chart(pair="XBTUSD", interval=60):
+        """
+        Fetches the most recent OHLC data from Kraken.
+        
+        Args:
+            pair (str): The trading pair to fetch data for (e.g., "XBTUSD", "ETHUSD").
+            interval (int): Timeframe in minutes (e.g., 1, 5, 15, 60, 240, etc.).
+
+        Returns:
+            list: A list of OHLC data where each entry contains:
+                [timestamp, open, high, low, close, vwap, volume, count]
+                - timestamp: UNIX time of the start of the interval
+                - open: Opening price
+                - high: Highest price
+                - low: Lowest price
+                - close: Closing price
+                - vwap: Volume-weighted average price
+                - volume: Total volume traded during the interval
+                - count: Number of trades during the interval
+            None: If an error occurs or no data is available.
+        """
+        # Kraken API endpoint for OHLC data
+        url = "https://api.kraken.com/0/public/OHLC"
+        params = {
+            "pair": pair,
+            "interval": interval
+        }
+
+        try:
+            # Make the request
+            response = requests.get(url, params=params)
+            response.raise_for_status()
+            data = response.json()
+            print(data)
+            # Handle API errors
+            if data.get("error"):
+                print("Error from Kraken API:", data["error"])
+                return None
+
+            # Extract OHLC data
+            key = f"X{pair.replace('/', '')}"
+            ohlc_data = data["result"].get(key, [])
+
+            if not ohlc_data:
+                print(f"No data found for pair {pair}.")
+                return None
+
+            return ohlc_data
+
+        except requests.exceptions.RequestException as e:
+            print(f"An error occurred while fetching data: {e}")
+            return None

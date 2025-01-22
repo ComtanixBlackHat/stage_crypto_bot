@@ -9,3 +9,4 @@ def init_db(app):
     Call this function in your app setup to bind the db instance to your app.
     """
     db.init_app(app)
+    

@@ -1,14 +1,25 @@
 from datetime import datetime
 from app import db
 from app.models import TradingPair
+from app.controllers.redisutil import RedisUtility
 class TradingPairCrud:
     @staticmethod
     def create_trading_pair(name, initial_capital, current_capital, current_stage, 
                             take_profit_percentage, rebuy_percentage, trade_usage_percentage, 
-                            status="Active", user_id=None):
+                            status="Active", user_id=1):
         """
         Create a new TradingPair entry.
         """
+        RedisUtility.set_add(name+"currentStage" , 0)
+        RedisUtility.set_add(name+"initial_capital" ,initial_capital)
+        RedisUtility.set_add(name+"current_capital" ,current_capital)
+        RedisUtility.set_add(name+"take_profit_percentage" , take_profit_percentage)
+        RedisUtility.set_add(name+"rebuy_percentage" , rebuy_percentage)
+        RedisUtility.set_add(name+"status" , status)
+        RedisUtility.set_add(name+"takeProfitPrice" , status)
+        RedisUtility.set_add(name+"reBuyPrice" , status)
+
+              
         new_trading_pair = TradingPair(
             name=name,
             initial_capital=initial_capital,

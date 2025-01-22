@@ -2,15 +2,16 @@ from flask import Blueprint, request, jsonify
 from app import db
 from app.models import TradingPair
 from app.controllers.crud.tradingpair import TradingPairCrud
+from app.controllers.redisutil import RedisUtility
 trading_pair_routes = Blueprint('trading_pair_routes', __name__)
 
 # Create - Add a new trading pair
-@trading_pair_routes.route('/trading_pair', methods=['POST'])
+@trading_pair_routes.route('/', methods=['POST'])
 def create_trading_pair():
 
     # Get JSON data from request
     data = request.get_json()
-
+    print(data)
     # Validate data
     required_fields = ['symbol', 'initial_capital', 'take_profit_percentage', 
                        'rebuy_percentage', 'trade_usage_percentage']
@@ -26,7 +27,7 @@ def create_trading_pair():
                                              current_stage= 0, 
                                              take_profit_percentage=data['take_profit_percentage'] , 
                                              rebuy_percentage= data['rebuy_percentage'], 
-        #                                      trade_usage_percentage= data['trade_usage_percentage']
+                                             trade_usage_percentage= data['trade_usage_percentage']
                                                 )
         # new_trading_pair = TradingPair(
         #     name=data['symbol'],
@@ -46,6 +47,7 @@ def create_trading_pair():
         return jsonify({"success": True}), 201
 
     except Exception as e:
+        print(e)
         db.session.rollback()
         return jsonify({"error": str(e)}), 500
 
