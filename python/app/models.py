@@ -17,7 +17,9 @@ class TradingPair(db.Model):
     name = db.Column(db.String(50), nullable=False)
     initial_capital = db.Column(db.Float, nullable=False)
     current_capital = db.Column(db.Float, nullable=False, default=0)
+    start_capital = db.Column(db.Integer, nullable=False)
     currentStage = db.Column(db.Integer, nullable=False)
+
     take_profit_percentage = db.Column(db.Float, nullable=False)
     rebuy_percentage = db.Column(db.Float, nullable=False)
     trade_usage_percentage = db.Column(db.Float, nullable=False)
@@ -31,10 +33,11 @@ class TradingPair(db.Model):
         return f"<TradingPair {self.name}>"
 
 class Position(db.Model):
-    id = db.Column(db.Integer, primary_key=True)
-    stage = db.Column(db.Integer, primary_key=True)
+    id = db.Column(db.Integer, primary_key=True, autoincrement=True)
+    stage = db.Column(db.Integer, nullable=False)
     trading_pair_id = db.Column(db.Integer, nullable=False)
     buy_price = db.Column(db.Float, nullable=False)
+    current_buy_price = db.Column(db.Float, nullable=False)  # New field added
     sell_price = db.Column(db.Float, nullable=True)
     amount = db.Column(db.Float, nullable=False)
     pln = db.Column(db.Float, nullable=True)
@@ -43,7 +46,26 @@ class Position(db.Model):
     status = db.Column(db.String(20), nullable=False, default="Open")
 
     def __repr__(self):
-        return f"<Position {self.trading_pair.name} - {self.status}>"
+        return f"<Position {self.trading_pair_id} - {self.status}>"
+
+
+class OldPosition(db.Model):
+    id = db.Column(db.Integer, primary_key=True, autoincrement=True)
+    stage = db.Column(db.Integer, nullable=False)
+    trading_pair_id = db.Column(db.Integer, nullable=False)
+    buy_price = db.Column(db.Float, nullable=False)
+    current_buy_price = db.Column(db.Float, nullable=False)
+    sell_price = db.Column(db.Float, nullable=True)
+    amount = db.Column(db.Float, nullable=False)
+    pln = db.Column(db.Float, nullable=True)
+    raw_response = db.Column(db.Float, nullable=True)
+    start_at = db.Column(db.DateTime)
+    end_at = db.Column(db.DateTime, default=datetime.utcnow)
+    status = db.Column(db.String(20), nullable=False, default="Closed")  # Default to 'Closed'
+
+    def __repr__(self):
+        return f"<OldPosition {self.trading_pair_id} - {self.status}>"
+
 
 class Transaction(db.Model):
     id = db.Column(db.Integer, primary_key=True)

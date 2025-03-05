@@ -6,4 +6,4 @@ app = create_app()
 if __name__ == "__main__":
     # Start the scheduler to monitor wallet balances and rebalance
     # start_scheduler()
-    app.run(debug=True)
+    app.run(host="0.0.0.0", debug=True )

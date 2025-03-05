@@ -74,6 +74,37 @@ class RedisUtility:
         """
         RedisUtility._client.hset(name, mapping=mapping)
 
+
+    @staticmethod
+    def set_hash_field(hash_name, field, value):
+        """
+        Set an individual field in a Redis hash.
+        :param hash_name: Name of the Redis hash.
+        :param field: The field name to set.
+        :param value: The value to store in the field.
+        """
+        RedisUtility._client.hset(hash_name, field, value)
+
+
+    @staticmethod
+    def get_all_hash_fields(hash_name):
+        """
+        Retrieve all fields and values from a Redis hash.
+        :param hash_name: Name of the Redis hash.
+        :return: Dictionary of all fields and their values.
+        """
+        return RedisUtility._client.hgetall(hash_name)
+   
+    @staticmethod
+    def get_hash_field(hash_name, key):
+        """
+        Retrieve a specific field value from a Redis hash.
+        :param hash_name: Name of the Redis hash.
+        :param key: The field key within the hash.
+        :return: Value of the specified field or None if not found.
+        """
+        return RedisUtility._client.hget(hash_name, key)
+
     @staticmethod
     def get_hash(name):
         """

@@ -15,7 +15,33 @@ def get_symbols(exchanges):
     # Return the result as a JSON response
     return jsonify(result), 200
 
+@kraken_routes.route('/query_orders/<exchanges>', methods=['POST'])
+def query_orders_route(exchanges):
+    try:
+        # Get data from the request JSON payload
+        data = request.get_json()
 
+        # Extract parameters from the request data
+        txid = data.get('txid')  # Kraken order identifier(s)
+        trades = data.get('trades', False)  # Whether or not to include trades related to the position
+        userref = data.get('userref', None)  # Optional user reference ID
+        consolidate_taker = data.get('consolidate_taker', True)  # Whether or not to consolidate taker trades
+
+        if not txid:
+            return jsonify({"error": "Missing txid parameter"}), 400
+
+        # Call the query_orders method from the Kraken class
+        if exchanges.lower() == 'kraken':
+            response = Kraken.query_orders(txid, trades, userref, consolidate_taker)
+            print(response)
+        else:
+            response = {'error': 'Unsupported exchange'}
+        
+        return jsonify(response)
+
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+    
 @kraken_routes.route('/send_order/<exchanges>', methods=['POST'])
 def send_order_route(exchanges):
     try:
@@ -25,18 +51,21 @@ def send_order_route(exchanges):
 
         # Extract parameters from the request data
         pair = data.get('pair')
-        order_type = data.get('type')
+        type = data.get('type')
         order_subtype = data.get('ordertype')  # For example: 'market' or 'limit'
         volume = data.get('volume')
         price = data.get('price', None)  # price is optional for limit orders
 
-        if not all([pair, order_type, order_subtype, volume]):
+        if not all([pair, type, order_subtype, volume]):
             return jsonify({"error": "Missing required parameters"}), 400
 
         # Call the send_order method from the Kraken class
         
         if exchanges.lower() == 'kraken':
-            response = Kraken.send_order(pair, order_type, order_subtype, volume, price)  # Call the static method get_symbols from Kraken class
+            pair = "SOLUSD"
+            volume="0.1"
+            response = Kraken.send_order(pair , type , volume)
+            # response = Kraken.send_order(pair, order_type, order_subtype, volume, price)  # Call the static method get_symbols from Kraken class
             print(response)
         else:
             response = {'error': 'Unsupported exchange'}

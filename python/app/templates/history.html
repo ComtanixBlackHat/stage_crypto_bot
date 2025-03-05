@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positions List</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Karaken</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="/"><span class="sr-only">Dashboard</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="pair-detail-link" href="#">Pair Detail</a>
+              </li>
+              <li class="nav-item  active">
+                <a class="nav-link" id="history-link" href="#">History</a>
+              </li>
+
+          </ul>
+        </div>
+      </nav>
+    <div class="container">
+        <h1 class="mb-4 text-center">History List</h1>
+
+        <form id="filter-form" class="mb-4">
+            <div class="row">
+                <div class="col-md-4">
+                    <label for="symbol" class="form-label">Symbol:</label>
+                    <input type="hidden" id="symbol" name="symbol" class="form-control" placeholder="Enter symbol">
+                </div>
+
+            </div>
+        </form>
+
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped">
+                <thead class="table-dark">
+                    <tr>
+                       
+                        <th>Stage</th>
+                        <!-- <th>Trading Pair ID</th> -->
+                        
+                        <th>Buy Price</th>
+                        <th>Sell Price</th>
+                        <th>Quantity</th>
+                        <th>P/L</th>
+                       
+                        <th>Start At</th>
+                        <th>End At</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody id="positions-table">
+                    <!-- Positions will be inserted dynamically -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        function getQueryParam(param) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(param);
+        }
+
+        function fetchPositions() {
+            const symbol = document.getElementById("symbol").value;
+            const status = "Closed";  // Hardcoded as requested
+
+            if (!symbol) {
+                alert("Please enter a symbol.");
+                return;
+            }
+
+            // Construct URL with required parameters
+            let url = `/api/positions/closed?status=${status}&symbol=${symbol}`;
+
+
+            fetch(url)
+    .then(response => response.json())
+    .then(data => {
+        const tableBody = document.getElementById("positions-table");
+        tableBody.innerHTML = '';  // Clear previous results
+
+        if (data.length === 0) {
+            tableBody.innerHTML = '<tr><td colspan="11" class="text-center">No positions found</td></tr>';
+            return;
+        }
+
+        data.forEach(position => {
+            // Parse the ISO 8601 date strings
+            const startDate = new Date(position.start_at);
+            const endDate = new Date(position.end_at);
+
+            // Define formatting options
+            const formatOptions = {
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric',
+                hour: '2-digit',
+                minute: '2-digit',
+                second: '2-digit',
+                hour12: true
+            };
+
+            // Format the dates to readable strings
+            const formattedStartDate = startDate.toLocaleString('en-US', formatOptions);
+            const formattedEndDate = endDate.toLocaleString('en-US', formatOptions);
+
+            // Construct the table row with formatted dates
+            const row = `
+                <tr>
+                    <td>${position.stage}</td>
+                    <td>${position.current_buy_price}</td>
+                    <td>${position.sell_price}</td>
+                    <td>${position.amount}</td>
+                    <td>${position.pln}</td>
+                    <td>${formattedStartDate}</td>
+                    <td>${formattedEndDate}</td>
+                    <td>${position.status}</td>
+                </tr>
+            `;
+            tableBody.innerHTML += row;
+        });
+    })
+    .catch(error => {
+        console.error("Error fetching positions:", error);
+    });
+
+            // fetch(url)
+            //     .then(response => response.json())
+            //     .then(data => {
+            //         const tableBody = document.getElementById("positions-table");
+            //         tableBody.innerHTML = '';  // Clear previous results
+
+            //         if (data.length === 0) {
+            //             tableBody.innerHTML = '<tr><td colspan="11" class="text-center">No positions found</td></tr>';
+            //             return;
+            //         }
+            //     // Parse the ISO 8601 date string
+            //     const startDate = new Date(position.start_at);
+            //     format = {
+            //         year: 'numeric',
+            //         month: 'long',
+            //         day: 'numeric',
+            //         hour: '2-digit',
+            //         minute: '2-digit',
+            //         second: '2-digit',
+            //         hour12: true
+            //     }
+            //     // Format the date to a readable string
+            //     const FormatedstartDate = startDate.toLocaleString('en-US', format);
+
+            //     const endDate = new Date(position.end_at);
+
+            //     const FormatedendDate = endDate.toLocaleString('en-US', format);
+
+            //         data.forEach(position => {
+            //             const row = `
+            //                 <tr>
+                               
+            //                     <td>${position.stage}</td>
+                               
+                                
+            //                     <td>${position.current_buy_price}</td>
+            //                     <td>${position.sell_price}</td>
+            //                     <td>${position.amount}</td>
+            //                     <td>${position.pln}</td>
+                                
+            //                     <td>${ FormatedstartDate }</td>
+            //                     <td>${ FormatedendDate}</td>
+            //                     <td>${position.status}</td>
+            //                 </tr>
+            //             `;
+            //             tableBody.innerHTML += row;
+            //         });
+            //     })
+            //     .catch(error => {
+            //         console.error("Error fetching positions:", error);
+            //     });
+       
+       
+       
+            }
+
+        // Populate symbol field from URL
+        window.onload = function() {
+            const symbol = getQueryParam("symbol");
+            if (symbol) {
+                document.getElementById("pair-detail-link").href = `/detail?symbol=${symbol}`;
+                document.getElementById("history-link").href = `history?symbol=${symbol}`;
+                document.getElementById("symbol").value = symbol;
+                fetchPositions()
+            }
+        };
+    </script>
+</body>
+</html>

@@ -17,3 +17,27 @@ sudo apt install -y build-essential libssl-dev libffi-dev python3-dev python3-pi
 sudo apt install redis-server
 sudo systemctl enable redis
 sudo systemctl start redis
+g++ -std=c++17 main.cpp -o websocket_client -lboost_system -lpthread
+sudo apt update
+sudo apt-get install libboost-all-dev
+
+sudo apt-get install libhiredis-dev
+git clone https://github.com/redis/hiredis.git
+
+cd hiredis
+
+make
+
+make install
+
+
+sudo apt install libboost-system-dev libboost-thread-dev libasio-dev nlohmann-json3-dev
+cd ~/stage_crypto_bot/cpp/BOTMAIN
+git clone https://github.com/zaphoyd/websocketpp.git
+cd websocketpp/
+sudo apt install cmake
+mkdir build
+cd build
+cmake ..
+make
+make install

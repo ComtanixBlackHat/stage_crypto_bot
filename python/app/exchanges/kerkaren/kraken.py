@@ -4,12 +4,15 @@ import hashlib
 import hmac
 import time
 from urllib.parse import urlencode
-
-api_key = "K8XjH+NigeGRIhPe7TKeDTXkOJnEzDQhC7xFkfZgQ5A2ItiweuXgzXXf"
-api_secret = "rgjj1yFtk5qgOwZu7OJ7x5AmajhHpCIE+BOekKTzakZ+FbIz9CmfTGA7UeNAgtZU27AEKYb2jbH7lt0UPkH3O1QF"
-
+import json
+# api_key = "Sc1rIvjDK4LaNzmQ7IfcrjlfLtRP7l2DyXuQK62gM6vTTghHQgcaL2PZ"
+# api_secret = "wsQzohrIl6SUX0sUa10uWO7iPQ+T5mc4q4YjubYXOq1jgyWnZum1Wj8nncj/WajsVXt9SUj9iBOhhduJ5Vf/jw=="
+# API_URL = "https://api.kraken.com"
+api_key = "Sc1rIvjDK4LaNzmQ7IfcrjlfLtRP7l2DyXuQK62gM6vTTghHQgcaL2PZ"
+api_secret = "wsQzohrIl6SUX0sUa10uWO7iPQ+T5mc4q4YjubYXOq1jgyWnZum1Wj8nncj/WajsVXt9SUj9iBOhhduJ5Vf/jw=="
+API_URL = "https://api.kraken.com"
 class Kraken:
-    API_URL = "https://demo-api.kraken.com"
+
     @staticmethod
     def _get_signature(url_path, data, api_secret, nonce):
         """
@@ -21,43 +24,80 @@ class Kraken:
         return base64.b64encode(mac.digest()).decode()
 
     @staticmethod
-    def send_order(pair, type, ordertype, volume, price=None):
+    def query_orders(txid, trades=False, userref=None, consolidate_taker=True):
+        # API URL
+        # url = "https://api.kraken.com/0/private/QueryOrders"
+        
+        # Prepare the data to send in the request
+        payload = {
+            'nonce': str(int(time.time() * 1000)),  # Generate a nonce for the request
+            'txid': txid,
+            'trades': trades,
+            
+            'consolidate_taker': consolidate_taker
+        }
+        url_path =  "/0/private/QueryOrders"
+        url = API_URL + url_path
+        nonce = str(int(time.time() * 1000))
+        # Generate the signature
+        signature = Kraken._get_signature(url_path, urlencode(payload), api_secret, nonce)
+
+        headers = {
+            'Content-Type': 'application/x-www-form-urlencoded',
+            'API-Key': api_key,
+            'API-Sign': signature
+        }      
+        # Call the Kraken API here using your preferred HTTP library (requests, etc.)
+        response = requests.post(url, data=payload, headers=headers)
+        print(response.json())
+        return response.json()  # Assuming the response is JSON formatted
+
+    @staticmethod
+    def send_order(pair, type, volume, ordertype="market", price=None, cl_ord_id=None):
         """
         Send an order to Kraken API.
 
-        :param api_key: Kraken API key.
-        :param api_secret: Kraken API secret.
         :param pair: Asset pair (e.g., 'XBTUSD').
         :param type: Order type ('buy' or 'sell').
         :param ordertype: Order execution type (e.g., 'market', 'limit').
         :param volume: Volume of the order.
         :param price: Price (required for limit orders).
+        :param cl_ord_id: Optional client order ID for the order.
         :return: Response from the Kraken API.
         """
         url_path = "/0/private/AddOrder"
-        url = Kraken.API_URL + url_path
+        url = API_URL + url_path
         nonce = str(int(time.time() * 1000))
 
         # Prepare payload
         payload = {
             "nonce": nonce,
-            "pair": pair,
-            "type": type,
             "ordertype": ordertype,
+            "type": type,
             "volume": volume,
+            "pair": pair,
         }
-        if ordertype == "limit" and price is not None:
+        
+        if cl_ord_id:
+            payload["cl_ord_id"] = cl_ord_id
+        if ordertype == "limit" and price:
             payload["price"] = price
 
-        # Add headers
+        print(payload)
+        # Generate the signature
+        signature = Kraken._get_signature(url_path, urlencode(payload), api_secret, nonce)
+
         headers = {
-            "API-Key": api_key,
-            "API-Sign": Kraken._get_signature(url_path, urlencode(payload), api_secret, nonce),
+            'Content-Type': 'application/x-www-form-urlencoded',
+            'API-Key': api_key,
+            'API-Sign': signature
         }
 
+        # Send the request
         try:
             response = requests.post(url, headers=headers, data=payload)
             response.raise_for_status()
+            print(response.json())
             return response.json()
         except requests.exceptions.RequestException as e:
             return {"error": str(e)}
@@ -77,63 +117,72 @@ class Kraken:
 
             if data["error"]:
                 return {"error": "Failed to retrieve symbols"}
-
-            symbols = list(data["result"].keys())
+            # s
+            # symbols = list(data["result"].keys())
+            symbols = [
+                        "BTC/USD" , "ETH/USD" , "XRP/USD" , "SOL/USD"  
+                       , "LTC/USD" , "ADA/USD" , "DODGE/USD" , "TRUMP/USD" , "LINK/USD",
+                         "AAVE/USD" , "PEPE/USD" , "ALGO/USD" , "XLM/USD" , "DOT/USD" , 
+                         "AVAX/USD" , "TRX/USD"  , "XMR/USD" , "APT/USD",
+                         "CRV/USD" , "UNI/USD" , "ICP/USD" , "SHIB/USD"  , "ATOM/USD" , 
+                         "FIL/USD" , "AKT/USD" , "POL/USD" , "MANA/USD", "BCH/USD", "SAND/USD",
+                         "ETC/USD", "EOS/USD" , "CHZ/USD", "GALA/USD", "LUNA/USD", "ETH/BTC"
+                         ]
             return {"symbols": symbols}
         except requests.exceptions.RequestException as e:
             return {"error": str(e)}
 
 
     @staticmethod
-    def get_current_kraken_chart(pair="XBTUSD", interval=60):
-        """
-        Fetches the most recent OHLC data from Kraken.
-        
-        Args:
-            pair (str): The trading pair to fetch data for (e.g., "XBTUSD", "ETHUSD").
-            interval (int): Timeframe in minutes (e.g., 1, 5, 15, 60, 240, etc.).
+    def get_current_price(pair: str):
+        """Get the latest price for a trading pair."""
+        url = f"{API_URL}/0/public/Ticker"
+        response = requests.get(url, params={"pair": pair})
+        data = response.json()
+        print("currentPrice response ", data)  # Debugging print
 
-        Returns:
-            list: A list of OHLC data where each entry contains:
-                [timestamp, open, high, low, close, vwap, volume, count]
-                - timestamp: UNIX time of the start of the interval
-                - open: Opening price
-                - high: Highest price
-                - low: Lowest price
-                - close: Closing price
-                - vwap: Volume-weighted average price
-                - volume: Total volume traded during the interval
-                - count: Number of trades during the interval
-            None: If an error occurs or no data is available.
-        """
-        # Kraken API endpoint for OHLC data
-        url = "https://api.kraken.com/0/public/OHLC"
-        params = {
-            "pair": pair,
-            "interval": interval
-        }
-
-        try:
-            # Make the request
-            response = requests.get(url, params=params)
-            response.raise_for_status()
-            data = response.json()
-            print(data)
-            # Handle API errors
-            if data.get("error"):
-                print("Error from Kraken API:", data["error"])
-                return None
-
-            # Extract OHLC data
-            key = f"X{pair.replace('/', '')}"
-            ohlc_data = data["result"].get(key, [])
-
-            if not ohlc_data:
-                print(f"No data found for pair {pair}.")
-                return None
-
-            return ohlc_data
-
-        except requests.exceptions.RequestException as e:
-            print(f"An error occurred while fetching data: {e}")
+        if "error" in data and data["error"]:
+            print("Kraken API Error:", data["error"])
             return None
+
+        # Extract the correct key dynamically
+        result = data.get("result", {})
+        if not result:
+            return None
+
+        # Get the first key (trading pair) dynamically
+        pair_key = next(iter(result), None)
+        if not pair_key:
+            return None
+
+        # Extract the latest trade price (close price)
+        return float(result[pair_key]["c"][0])
+
+    @staticmethod
+    def orderFillChecker(data):
+        while True:
+                        # print(data)
+            # data = {'error': [], 'result': {'txid': ['ODLRQD-FQPCC-T7WVUE'], 'descr': {'order': 'buy 12.30593539 ADAUSD @ market'}}}
+            txid = data["result"]["txid"][0]  # Get the first transaction ID
+            print(txid)
+            trades = data.get('trades', False)  # Whether or not to include trades related to the position
+            userref = data.get('userref', None)  # Optional user reference ID
+            consolidate_taker = data.get('consolidate_taker', True)  # Whether or not to consolidate taker trades
+            # orderDetail = Kraken.query_orders(txid)
+            orderDetail  = Kraken.query_orders(txid, trades, userref, consolidate_taker)
+            print(orderDetail)
+            # orderDetail  = {'error': [], 'result': {}}
+            if orderDetail["result"] != {}:
+                
+                print("*************************************")
+                if orderDetail["result"][txid]["status"] == "closed":
+                    print(orderDetail["result"])
+                    return orderDetail
+            # print("sleeping for some time")
+            time.sleep(1)
+
+
+# curl -X POST http://127.0.0.1:5000/bot/stage-complete      -H "Content-Type: application/json"      -d '{
+# "symbol": "AAVEUSD",
+# "hitType": "TakeProfit"
+# }'

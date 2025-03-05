@@ -7,7 +7,7 @@ from app.util.Util import UTIL
 from app.util.Constant import CONSTANT , BaseURL
 from app.exchanges.kerkaren.webSocketClient import KrakenOHLCClient
 from app.exchanges.binancne.websocketClient import BinanceOHLCClient
-
+from app.controllers.redisutil import RedisUtility
 connected_clients = {}
 
 async def server(websocket):
@@ -51,23 +51,25 @@ async def server(websocket):
                                     try:
                                         print("Connected")
                                         print(await websocket.ping())
-                                        symbols = ["BTCUSDT", "ETHUSDT"]  # Binance pairs
+                                        # symbols = ["BTCUSDT", "ETHUSDT"]  # Binance pairs
+                                        symbols = RedisUtility.get_all_hash_fields("symbol")
+                                        symbolList = []
+                                        print("symbols" , symbols)
+                                        for key in symbols.keys():
+                                            # print(key)
+                                            print(key)
+                                            symbolList.append(key)                                        
                                         binance_client = BinanceOHLCClient(websocket,symbols=symbols, interval=5)
 
                                         # Running WebSocket in a separate thread
                                         websocket_thread = threading.Thread(target=binance_client.start)
                                         websocket_thread.start()
 
-                                        # Stop the WebSocket connection after some time (for example, 30 seconds)
                                         import time
                                         time.sleep(30)
                                         binance_client.stop()
                                         websocket_thread.join()
-                                        # Stop the WebSocket connection after some time (for example, 30 seconds)
-                                        # import time
-                                        # time.sleep(30)
-                                        # kraken_client.stop()
-                                        # websocket_thread.join()
+
                                         
                                     except Exception as e:
                                         print(f"fail to get option chain of {symbol} {e}")
