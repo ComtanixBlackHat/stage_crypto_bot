@@ -1,0 +1,2018 @@
+nohup: ignoring input
+Database connection successful.
+ * Serving Flask app 'app'
+ * Debug mode: off
+2025-03-08 18:32:00,873 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:2000
+2025-03-08 18:32:00,874 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-09 10:20:53,576 - INFO - Received request at /stage-complete
+2025-03-09 10:20:53,577 - DEBUG - ***************************
+Request Data: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+
+
+2025-03-09 10:20:53,577 - INFO - Processing data in background: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+2025-03-09 10:20:53,577 - INFO - Received request at /stage-complete
+2025-03-09 10:20:53,578 - DEBUG - ***************************
+Request Data: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+
+
+2025-03-09 10:20:53,578 - INFO - 127.0.0.1 - - [09/Mar/2025 10:20:53] "POST /bot/stage-complete HTTP/1.1" 200 -
+2025-03-09 10:20:53,581 - DEBUG - Symbol: XRPUSD, Hit Type: rebuy
+2025-03-09 10:20:53,582 - DEBUG - Current Stage: 0
+2025-03-09 10:20:53,583 - DEBUG - StageKey: XRPUSD0, TRADING_PAIR_ID: 13
+2025-03-09 10:20:53,584 - DEBUG - Take Profit %: 3.0, Rebuy %: 3.0
+2025-03-09 10:20:53,584 - DEBUG - Current Capital: 500.0, Trade Usage %: 4.0
+2025-03-09 10:20:53,590 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 10:20:53,695 - DEBUG - https://api.kraken.com:443 "GET /0/public/Ticker?pair=XRPUSD HTTP/1.1" 200 None
+2025-03-09 10:20:53,698 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 10:20:53,782 - DEBUG - https://api.kraken.com:443 "POST /0/private/AddOrder HTTP/1.1" 200 None
+2025-03-09 10:20:53,789 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 10:20:53,883 - DEBUG - https://api.kraken.com:443 "POST /0/private/QueryOrders HTTP/1.1" 200 None
+2025-03-09 10:21:03,975 - INFO - Stage completion process successful
+2025-03-09 10:21:03,975 - INFO - Task Completed!
+2025-03-09 13:47:08,664 - INFO - Received request at /stage-complete
+2025-03-09 13:47:08,665 - DEBUG - ***************************
+Request Data: {'hitType': 'rebuy', 'symbol': 'XLMUSD'}
+
+
+2025-03-09 13:47:08,665 - INFO - Processing data in background: {'hitType': 'rebuy', 'symbol': 'XLMUSD'}
+2025-03-09 13:47:08,665 - INFO - Received request at /stage-complete
+2025-03-09 13:47:08,665 - DEBUG - ***************************
+Request Data: {'hitType': 'rebuy', 'symbol': 'XLMUSD'}
+
+
+2025-03-09 13:47:08,666 - INFO - 127.0.0.1 - - [09/Mar/2025 13:47:08] "POST /bot/stage-complete HTTP/1.1" 200 -
+2025-03-09 13:47:08,666 - DEBUG - Symbol: XLMUSD, Hit Type: rebuy
+2025-03-09 13:47:08,667 - DEBUG - Current Stage: 0
+2025-03-09 13:47:08,668 - DEBUG - StageKey: XLMUSD0, TRADING_PAIR_ID: 12
+2025-03-09 13:47:08,670 - DEBUG - Take Profit %: 3.0, Rebuy %: 3.0
+2025-03-09 13:47:08,670 - DEBUG - Current Capital: 500.0, Trade Usage %: 4.0
+2025-03-09 13:47:08,672 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 13:47:08,778 - DEBUG - https://api.kraken.com:443 "GET /0/public/Ticker?pair=XLMUSD HTTP/1.1" 200 None
+2025-03-09 13:47:08,781 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 13:47:08,874 - DEBUG - https://api.kraken.com:443 "POST /0/private/AddOrder HTTP/1.1" 200 None
+2025-03-09 13:47:08,875 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 13:47:09,051 - DEBUG - https://api.kraken.com:443 "POST /0/private/QueryOrders HTTP/1.1" 200 24
+2025-03-09 13:47:10,053 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 13:47:10,151 - DEBUG - https://api.kraken.com:443 "POST /0/private/QueryOrders HTTP/1.1" 200 None
+2025-03-09 13:47:20,178 - INFO - Stage completion process successful
+2025-03-09 13:47:20,178 - INFO - Task Completed!
+2025-03-09 13:57:53,533 - INFO - Received request at /stage-complete
+2025-03-09 13:57:53,534 - DEBUG - ***************************
+Request Data: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+
+
+2025-03-09 13:57:53,536 - INFO - Processing data in background: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+2025-03-09 13:57:53,537 - INFO - Received request at /stage-complete
+2025-03-09 13:57:53,537 - DEBUG - ***************************
+Request Data: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+
+
+2025-03-09 13:57:53,537 - INFO - 127.0.0.1 - - [09/Mar/2025 13:57:53] "POST /bot/stage-complete HTTP/1.1" 200 -
+2025-03-09 13:57:53,538 - DEBUG - Symbol: XRPUSD, Hit Type: rebuy
+2025-03-09 13:57:53,538 - DEBUG - Current Stage: 1
+2025-03-09 13:57:53,538 - DEBUG - StageKey: XRPUSD1, TRADING_PAIR_ID: 13
+2025-03-09 13:57:53,539 - DEBUG - Take Profit %: 3.0, Rebuy %: 3.0
+2025-03-09 13:57:53,539 - DEBUG - Current Capital: 500.0, Trade Usage %: 4.0
+2025-03-09 13:57:53,540 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 13:57:53,596 - INFO - Received request at /stage-complete
+2025-03-09 13:57:53,596 - DEBUG - ***************************
+Request Data: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+
+
+2025-03-09 13:57:53,597 - INFO - Processing data in background: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+2025-03-09 13:57:53,597 - INFO - Received request at /stage-complete
+2025-03-09 13:57:53,597 - DEBUG - ***************************
+Request Data: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+
+
+2025-03-09 13:57:53,597 - INFO - 127.0.0.1 - - [09/Mar/2025 13:57:53] "POST /bot/stage-complete HTTP/1.1" 200 -
+2025-03-09 13:57:53,598 - DEBUG - Symbol: XRPUSD, Hit Type: rebuy
+2025-03-09 13:57:53,598 - DEBUG - Current Stage: 1
+2025-03-09 13:57:53,598 - DEBUG - StageKey: XRPUSD1, TRADING_PAIR_ID: 13
+2025-03-09 13:57:53,599 - DEBUG - Take Profit %: 3.0, Rebuy %: 3.0
+2025-03-09 13:57:53,599 - DEBUG - Current Capital: 500.0, Trade Usage %: 4.0
+2025-03-09 13:57:53,600 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 13:57:53,628 - DEBUG - https://api.kraken.com:443 "GET /0/public/Ticker?pair=XRPUSD HTTP/1.1" 200 None
+2025-03-09 13:57:53,630 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 13:57:53,637 - DEBUG - https://api.kraken.com:443 "GET /0/public/Ticker?pair=XRPUSD HTTP/1.1" 200 None
+2025-03-09 13:57:53,639 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 13:57:53,707 - INFO - Received request at /stage-complete
+2025-03-09 13:57:53,707 - DEBUG - ***************************
+Request Data: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+
+
+2025-03-09 13:57:53,708 - INFO - Processing data in background: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+2025-03-09 13:57:53,708 - INFO - Received request at /stage-complete
+2025-03-09 13:57:53,708 - DEBUG - ***************************
+Request Data: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+
+
+2025-03-09 13:57:53,708 - INFO - 127.0.0.1 - - [09/Mar/2025 13:57:53] "POST /bot/stage-complete HTTP/1.1" 200 -
+2025-03-09 13:57:53,709 - DEBUG - Symbol: XRPUSD, Hit Type: rebuy
+2025-03-09 13:57:53,709 - DEBUG - Current Stage: 1
+2025-03-09 13:57:53,710 - DEBUG - StageKey: XRPUSD1, TRADING_PAIR_ID: 13
+2025-03-09 13:57:53,714 - DEBUG - Take Profit %: 3.0, Rebuy %: 3.0
+2025-03-09 13:57:53,714 - DEBUG - Current Capital: 500.0, Trade Usage %: 4.0
+2025-03-09 13:57:53,715 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 13:57:53,716 - INFO - Received request at /stage-complete
+2025-03-09 13:57:53,716 - DEBUG - ***************************
+Request Data: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+
+
+2025-03-09 13:57:53,716 - INFO - Processing data in background: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+2025-03-09 13:57:53,717 - INFO - Received request at /stage-complete
+2025-03-09 13:57:53,717 - DEBUG - ***************************
+Request Data: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+
+
+2025-03-09 13:57:53,719 - INFO - 127.0.0.1 - - [09/Mar/2025 13:57:53] "POST /bot/stage-complete HTTP/1.1" 200 -
+2025-03-09 13:57:53,719 - DEBUG - Symbol: XRPUSD, Hit Type: rebuy
+2025-03-09 13:57:53,720 - DEBUG - Current Stage: 1
+2025-03-09 13:57:53,721 - DEBUG - StageKey: XRPUSD1, TRADING_PAIR_ID: 13
+2025-03-09 13:57:53,722 - INFO - Received request at /stage-complete
+2025-03-09 13:57:53,722 - DEBUG - ***************************
+Request Data: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+
+
+2025-03-09 13:57:53,722 - INFO - Processing data in background: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+2025-03-09 13:57:53,722 - INFO - Received request at /stage-complete
+2025-03-09 13:57:53,723 - INFO - 127.0.0.1 - - [09/Mar/2025 13:57:53] "POST /bot/stage-complete HTTP/1.1" 200 -
+2025-03-09 13:57:53,723 - DEBUG - Take Profit %: 3.0, Rebuy %: 3.0
+2025-03-09 13:57:53,724 - DEBUG - Current Capital: 500.0, Trade Usage %: 4.0
+2025-03-09 13:57:53,723 - DEBUG - ***************************
+Request Data: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+
+
+2025-03-09 13:57:53,724 - DEBUG - Symbol: XRPUSD, Hit Type: rebuy
+2025-03-09 13:57:53,725 - DEBUG - Current Stage: 1
+2025-03-09 13:57:53,725 - DEBUG - StageKey: XRPUSD1, TRADING_PAIR_ID: 13
+2025-03-09 13:57:53,726 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 13:57:53,726 - INFO - Received request at /stage-complete
+2025-03-09 13:57:53,727 - DEBUG - ***************************
+Request Data: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+
+
+2025-03-09 13:57:53,728 - INFO - Processing data in background: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+2025-03-09 13:57:53,729 - INFO - 127.0.0.1 - - [09/Mar/2025 13:57:53] "POST /bot/stage-complete HTTP/1.1" 200 -
+2025-03-09 13:57:53,729 - INFO - Received request at /stage-complete
+2025-03-09 13:57:53,730 - DEBUG - ***************************
+Request Data: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+
+
+2025-03-09 13:57:53,729 - DEBUG - Take Profit %: 3.0, Rebuy %: 3.0
+2025-03-09 13:57:53,730 - DEBUG - Current Capital: 500.0, Trade Usage %: 4.0
+2025-03-09 13:57:53,731 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 13:57:53,731 - DEBUG - Symbol: XRPUSD, Hit Type: rebuy
+2025-03-09 13:57:53,732 - DEBUG - Current Stage: 1
+2025-03-09 13:57:53,731 - INFO - Received request at /stage-complete
+2025-03-09 13:57:53,732 - DEBUG - StageKey: XRPUSD1, TRADING_PAIR_ID: 13
+2025-03-09 13:57:53,732 - DEBUG - ***************************
+Request Data: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+
+
+2025-03-09 13:57:53,733 - INFO - Processing data in background: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+2025-03-09 13:57:53,733 - INFO - Received request at /stage-complete
+2025-03-09 13:57:53,733 - DEBUG - ***************************
+Request Data: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+
+
+2025-03-09 13:57:53,734 - INFO - 127.0.0.1 - - [09/Mar/2025 13:57:53] "POST /bot/stage-complete HTTP/1.1" 200 -
+2025-03-09 13:57:53,736 - DEBUG - Take Profit %: 3.0, Rebuy %: 3.0
+2025-03-09 13:57:53,736 - DEBUG - Current Capital: 500.0, Trade Usage %: 4.0
+2025-03-09 13:57:53,737 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 13:57:53,739 - DEBUG - Symbol: XRPUSD, Hit Type: rebuy
+2025-03-09 13:57:53,739 - DEBUG - Current Stage: 1
+2025-03-09 13:57:53,740 - DEBUG - StageKey: XRPUSD1, TRADING_PAIR_ID: 13
+2025-03-09 13:57:53,740 - DEBUG - Take Profit %: 3.0, Rebuy %: 3.0
+2025-03-09 13:57:53,741 - DEBUG - Current Capital: 500.0, Trade Usage %: 4.0
+2025-03-09 13:57:53,742 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 13:57:53,743 - DEBUG - https://api.kraken.com:443 "POST /0/private/AddOrder HTTP/1.1" 200 None
+2025-03-09 13:57:53,746 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 13:57:53,780 - INFO - Received request at /stage-complete
+2025-03-09 13:57:53,780 - DEBUG - ***************************
+Request Data: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+
+
+2025-03-09 13:57:53,780 - INFO - Processing data in background: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+2025-03-09 13:57:53,781 - INFO - Received request at /stage-complete
+2025-03-09 13:57:53,781 - DEBUG - ***************************
+Request Data: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+
+
+2025-03-09 13:57:53,781 - INFO - 127.0.0.1 - - [09/Mar/2025 13:57:53] "POST /bot/stage-complete HTTP/1.1" 200 -
+2025-03-09 13:57:53,781 - DEBUG - Symbol: XRPUSD, Hit Type: rebuy
+2025-03-09 13:57:53,782 - DEBUG - Current Stage: 1
+2025-03-09 13:57:53,782 - DEBUG - StageKey: XRPUSD1, TRADING_PAIR_ID: 13
+2025-03-09 13:57:53,783 - DEBUG - Take Profit %: 3.0, Rebuy %: 3.0
+2025-03-09 13:57:53,783 - DEBUG - Current Capital: 500.0, Trade Usage %: 4.0
+2025-03-09 13:57:53,783 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 13:57:53,786 - INFO - Received request at /stage-complete
+2025-03-09 13:57:53,786 - DEBUG - https://api.kraken.com:443 "GET /0/public/Ticker?pair=XRPUSD HTTP/1.1" 200 None
+2025-03-09 13:57:53,787 - DEBUG - ***************************
+Request Data: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+
+
+2025-03-09 13:57:53,788 - INFO - Processing data in background: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+2025-03-09 13:57:53,789 - INFO - Received request at /stage-complete
+2025-03-09 13:57:53,789 - DEBUG - ***************************
+Request Data: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+
+
+2025-03-09 13:57:53,789 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 13:57:53,790 - INFO - 127.0.0.1 - - [09/Mar/2025 13:57:53] "POST /bot/stage-complete HTTP/1.1" 200 -
+2025-03-09 13:57:53,791 - DEBUG - Symbol: XRPUSD, Hit Type: rebuy
+2025-03-09 13:57:53,792 - DEBUG - https://api.kraken.com:443 "GET /0/public/Ticker?pair=XRPUSD HTTP/1.1" 200 None
+2025-03-09 13:57:53,792 - DEBUG - Current Stage: 1
+2025-03-09 13:57:53,793 - DEBUG - StageKey: XRPUSD1, TRADING_PAIR_ID: 13
+2025-03-09 13:57:53,794 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 13:57:53,796 - INFO - Received request at /stage-complete
+2025-03-09 13:57:53,800 - DEBUG - ***************************
+Request Data: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+
+
+2025-03-09 13:57:53,800 - DEBUG - Take Profit %: 3.0, Rebuy %: 3.0
+2025-03-09 13:57:53,797 - DEBUG - https://api.kraken.com:443 "GET /0/public/Ticker?pair=XRPUSD HTTP/1.1" 200 None
+2025-03-09 13:57:53,801 - INFO - Processing data in background: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+2025-03-09 13:57:53,801 - INFO - 127.0.0.1 - - [09/Mar/2025 13:57:53] "POST /bot/stage-complete HTTP/1.1" 200 -
+2025-03-09 13:57:53,801 - DEBUG - Current Capital: 500.0, Trade Usage %: 4.0
+2025-03-09 13:57:53,804 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 13:57:53,808 - DEBUG - https://api.kraken.com:443 "GET /0/public/Ticker?pair=XRPUSD HTTP/1.1" 200 None
+XRPUSDcurrentStage
+0
+currentPrice response  {'error': [], 'result': {'XXRPZUSD': {'a': ['2.26473000', '42564', '42564.000'], 'b': ['2.26472000', '200', '200.000'], 'c': ['2.26500000', '545.53594128'], 'v': ['5645811.94908975', '14980492.36432164'], 'p': ['2.31041866', '2.32689650'], 't': [7078, 21402], 'l': ['2.26500000', '2.26500000'], 'h': ['2.34888000', '2.36559000'], 'o': '2.32496000'}}}
+{'nonce': '1741515653697', 'ordertype': 'market', 'type': 'buy', 'volume': 8.830022075055187, 'pair': 'XRPUSD'}
+{'error': [], 'result': {'txid': ['OSQ56J-NR4T6-PYN7BO'], 'descr': {'order': 'buy 8.83002207 XRPUSD @ market'}}}
+OSQ56J-NR4T6-PYN7BO
+{'error': [], 'result': {'OSQ56J-NR4T6-PYN7BO': {'refid': None, 'userref': 0, 'status': 'closed', 'opentm': 1741515653.758528, 'starttm': 0, 'expiretm': 0, 'descr': {'pair': 'XRPUSD', 'aclass': 'forex', 'type': 'buy', 'ordertype': 'market', 'price': '0', 'price2': '0', 'leverage': 'none', 'order': 'buy 8.83002207 XRPUSD @ market', 'close': ''}, 'vol': '8.83002207', 'vol_exec': '8.83002207', 'cost': '19.97730683', 'fee': '0.06992057', 'price': '2.26242', 'stopprice': '0.00000000', 'limitprice': '0.00000000', 'misc': '', 'oflags': 'fciq', 'reason': None, 'closetm': 1741515653.758597}}}
+{'error': [], 'result': {'OSQ56J-NR4T6-PYN7BO': {'refid': None, 'userref': 0, 'status': 'closed', 'opentm': 1741515653.758528, 'starttm': 0, 'expiretm': 0, 'descr': {'pair': 'XRPUSD', 'aclass': 'forex', 'type': 'buy', 'ordertype': 'market', 'price': '0', 'price2': '0', 'leverage': 'none', 'order': 'buy 8.83002207 XRPUSD @ market', 'close': ''}, 'vol': '8.83002207', 'vol_exec': '8.83002207', 'cost': '19.97730683', 'fee': '0.06992057', 'price': '2.26242', 'stopprice': '0.00000000', 'limitprice': '0.00000000', 'misc': '', 'oflags': 'fciq', 'reason': None, 'closetm': 1741515653.758597}}}
+*************************************
+{'OSQ56J-NR4T6-PYN7BO': {'refid': None, 'userref': 0, 'status': 'closed', 'opentm': 1741515653.758528, 'starttm': 0, 'expiretm': 0, 'descr': {'pair': 'XRPUSD', 'aclass': 'forex', 'type': 'buy', 'ordertype': 'market', 'price': '0', 'price2': '0', 'leverage': 'none', 'order': 'buy 8.83002207 XRPUSD @ market', 'close': ''}, 'vol': '8.83002207', 'vol_exec': '8.83002207', 'cost': '19.97730683', 'fee': '0.06992057', 'price': '2.26242', 'stopprice': '0.00000000', 'limitprice': '0.00000000', 'misc': '', 'oflags': 'fciq', 'reason': None, 'closetm': 1741515653.758597}}
+Current Capital = 480.00000001 and cost = 19.97730683
+test2
+8.83002207
+<class 'float'>
+waiting for 10 secounds
+wait complete for 10 secounds
+XLMUSDcurrentStage
+0
+currentPrice response  {'error': [], 'result': {'XXLMZUSD': {'a': ['0.26772000', '6042', '6042.000'], 'b': ['0.26762400', '1663', '1663.000'], 'c': ['0.26811100', '84.46121030'], 'v': ['1929360.13503407', '4126185.19609578'], 'p': ['0.27318609', '0.27541371'], 't': [1631, 2840], 'l': ['0.26767000', '0.26767000'], 'h': ['0.27911600', '0.28042400'], 'o': '0.27570300'}}}
+{'nonce': '1741528028780', 'ordertype': 'market', 'type': 'buy', 'volume': 74.5959695797636, 'pair': 'XLMUSD'}
+{'error': [], 'result': {'txid': ['ODPV7Z-R2ALA-IDRANJ'], 'descr': {'order': 'buy 74.59596957 XLMUSD @ market'}}}
+ODPV7Z-R2ALA-IDRANJ
+{'error': [], 'result': {}}
+{'error': [], 'result': {}}
+ODPV7Z-R2ALA-IDRANJ
+{'error': [], 'result': {'ODPV7Z-R2ALA-IDRANJ': {'refid': None, 'userref': 0, 'status': 'closed', 'opentm': 1741528028.850154, 'starttm': 0, 'expiretm': 0, 'descr': {'pair': 'XLMUSD', 'aclass': 'forex', 'type': 'buy', 'ordertype': 'market', 'price': '0', 'price2': '0', 'leverage': 'none', 'order': 'buy 74.59596957 XLMUSD @ market', 'close': ''}, 'vol': '74.59596957', 'vol_exec': '74.59596957', 'cost': '19.97008701', 'fee': '0.06989530', 'price': '0.267709', 'stopprice': '0.00000000', 'limitprice': '0.00000000', 'misc': '', 'oflags': 'fciq', 'reason': None, 'closetm': 1741528028.850162}}}
+{'error': [], 'result': {'ODPV7Z-R2ALA-IDRANJ': {'refid': None, 'userref': 0, 'status': 'closed', 'opentm': 1741528028.850154, 'starttm': 0, 'expiretm': 0, 'descr': {'pair': 'XLMUSD', 'aclass': 'forex', 'type': 'buy', 'ordertype': 'market', 'price': '0', 'price2': '0', 'leverage': 'none', 'order': 'buy 74.59596957 XLMUSD @ market', 'close': ''}, 'vol': '74.59596957', 'vol_exec': '74.59596957', 'cost': '19.97008701', 'fee': '0.06989530', 'price': '0.267709', 'stopprice': '0.00000000', 'limitprice': '0.00000000', 'misc': '', 'oflags': 'fciq', 'reason': None, 'closetm': 1741528028.850162}}}
+*************************************
+{'ODPV7Z-R2ALA-IDRANJ': {'refid': None, 'userref': 0, 'status': 'closed', 'opentm': 1741528028.850154, 'starttm': 0, 'expiretm': 0, 'descr': {'pair': 'XLMUSD', 'aclass': 'forex', 'type': 'buy', 'ordertype': 'market', 'price': '0', 'price2': '0', 'leverage': 'none', 'order': 'buy 74.59596957 XLMUSD @ market', 'close': ''}, 'vol': '74.59596957', 'vol_exec': '74.59596957', 'cost': '19.97008701', 'fee': '0.06989530', 'price': '0.267709', 'stopprice': '0.00000000', 'limitprice': '0.00000000', 'misc': '', 'oflags': 'fciq', 'reason': None, 'closetm': 1741528028.850162}}
+Current Capital = 480.00014502 and cost = 19.97008701
+test2
+74.59596957
+<class 'float'>
+waiting for 10 secounds
+wait complete for 10 secounds
+XRPUSDcurrentStage
+1
+XRPUSDcurrentStage
+1
+currentPrice response  {'error': [], 'result': {'XXRPZUSD': {'a': ['2.20048000', '60', '60.000'], 'b': ['2.20019000', '24', '24.000'], 'c': ['2.20128000', '41.99918600'], 'v': ['11351282.13686755', '17751838.32339999'], 'p': ['2.27044404', '2.29530477'], 't': [13033, 24122], 'l': ['2.19900000', '2.19900000'], 'h': ['2.34888000', '2.36559000'], 'o': '2.32496000'}}}
+{'nonce': '1741528673630', 'ordertype': 'market', 'type': 'buy', 'volume': 9.08562291030673, 'pair': 'XRPUSD'}
+currentPrice response  {'error': [], 'result': {'XXRPZUSD': {'a': ['2.20048000', '60', '60.000'], 'b': ['2.20019000', '24', '24.000'], 'c': ['2.20128000', '41.99918600'], 'v': ['11351282.13686755', '17751838.32339999'], 'p': ['2.27044404', '2.29530477'], 't': [13033, 24122], 'l': ['2.19900000', '2.19900000'], 'h': ['2.34888000', '2.36559000'], 'o': '2.32496000'}}}
+{'nonce': '1741528673638', 'ordertype': 'market', 'type': 'buy', 'volume': 9.08562291030673, 'pair': 'XRPUSD'}
+XRPUSDcurrentStage
+1
+XRPUSDcurrentStage
+1
+XRPUSDcurrentStage
+1
+XRPUSDcurrentStage
+1
+XRPUSDcurrentStage
+1
+{'error': [], 'result': {'txid': ['OW3QSD-5PKWW-K36YMN'], 'descr': {'order': 'buy 9.08562291 XRPUSD @ market'}}}
+OW3QSD-5PKWW-K36YMN
+XRPUSDcurrentStage
+1
+currentPrice response  {'error': [], 'result': {'XXRPZUSD': {'a': ['2.20048000', '60', '60.000'], 'b': ['2.20019000', '24', '24.000'], 'c': ['2.20128000', '41.99918600'], 'v': ['11351282.13686755', '17751838.32339999'], 'p': ['2.27044404', '2.29530477'], 't': [13033, 24122], 'l': ['2.19900000', '2.19900000'], 'h': ['2.34888000', '2.36559000'], 'o': '2.32496000'}}}
+{'nonce': '1741528673788', 'ordertype': 'market', 'type': 'buy', 'volume': 9.08562291030673, 'pair': 'XRPUSD'}
+XRPUSDcurrentStage
+1
+currentPrice response  {'error': [], 'result': {'XXRPZUSD': {'a': ['2.20048000', '60', '60.000'], 'b': ['2.20019000', '24', '24.000'], 'c': ['2.20128000', '41.99918600'], 'v': ['11351282.13686755', '17751838.32339999'], 'p': ['2.27044404', '2.29530477'], 't': [13033, 24122], 'l': ['2.19900000', '2.19900000'], 'h': ['2.34888000', '2.36559000'], 'o': '2.32496000'}}}
+{'nonce': '1741528673793', 'ordertype': 'market', 'type': 'buy', 'volume': 9.08562291030673, 'pair': 'XRPUSD'}
+currentPrice response  {'error': [], 'result': {'XXRPZUSD': {'a': ['2.20048000', '60', '60.000'], 'b': ['2.20019000', '24', '24.000'], 'c': ['2.20128000', '41.99918600'], 'v': ['11351282.13686755', '17751838.32339999'], 'p': ['2.27044404', '2.29530477'], 't': [13033, 24122], 'l': ['2.19900000', '2.19900000'], 'h': ['2.34888000', '2.36559000'], 'o': '2.32496000'}}}
+{'nonce': '1741528673803', 'ordertype': 'market', 'type': 'buy', 'volume': 9.08562291030673, 'pair': 'XRPUSD'}
+currentPrice response  2025-03-09 13:57:53,805 - INFO - Received request at /stage-complete
+2025-03-09 13:57:53,811 - DEBUG - ***************************
+Request Data: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+
+
+2025-03-09 13:57:53,807 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 13:57:53,812 - DEBUG - Symbol: XRPUSD, Hit Type: rebuy
+2025-03-09 13:57:53,812 - DEBUG - Current Stage: 1
+2025-03-09 13:57:53,814 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 13:57:53,816 - DEBUG - StageKey: XRPUSD1, TRADING_PAIR_ID: 13
+2025-03-09 13:57:53,817 - INFO - Received request at /stage-complete
+2025-03-09 13:57:53,818 - DEBUG - ***************************
+Request Data: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+
+
+2025-03-09 13:57:53,818 - DEBUG - Take Profit %: 3.0, Rebuy %: 3.0
+2025-03-09 13:57:53,820 - DEBUG - Current Capital: 500.0, Trade Usage %: 4.0
+2025-03-09 13:57:53,821 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 13:57:53,821 - INFO - Processing data in background: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+2025-03-09 13:57:53,821 - INFO - Received request at /stage-complete
+2025-03-09 13:57:53,822 - DEBUG - ***************************
+Request Data: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+
+
+2025-03-09 13:57:53,824 - INFO - 127.0.0.1 - - [09/Mar/2025 13:57:53] "POST /bot/stage-complete HTTP/1.1" 200 -
+2025-03-09 13:57:53,825 - DEBUG - Symbol: XRPUSD, Hit Type: rebuy
+2025-03-09 13:57:53,825 - DEBUG - https://api.kraken.com:443 "POST /0/private/AddOrder HTTP/1.1" 200 None
+2025-03-09 13:57:53,826 - DEBUG - Current Stage: 1
+2025-03-09 13:57:53,828 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 13:57:53,830 - DEBUG - StageKey: XRPUSD1, TRADING_PAIR_ID: 13
+2025-03-09 13:57:53,833 - DEBUG - Take Profit %: 3.0, Rebuy %: 3.0
+2025-03-09 13:57:53,833 - DEBUG - Current Capital: 500.0, Trade Usage %: 4.0
+2025-03-09 13:57:53,834 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 13:57:53,836 - DEBUG - https://api.kraken.com:443 "POST /0/private/QueryOrders HTTP/1.1" 200 24
+2025-03-09 13:57:53,863 - INFO - Received request at /stage-complete
+2025-03-09 13:57:53,864 - DEBUG - ***************************
+Request Data: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+
+
+2025-03-09 13:57:53,865 - DEBUG - https://api.kraken.com:443 "GET /0/public/Ticker?pair=XRPUSD HTTP/1.1" 200 None
+2025-03-09 13:57:53,865 - INFO - Processing data in background: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+2025-03-09 13:57:53,866 - DEBUG - https://api.kraken.com:443 "GET /0/public/Ticker?pair=XRPUSD HTTP/1.1" 200 None
+2025-03-09 13:57:53,867 - INFO - 127.0.0.1 - - [09/Mar/2025 13:57:53] "POST /bot/stage-complete HTTP/1.1" 200 -
+2025-03-09 13:57:53,868 - INFO - Received request at /stage-complete
+2025-03-09 13:57:53,870 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 13:57:53,872 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 13:57:53,873 - DEBUG - ***************************
+Request Data: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+
+
+2025-03-09 13:57:53,874 - DEBUG - Symbol: XRPUSD, Hit Type: rebuy
+2025-03-09 13:57:53,874 - DEBUG - Current Stage: 1
+2025-03-09 13:57:53,875 - DEBUG - StageKey: XRPUSD1, TRADING_PAIR_ID: 13
+2025-03-09 13:57:53,876 - INFO - Received request at /stage-complete
+2025-03-09 13:57:53,876 - DEBUG - ***************************
+Request Data: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+
+
+2025-03-09 13:57:53,877 - INFO - Processing data in background: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+2025-03-09 13:57:53,877 - INFO - Received request at /stage-complete
+2025-03-09 13:57:53,877 - DEBUG - ***************************
+Request Data: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+
+
+2025-03-09 13:57:53,877 - INFO - 127.0.0.1 - - [09/Mar/2025 13:57:53] "POST /bot/stage-complete HTTP/1.1" 200 -
+2025-03-09 13:57:53,877 - DEBUG - Take Profit %: 3.0, Rebuy %: 3.0
+2025-03-09 13:57:53,878 - DEBUG - Current Capital: 500.0, Trade Usage %: 4.0
+2025-03-09 13:57:53,880 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 13:57:53,881 - DEBUG - Symbol: XRPUSD, Hit Type: rebuy
+2025-03-09 13:57:53,880 - DEBUG - https://api.kraken.com:443 "GET /0/public/Ticker?pair=XRPUSD HTTP/1.1" 200 None
+2025-03-09 13:57:53,883 - INFO - Received request at /stage-complete
+2025-03-09 13:57:53,884 - DEBUG - Current Stage: 1
+2025-03-09 13:57:53,886 - DEBUG - ***************************
+Request Data: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+
+
+2025-03-09 13:57:53,887 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 13:57:53,887 - DEBUG - StageKey: XRPUSD1, TRADING_PAIR_ID: 13
+2025-03-09 13:57:53,888 - INFO - Processing data in background: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+2025-03-09 13:57:53,889 - INFO - Received request at /stage-complete
+2025-03-09 13:57:53,891 - DEBUG - ***************************
+Request Data: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+
+
+2025-03-09 13:57:53,889 - INFO - 127.0.0.1 - - [09/Mar/2025 13:57:53] "POST /bot/stage-complete HTTP/1.1" 200 -
+2025-03-09 13:57:53,893 - DEBUG - Symbol: XRPUSD, Hit Type: rebuy
+2025-03-09 13:57:53,894 - DEBUG - Current Stage: 1
+2025-03-09 13:57:53,895 - DEBUG - Take Profit %: 3.0, Rebuy %: 3.0
+2025-03-09 13:57:53,895 - DEBUG - Current Capital: 500.0, Trade Usage %: 4.0
+2025-03-09 13:57:53,896 - DEBUG - StageKey: XRPUSD1, TRADING_PAIR_ID: 13
+2025-03-09 13:57:53,898 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 13:57:53,902 - DEBUG - https://api.kraken.com:443 "POST /0/private/AddOrder HTTP/1.1" 200 None
+2025-03-09 13:57:53,904 - DEBUG - https://api.kraken.com:443 "POST /0/private/AddOrder HTTP/1.1" 200 None
+2025-03-09 13:57:53,905 - DEBUG - https://api.kraken.com:443 "POST /0/private/AddOrder HTTP/1.1" 200 32
+2025-03-09 13:57:53,907 - INFO - Received request at /stage-complete
+2025-03-09 13:57:53,909 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 13:57:53,910 - DEBUG - Take Profit %: 3.0, Rebuy %: 3.0
+2025-03-09 13:57:53,915 - DEBUG - Current Capital: 500.0, Trade Usage %: 4.0
+2025-03-09 13:57:53,911 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 13:57:53,912 - ERROR - Error in stagecomplete: 'result'
+Traceback (most recent call last):
+  File "/home/ubuntu/stage_crypto_bot/python/app/controllers/bot_control.py", line 197, in process
+    txid = nextbuyOrder["result"]["txid"][0]
+           ~~~~~~~~~~~~^^^^^^^^^^
+KeyError: 'result'
+2025-03-09 13:57:53,913 - DEBUG - ***************************
+Request Data: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+
+
+2025-03-09 13:57:53,916 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 13:57:53,916 - INFO - Task Completed!
+2025-03-09 13:57:53,917 - INFO - Processing data in background: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+2025-03-09 13:57:53,917 - INFO - Received request at /stage-complete
+2025-03-09 13:57:53,917 - DEBUG - ***************************
+Request Data: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+
+
+2025-03-09 13:57:53,918 - INFO - 127.0.0.1 - - [09/Mar/2025 13:57:53] "POST /bot/stage-complete HTTP/1.1" 200 -
+2025-03-09 13:57:53,919 - DEBUG - Symbol: XRPUSD, Hit Type: rebuy
+2025-03-09 13:57:53,920 - DEBUG - Current Stage: 1
+2025-03-09 13:57:53,922 - DEBUG - StageKey: XRPUSD1, TRADING_PAIR_ID: 13
+2025-03-09 13:57:53,924 - DEBUG - https://api.kraken.com:443 "GET /0/public/Ticker?pair=XRPUSD HTTP/1.1" 200 None
+2025-03-09 13:57:53,924 - DEBUG - Take Profit %: 3.0, Rebuy %: 3.0
+2025-03-09 13:57:53,930 - DEBUG - Current Capital: 500.0, Trade Usage %: 4.0
+2025-03-09 13:57:53,926 - DEBUG - https://api.kraken.com:443 "GET /0/public/Ticker?pair=XRPUSD HTTP/1.1" 200 None
+2025-03-09 13:57:53,931 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 13:57:53,932 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 13:57:53,932 - DEBUG - https://api.kraken.com:443 "POST /0/private/QueryOrders HTTP/1.1" 200 24
+2025-03-09 13:57:53,937 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 13:57:53,942 - INFO - Received request at /stage-complete
+2025-03-09 13:57:53,943 - DEBUG - ***************************
+Request Data: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+
+
+2025-03-09 13:57:53,943 - INFO - Processing data in background: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+2025-03-09 13:57:53,944 - INFO - Received request at /stage-complete
+2025-03-09 13:57:53,944 - DEBUG - ***************************
+Request Data: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+
+
+2025-03-09 13:57:53,944 - INFO - 127.0.0.1 - - [09/Mar/2025 13:57:53] "POST /bot/stage-complete HTTP/1.1" 200 -
+2025-03-09 13:57:53,945 - DEBUG - Symbol: XRPUSD, Hit Type: rebuy
+2025-03-09 13:57:53,946 - DEBUG - Current Stage: 1
+2025-03-09 13:57:53,947 - INFO - Received request at /stage-complete
+2025-03-09 13:57:53,947 - DEBUG - StageKey: XRPUSD1, TRADING_PAIR_ID: 13
+2025-03-09 13:57:53,947 - DEBUG - ***************************
+Request Data: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+
+
+2025-03-09 13:57:53,948 - INFO - Processing data in background: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+2025-03-09 13:57:53,948 - INFO - Received request at /stage-complete
+2025-03-09 13:57:53,948 - DEBUG - ***************************
+Request Data: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+
+
+2025-03-09 13:57:53,949 - INFO - 127.0.0.1 - - [09/Mar/2025 13:57:53] "POST /bot/stage-complete HTTP/1.1" 200 -
+2025-03-09 13:57:53,949 - DEBUG - Symbol: XRPUSD, Hit Type: rebuy
+2025-03-09 13:57:53,950 - DEBUG - Take Profit %: 3.0, Rebuy %: 3.0
+2025-03-09 13:57:53,952 - DEBUG - Current Capital: 500.0, Trade Usage %: 4.0
+2025-03-09 13:57:53,953 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 13:57:53,952 - DEBUG - Current Stage: 1
+2025-03-09 13:57:53,954 - DEBUG - StageKey: XRPUSD1, TRADING_PAIR_ID: 13
+2025-03-09 13:57:53,957 - DEBUG - Take Profit %: 3.0, Rebuy %: 3.0
+2025-03-09 13:57:53,957 - DEBUG - Current Capital: 500.0, Trade Usage %: 4.0
+2025-03-09 13:57:53,961 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 13:57:53,962 - DEBUG - https://api.kraken.com:443 "GET /0/public/Ticker?pair=XRPUSD HTTP/1.1" 200 None
+2025-03-09 13:57:53,965 - DEBUG - https://api.kraken.com:443 "POST /0/private/AddOrder HTTP/1.1" 200 None
+2025-03-09 13:57:53,965 - DEBUG - https://api.kraken.com:443 "GET /0/public/Ticker?pair=XRPUSD HTTP/1.1" 200 None
+2025-03-09 13:57:53,966 - INFO - Received request at /stage-complete
+2025-03-09 13:57:53,970 - DEBUG - ***************************
+Request Data: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+
+
+2025-03-09 13:57:53,968 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 13:57:53,971 - INFO - Processing data in background: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+2025-03-09 13:57:53,972 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 13:57:53,973 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 13:57:53,973 - INFO - Received request at /stage-complete
+2025-03-09 13:57:53,974 - DEBUG - ***************************
+Request Data: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+
+
+2025-03-09 13:57:53,974 - INFO - 127.0.0.1 - - [09/Mar/2025 13:57:53] "POST /bot/stage-complete HTTP/1.1" 200 -
+2025-03-09 13:57:53,975 - DEBUG - Symbol: XRPUSD, Hit Type: rebuy
+2025-03-09 13:57:53,976 - DEBUG - Current Stage: 1
+2025-03-09 13:57:53,976 - DEBUG - StageKey: XRPUSD1, TRADING_PAIR_ID: 13
+2025-03-09 13:57:53,977 - DEBUG - Take Profit %: 3.0, Rebuy %: 3.0
+2025-03-09 13:57:53,977 - DEBUG - Current Capital: 500.0, Trade Usage %: 4.0
+2025-03-09 13:57:53,978 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 13:57:53,980 - INFO - Received request at /stage-complete
+2025-03-09 13:57:53,980 - DEBUG - ***************************
+Request Data: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+
+
+2025-03-09 13:57:53,982 - INFO - Processing data in background: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+2025-03-09 13:57:53,981 - DEBUG - https://api.kraken.com:443 "POST /0/private/AddOrder HTTP/1.1" 200 32
+2025-03-09 13:57:53,982 - INFO - Received request at /stage-complete
+2025-03-09 13:57:53,982 - INFO - 127.0.0.1 - - [09/Mar/2025 13:57:53] "POST /bot/stage-complete HTTP/1.1" 200 -
+2025-03-09 13:57:53,983 - DEBUG - ***************************
+Request Data: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+
+
+2025-03-09 13:57:53,984 - ERROR - Error in stagecomplete: 'result'
+Traceback (most recent call last):
+  File "/home/ubuntu/stage_crypto_bot/python/app/controllers/bot_control.py", line 197, in process
+    txid = nextbuyOrder["result"]["txid"][0]
+           ~~~~~~~~~~~~^^^^^^^^^^
+KeyError: 'result'
+2025-03-09 13:57:53,986 - INFO - Task Completed!
+2025-03-09 13:57:53,985 - DEBUG - https://api.kraken.com:443 "POST /0/private/AddOrder HTTP/1.1" 200 32
+2025-03-09 13:57:53,988 - ERROR - Error in stagecomplete: 'result'
+Traceback (most recent call last):
+  File "/home/ubuntu/stage_crypto_bot/python/app/controllers/bot_control.py", line 197, in process
+    txid = nextbuyOrder["result"]["txid"][0]
+           ~~~~~~~~~~~~^^^^^^^^^^
+KeyError: 'result'
+2025-03-09 13:57:53,989 - DEBUG - Symbol: XRPUSD, Hit Type: rebuy
+2025-03-09 13:57:53,990 - INFO - Task Completed!
+2025-03-09 13:57:53,990 - DEBUG - Current Stage: 1
+2025-03-09 13:57:53,991 - DEBUG - StageKey: XRPUSD1, TRADING_PAIR_ID: 13
+2025-03-09 13:57:53,991 - DEBUG - Take Profit %: 3.0, Rebuy %: 3.0
+2025-03-09 13:57:53,992 - DEBUG - Current Capital: 500.0, Trade Usage %: 4.0
+2025-03-09 13:57:53,992 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 13:57:53,995 - DEBUG - https://api.kraken.com:443 "GET /0/public/Ticker?pair=XRPUSD HTTP/1.1" 200 None
+2025-03-09 13:57:54,002 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 13:57:54,003 - DEBUG - https://api.kraken.com:443 "POST /0/private/QueryOrders HTTP/1.1" 200 24
+2025-03-09 13:57:54,003 - DEBUG - https://api.kraken.com:443 "POST /0/private/AddOrder HTTP/1.1" 200 32
+2025-03-09 13:57:54,004 - DEBUG - https://api.kraken.com:443 "GET /0/public/Ticker?pair=XRPUSD HTTP/1.1" 200 None
+2025-03-09 13:57:54,007 - ERROR - Error in stagecomplete: 'result'
+Traceback (most recent call last):
+  File "/home/ubuntu/stage_crypto_bot/python/app/controllers/bot_control.py", line 197, in process
+    txid = nextbuyOrder["result"]["txid"][0]
+           ~~~~~~~~~~~~^^^^^^^^^^
+KeyError: 'result'
+2025-03-09 13:57:54,010 - INFO - Task Completed!
+2025-03-09 13:57:54,012 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 13:57:54,015 - DEBUG - https://api.kraken.com:443 "POST /0/private/QueryOrders HTTP/1.1" 200 24
+2025-03-09 13:57:54,020 - DEBUG - https://api.kraken.com:443 "POST /0/private/AddOrder HTTP/1.1" 200 None
+2025-03-09 13:57:54,022 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 13:57:54,026 - INFO - Received request at /stage-complete
+2025-03-09 13:57:54,026 - DEBUG - ***************************
+Request Data: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+
+
+2025-03-09 13:57:54,029 - INFO - Processing data in background: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+2025-03-09 13:57:54,029 - INFO - Received request at /stage-complete
+2025-03-09 13:57:54,029 - DEBUG - ***************************
+Request Data: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+
+
+2025-03-09 13:57:54,029 - DEBUG - Symbol: XRPUSD, Hit Type: rebuy
+2025-03-09 13:57:54,030 - DEBUG - https://api.kraken.com:443 "GET /0/public/Ticker?pair=XRPUSD HTTP/1.1" 200 None
+2025-03-09 13:57:54,031 - INFO - 127.0.0.1 - - [09/Mar/2025 13:57:54] "POST /bot/stage-complete HTTP/1.1" 200 -
+2025-03-09 13:57:54,032 - DEBUG - Current Stage: 1
+2025-03-09 13:57:54,034 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 13:57:54,035 - DEBUG - StageKey: XRPUSD1, TRADING_PAIR_ID: 13
+2025-03-09 13:57:54,036 - DEBUG - Take Profit %: 3.0, Rebuy %: 3.0
+2025-03-09 13:57:54,036 - DEBUG - Current Capital: 500.0, Trade Usage %: 4.0
+2025-03-09 13:57:54,037 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 13:57:54,037 - DEBUG - https://api.kraken.com:443 "GET /0/public/Ticker?pair=XRPUSD HTTP/1.1" 200 None
+2025-03-09 13:57:54,040 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 13:57:54,051 - INFO - Received request at /stage-complete
+2025-03-09 13:57:54,052 - DEBUG - ***************************
+Request Data: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+
+
+2025-03-09 13:57:54,052 - INFO - Processing data in background: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+2025-03-09 13:57:54,052 - INFO - Received request at /stage-complete
+2025-03-09 13:57:54,052 - DEBUG - ***************************
+Request Data: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+
+
+2025-03-09 13:57:54,053 - INFO - 127.0.0.1 - - [09/Mar/2025 13:57:54] "POST /bot/stage-complete HTTP/1.1" 200 -
+2025-03-09 13:57:54,054 - DEBUG - https://api.kraken.com:443 "POST /0/private/AddOrder HTTP/1.1" 200 None
+2025-03-09 13:57:54,058 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 13:57:54,056 - DEBUG - Symbol: XRPUSD, Hit Type: rebuy
+2025-03-09 13:57:54,060 - DEBUG - Current Stage: 1
+2025-03-09 13:57:54,061 - DEBUG - StageKey: XRPUSD1, TRADING_PAIR_ID: 13
+2025-03-09 13:57:54,062 - DEBUG - Take Profit %: 3.0, Rebuy %: 3.0
+2025-03-09 13:57:54,062 - DEBUG - Current Capital: 500.0, Trade Usage %: 4.0
+2025-03-09 13:57:54,064 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 13:57:54,064 - DEBUG - https://api.kraken.com:443 "POST /0/private/QueryOrders HTTP/1.1" 200 24
+2025-03-09 13:57:54,070 - DEBUG - https://api.kraken.com:443 "GET /0/public/Ticker?pair=XRPUSD HTTP/1.1" 200 None
+2025-03-09 13:57:54,071 - INFO - Received request at /stage-complete
+2025-03-09 13:57:54,077 - DEBUG - ***************************
+Request Data: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+
+
+2025-03-09 13:57:54,074 - DEBUG - https://api.kraken.com:443 "POST /0/private/AddOrder HTTP/1.1" 200 None
+2025-03-09 13:57:54,076 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 13:57:54,078 - INFO - Processing data in background: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+2025-03-09 13:57:54,081 - INFO - Received request at /stage-complete
+2025-03-09 13:57:54,082 - DEBUG - ***************************
+Request Data: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+
+
+2025-03-09 13:57:54,081 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 13:57:54,078 - INFO - 127.0.0.1 - - [09/Mar/2025 13:57:54] "POST /bot/stage-complete HTTP/1.1" 200 -
+2025-03-09 13:57:54,083 - DEBUG - Symbol: XRPUSD, Hit Type: rebuy
+2025-03-09 13:57:54,083 - DEBUG - Current Stage: 1
+2025-03-09 13:57:54,084 - DEBUG - StageKey: XRPUSD1, TRADING_PAIR_ID: 13
+2025-03-09 13:57:54,084 - DEBUG - Take Profit %: 3.0, Rebuy %: 3.0
+2025-03-09 13:57:54,084 - DEBUG - Current Capital: 500.0, Trade Usage %: 4.0
+2025-03-09 13:57:54,085 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 13:57:54,089 - DEBUG - https://api.kraken.com:443 "GET /0/public/Ticker?pair=XRPUSD HTTP/1.1" 200 None
+{'error': [], 'result': {'XXRPZUSD': {'a': ['2.20048000', '60', '60.000'], 'b': ['2.20019000', '24', '24.000'], 'c': ['2.20128000', '41.99918600'], 'v': ['11351282.13686755', '17751838.32339999'], 'p': ['2.27044404', '2.29530477'], 't': [13033, 24122], 'l': ['2.19900000', '2.19900000'], 'h': ['2.34888000', '2.36559000'], 'o': '2.32496000'}}}
+XRPUSDcurrentStage
+1
+{'nonce': '1741528673813', 'ordertype': 'market', 'type': 'buy', 'volume': 9.08562291030673, 'pair': 'XRPUSD'}
+XRPUSDcurrentStage
+1
+{'error': [], 'result': {'txid': ['OBYVD3-6NA2Q-XJ4CIA'], 'descr': {'order': 'buy 9.08562291 XRPUSD @ market'}}}
+OBYVD3-6NA2Q-XJ4CIA
+{'error': [], 'result': {}}
+{'error': [], 'result': {}}
+currentPrice response  {'error': [], 'result': {'XXRPZUSD': {'a': ['2.20048000', '60', '60.000'], 'b': ['2.20019000', '24', '24.000'], 'c': ['2.20128000', '41.99918600'], 'v': ['11351282.13686755', '17751838.32339999'], 'p': ['2.27044404', '2.29530477'], 't': [13033, 24122], 'l': ['2.19900000', '2.19900000'], 'h': ['2.34888000', '2.36559000'], 'o': '2.32496000'}}}
+currentPrice response  {'error': [], 'result': {'XXRPZUSD': {'a': ['2.20048000', '60', '60.000'], 'b': ['2.20019000', '24', '24.000'], 'c': ['2.20128000', '41.99918600'], 'v': ['11351282.13686755', '17751838.32339999'], 'p': ['2.27044404', '2.29530477'], 't': [13033, 24122], 'l': ['2.19900000', '2.19900000'], 'h': ['2.34888000', '2.36559000'], 'o': '2.32496000'}}}
+{'nonce': '1741528673869', 'ordertype': 'market', 'type': 'buy', 'volume': 9.08562291030673, 'pair': 'XRPUSD'}
+{'nonce': '1741528673872', 'ordertype': 'market', 'type': 'buy', 'volume': 9.08562291030673, 'pair': 'XRPUSD'}
+XRPUSDcurrentStage
+1
+XRPUSDcurrentStage
+1
+currentPrice response  {'error': [], 'result': {'XXRPZUSD': {'a': ['2.20048000', '60', '60.000'], 'b': ['2.20019000', '24', '24.000'], 'c': ['2.20128000', '41.99918600'], 'v': ['11351282.13686755', '17751838.32339999'], 'p': ['2.27044404', '2.29530477'], 't': [13033, 24122], 'l': ['2.19900000', '2.19900000'], 'h': ['2.34888000', '2.36559000'], 'o': '2.32496000'}}}
+{'nonce': '1741528673886', 'ordertype': 'market', 'type': 'buy', 'volume': 9.08562291030673, 'pair': 'XRPUSD'}
+XRPUSDcurrentStage
+1
+{'error': [], 'result': {'txid': ['OQNM3D-SPKZT-APWF3L'], 'descr': {'order': 'buy 9.08562291 XRPUSD @ market'}}}
+OQNM3D-SPKZT-APWF3L
+{'error': [], 'result': {'txid': ['OOP267-LH263-WWEV6R'], 'descr': {'order': 'buy 9.08562291 XRPUSD @ market'}}}
+OOP267-LH263-WWEV6R
+{'error': ['EAPI:Invalid nonce']}
+XRPUSDcurrentStage
+1
+currentPrice response  {'error': [], 'result': {'XXRPZUSD': {'a': ['2.20048000', '60', '60.000'], 'b': ['2.20019000', '24', '24.000'], 'c': ['2.20128000', '41.99918600'], 'v': ['11351282.13686755', '17751838.32339999'], 'p': ['2.27044404', '2.29530477'], 't': [13033, 24122], 'l': ['2.19900000', '2.19900000'], 'h': ['2.34888000', '2.36559000'], 'o': '2.32496000'}}}
+{'nonce': '1741528673930', 'ordertype': 'market', 'type': 'buy', 'volume': 9.08562291030673, 'pair': 'XRPUSD'}
+currentPrice response  {'error': [], 'result': {'XXRPZUSD': {'a': ['2.20048000', '60', '60.000'], 'b': ['2.20019000', '24', '24.000'], 'c': ['2.20128000', '41.99918600'], 'v': ['11351282.13686755', '17751838.32339999'], 'p': ['2.27044404', '2.29530477'], 't': [13033, 24122], 'l': ['2.19900000', '2.19900000'], 'h': ['2.34888000', '2.36559000'], 'o': '2.32496000'}}}
+{'nonce': '1741528673935', 'ordertype': 'market', 'type': 'buy', 'volume': 9.08562291030673, 'pair': 'XRPUSD'}
+{'error': [], 'result': {}}
+{'error': [], 'result': {}}
+XRPUSDcurrentStage
+1
+XRPUSDcurrentStage
+1
+currentPrice response  {'error': [], 'result': {'XXRPZUSD': {'a': ['2.20048000', '60', '60.000'], 'b': ['2.20019000', '24', '24.000'], 'c': ['2.20128000', '41.99918600'], 'v': ['11351282.13686755', '17751838.32339999'], 'p': ['2.27044404', '2.29530477'], 't': [13033, 24122], 'l': ['2.19900000', '2.19900000'], 'h': ['2.34888000', '2.36559000'], 'o': '2.32496000'}}}
+{'error': [], 'result': {'txid': ['OSMOK2-BK333-ORYQMJ'], 'descr': {'order': 'buy 9.08562291 XRPUSD @ market'}}}
+OSMOK2-BK333-ORYQMJ
+currentPrice response  {'error': [], 'result': {'XXRPZUSD': {'a': ['2.20048000', '60', '60.000'], 'b': ['2.20019000', '24', '24.000'], 'c': ['2.20128000', '41.99918600'], 'v': ['11351282.13686755', '17751838.32339999'], 'p': ['2.27044404', '2.29530477'], 't': [13033, 24122], 'l': ['2.19900000', '2.19900000'], 'h': ['2.34888000', '2.36559000'], 'o': '2.32496000'}}}
+{'nonce': '1741528673971', 'ordertype': 'market', 'type': 'buy', 'volume': 9.08562291030673, 'pair': 'XRPUSD'}
+{'nonce': '1741528673972', 'ordertype': 'market', 'type': 'buy', 'volume': 9.08562291030673, 'pair': 'XRPUSD'}
+XRPUSDcurrentStage
+1
+{'error': ['EAPI:Invalid nonce']}
+{'error': ['EAPI:Invalid nonce']}
+XRPUSDcurrentStage
+1
+currentPrice response  {'error': [], 'result': {'XXRPZUSD': {'a': ['2.20048000', '60', '60.000'], 'b': ['2.20019000', '24', '24.000'], 'c': ['2.20128000', '41.99918600'], 'v': ['11351282.13686755', '17751838.32339999'], 'p': ['2.27044404', '2.29530477'], 't': [13033, 24122], 'l': ['2.19900000', '2.19900000'], 'h': ['2.34888000', '2.36559000'], 'o': '2.32496000'}}}
+{'nonce': '1741528674000', 'ordertype': 'market', 'type': 'buy', 'volume': 9.08562291030673, 'pair': 'XRPUSD'}
+{'error': [], 'result': {}}
+{'error': [], 'result': {}}
+{'error': ['EAPI:Invalid nonce']}
+currentPrice response  {'error': [], 'result': {'XXRPZUSD': {'a': ['2.20048000', '60', '60.000'], 'b': ['2.20019000', '24', '24.000'], 'c': ['2.20128000', '41.99918600'], 'v': ['11351282.13686755', '17751838.32339999'], 'p': ['2.27044404', '2.29530477'], 't': [13033, 24122], 'l': ['2.19900000', '2.19900000'], 'h': ['2.34888000', '2.36559000'], 'o': '2.32496000'}}}
+{'nonce': '1741528674010', 'ordertype': 'market', 'type': 'buy', 'volume': 9.08562291030673, 'pair': 'XRPUSD'}
+{'error': [], 'result': {}}
+{'error': [], 'result': {}}
+{'error': [], 'result': {'txid': ['OYCHFJ-PRMU6-NHWUFD'], 'descr': {'order': 'buy 9.08562291 XRPUSD @ market'}}}
+OYCHFJ-PRMU6-NHWUFD
+XRPUSDcurrentStage
+1
+currentPrice response  {'error': [], 'result': {'XXRPZUSD': {'a': ['2.20048000', '60', '60.000'], 'b': ['2.20019000', '24', '24.000'], 'c': ['2.20128000', '41.99918600'], 'v': ['11351282.13686755', '17751838.32339999'], 'p': ['2.27044404', '2.29530477'], 't': [13033, 24122], 'l': ['2.19900000', '2.19900000'], 'h': ['2.34888000', '2.36559000'], 'o': '2.32496000'}}}
+{'nonce': '1741528674034', 'ordertype': 'market', 'type': 'buy', 'volume': 9.08562291030673, 'pair': 'XRPUSD'}
+currentPrice response  {'error': [], 'result': {'XXRPZUSD': {'a': ['2.20048000', '60', '60.000'], 'b': ['2.20019000', '24', '24.000'], 'c': ['2.20128000', '41.99918600'], 'v': ['11351282.13686755', '17751838.32339999'], 'p': ['2.27044404', '2.29530477'], 't': [13033, 24122], 'l': ['2.19900000', '2.19900000'], 'h': ['2.34888000', '2.36559000'], 'o': '2.32496000'}}}
+{'nonce': '1741528674039', 'ordertype': 'market', 'type': 'buy', 'volume': 9.08562291030673, 'pair': 'XRPUSD'}
+{'error': [], 'result': {'txid': ['ONTZZZ-PHW7O-72DSXW'], 'descr': {'order': 'buy 9.08562291 XRPUSD @ market'}}}
+ONTZZZ-PHW7O-72DSXW
+XRPUSDcurrentStage
+1
+{'error': [], 'result': {}}
+{'error': [], 'result': {}}
+currentPrice response  {'error': [], 'result': {'XXRPZUSD': {'a': ['2.20048000', '60', '60.000'], 'b': ['2.20019000', '24', '24.000'], 'c': ['2.20128000', '41.99918600'], 'v': ['11351282.13686755', '17751838.32339999'], 'p': ['2.27044404', '2.29530477'], 't': [13033, 24122], 'l': ['2.19900000', '2.19900000'], 'h': ['2.34888000', '2.36559000'], 'o': '2.32496000'}}}
+{'nonce': '1741528674074', 'ordertype': 'market', 'type': 'buy', 'volume': 9.08562291030673, 'pair': 'XRPUSD'}
+{'error': [], 'result': {'txid': ['OLTPER-CPRD7-3K2G37'], 'descr': {'order': 'buy 9.08562291 XRPUSD @ market'}}}
+OLTPER-CPRD7-3K2G37
+XRPUSDcurrentStage
+1
+currentPrice response  {'error': [], 'result': {'XXRPZUSD': {'a': ['2.20048000', '60', '60.000'], 'b': ['2.20019000', '24', '24.000'], 'c': ['2.20128000', '41.99918600'], 'v': ['11351282.13686755', '17751838.32339999'], 'p': ['2.27044404', '2.29530477'], 't': [13033, 24122], 'l': ['2.19900000', '2.19900000'], 'h': ['2.34888000', '2.36559000'], 'o': '2.32496000'}}}
+2025-03-09 13:57:54,091 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 13:57:54,110 - DEBUG - https://api.kraken.com:443 "GET /0/public/Ticker?pair=XRPUSD HTTP/1.1" 200 None
+2025-03-09 13:57:54,112 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 13:57:54,120 - INFO - Received request at /stage-complete
+2025-03-09 13:57:54,120 - DEBUG - ***************************
+Request Data: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+
+
+2025-03-09 13:57:54,121 - INFO - Processing data in background: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+2025-03-09 13:57:54,121 - INFO - 127.0.0.1 - - [09/Mar/2025 13:57:54] "POST /bot/stage-complete HTTP/1.1" 200 -
+2025-03-09 13:57:54,122 - INFO - Received request at /stage-complete
+2025-03-09 13:57:54,122 - DEBUG - https://api.kraken.com:443 "POST /0/private/AddOrder HTTP/1.1" 200 None
+2025-03-09 13:57:54,122 - DEBUG - https://api.kraken.com:443 "POST /0/private/AddOrder HTTP/1.1" 200 32
+2025-03-09 13:57:54,123 - DEBUG - ***************************
+Request Data: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+
+
+2025-03-09 13:57:54,123 - DEBUG - https://api.kraken.com:443 "POST /0/private/AddOrder HTTP/1.1" 200 None
+2025-03-09 13:57:54,126 - ERROR - Error in stagecomplete: 'result'
+Traceback (most recent call last):
+  File "/home/ubuntu/stage_crypto_bot/python/app/controllers/bot_control.py", line 197, in process
+    txid = nextbuyOrder["result"]["txid"][0]
+           ~~~~~~~~~~~~^^^^^^^^^^
+KeyError: 'result'
+2025-03-09 13:57:54,129 - INFO - Received request at /stage-complete
+2025-03-09 13:57:54,130 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 13:57:54,131 - DEBUG - https://api.kraken.com:443 "POST /0/private/QueryOrders HTTP/1.1" 200 24
+2025-03-09 13:57:54,131 - DEBUG - Symbol: XRPUSD, Hit Type: rebuy
+2025-03-09 13:57:54,131 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 13:57:54,131 - INFO - Task Completed!
+2025-03-09 13:57:54,132 - DEBUG - ***************************
+Request Data: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+
+
+2025-03-09 13:57:54,134 - DEBUG - Current Stage: 1
+2025-03-09 13:57:54,135 - INFO - Processing data in background: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+2025-03-09 13:57:54,135 - INFO - 127.0.0.1 - - [09/Mar/2025 13:57:54] "POST /bot/stage-complete HTTP/1.1" 200 -
+2025-03-09 13:57:54,135 - DEBUG - StageKey: XRPUSD1, TRADING_PAIR_ID: 13
+2025-03-09 13:57:54,136 - INFO - Received request at /stage-complete
+2025-03-09 13:57:54,137 - DEBUG - ***************************
+Request Data: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+
+
+2025-03-09 13:57:54,138 - DEBUG - Symbol: XRPUSD, Hit Type: rebuy
+2025-03-09 13:57:54,138 - DEBUG - Take Profit %: 3.0, Rebuy %: 3.0
+2025-03-09 13:57:54,138 - DEBUG - Current Stage: 1
+2025-03-09 13:57:54,138 - DEBUG - Current Capital: 500.0, Trade Usage %: 4.0
+2025-03-09 13:57:54,139 - DEBUG - StageKey: XRPUSD1, TRADING_PAIR_ID: 13
+2025-03-09 13:57:54,140 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 13:57:54,142 - DEBUG - Take Profit %: 3.0, Rebuy %: 3.0
+2025-03-09 13:57:54,142 - DEBUG - Current Capital: 500.0, Trade Usage %: 4.0
+2025-03-09 13:57:54,142 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 13:57:54,149 - INFO - Received request at /stage-complete
+2025-03-09 13:57:54,149 - DEBUG - ***************************
+Request Data: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+
+
+2025-03-09 13:57:54,150 - INFO - Processing data in background: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+2025-03-09 13:57:54,150 - INFO - Received request at /stage-complete
+2025-03-09 13:57:54,150 - DEBUG - ***************************
+Request Data: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+
+
+2025-03-09 13:57:54,151 - INFO - 127.0.0.1 - - [09/Mar/2025 13:57:54] "POST /bot/stage-complete HTTP/1.1" 200 -
+2025-03-09 13:57:54,151 - DEBUG - Symbol: XRPUSD, Hit Type: rebuy
+2025-03-09 13:57:54,152 - DEBUG - Current Stage: 1
+2025-03-09 13:57:54,152 - DEBUG - StageKey: XRPUSD1, TRADING_PAIR_ID: 13
+2025-03-09 13:57:54,153 - DEBUG - Take Profit %: 3.0, Rebuy %: 3.0
+2025-03-09 13:57:54,153 - DEBUG - Current Capital: 500.0, Trade Usage %: 4.0
+2025-03-09 13:57:54,154 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 13:57:54,155 - DEBUG - https://api.kraken.com:443 "POST /0/private/AddOrder HTTP/1.1" 200 None
+2025-03-09 13:57:54,160 - DEBUG - https://api.kraken.com:443 "GET /0/public/Ticker?pair=XRPUSD HTTP/1.1" 200 None
+2025-03-09 13:57:54,161 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 13:57:54,163 - DEBUG - https://api.kraken.com:443 "GET /0/public/Ticker?pair=XRPUSD HTTP/1.1" 200 None
+2025-03-09 13:57:54,164 - DEBUG - https://api.kraken.com:443 "POST /0/private/AddOrder HTTP/1.1" 200 32
+2025-03-09 13:57:54,168 - ERROR - Error in stagecomplete: 'result'
+Traceback (most recent call last):
+  File "/home/ubuntu/stage_crypto_bot/python/app/controllers/bot_control.py", line 197, in process
+    txid = nextbuyOrder["result"]["txid"][0]
+           ~~~~~~~~~~~~^^^^^^^^^^
+KeyError: 'result'
+2025-03-09 13:57:54,174 - INFO - Task Completed!
+2025-03-09 13:57:54,172 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 13:57:54,174 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 13:57:54,173 - INFO - Received request at /stage-complete
+2025-03-09 13:57:54,178 - DEBUG - ***************************
+Request Data: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+
+
+2025-03-09 13:57:54,175 - DEBUG - https://api.kraken.com:443 "POST /0/private/AddOrder HTTP/1.1" 200 None
+2025-03-09 13:57:54,178 - DEBUG - https://api.kraken.com:443 "POST /0/private/AddOrder HTTP/1.1" 200 None
+2025-03-09 13:57:54,175 - DEBUG - https://api.kraken.com:443 "POST /0/private/QueryOrders HTTP/1.1" 200 24
+2025-03-09 13:57:54,183 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 13:57:54,184 - INFO - Processing data in background: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+2025-03-09 13:57:54,187 - INFO - Received request at /stage-complete
+2025-03-09 13:57:54,184 - INFO - 127.0.0.1 - - [09/Mar/2025 13:57:54] "POST /bot/stage-complete HTTP/1.1" 200 -
+2025-03-09 13:57:54,187 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 13:57:54,188 - DEBUG - ***************************
+Request Data: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+
+
+2025-03-09 13:57:54,194 - DEBUG - https://api.kraken.com:443 "GET /0/public/Ticker?pair=XRPUSD HTTP/1.1" 200 None
+2025-03-09 13:57:54,194 - DEBUG - Symbol: XRPUSD, Hit Type: rebuy
+2025-03-09 13:57:54,197 - DEBUG - Current Stage: 1
+2025-03-09 13:57:54,200 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 13:57:54,201 - DEBUG - StageKey: XRPUSD1, TRADING_PAIR_ID: 13
+2025-03-09 13:57:54,202 - INFO - Received request at /stage-complete
+2025-03-09 13:57:54,203 - DEBUG - https://api.kraken.com:443 "POST /0/private/AddOrder HTTP/1.1" 200 None
+2025-03-09 13:57:54,204 - DEBUG - ***************************
+Request Data: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+
+
+2025-03-09 13:57:54,205 - INFO - Processing data in background: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+2025-03-09 13:57:54,206 - INFO - Received request at /stage-complete
+2025-03-09 13:57:54,207 - DEBUG - ***************************
+Request Data: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+
+
+2025-03-09 13:57:54,206 - INFO - 127.0.0.1 - - [09/Mar/2025 13:57:54] "POST /bot/stage-complete HTTP/1.1" 200 -
+2025-03-09 13:57:54,207 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 13:57:54,208 - DEBUG - Symbol: XRPUSD, Hit Type: rebuy
+2025-03-09 13:57:54,208 - DEBUG - Take Profit %: 3.0, Rebuy %: 3.0
+2025-03-09 13:57:54,210 - DEBUG - Current Capital: 500.0, Trade Usage %: 4.0
+2025-03-09 13:57:54,212 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 13:57:54,211 - DEBUG - https://api.kraken.com:443 "GET /0/public/Ticker?pair=XRPUSD HTTP/1.1" 200 None
+2025-03-09 13:57:54,211 - DEBUG - Current Stage: 1
+2025-03-09 13:57:54,213 - DEBUG - https://api.kraken.com:443 "GET /0/public/Ticker?pair=XRPUSD HTTP/1.1" 200 None
+2025-03-09 13:57:54,215 - DEBUG - https://api.kraken.com:443 "POST /0/private/QueryOrders HTTP/1.1" 200 24
+2025-03-09 13:57:54,215 - DEBUG - StageKey: XRPUSD1, TRADING_PAIR_ID: 13
+2025-03-09 13:57:54,220 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 13:57:54,221 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 13:57:54,223 - DEBUG - Take Profit %: 3.0, Rebuy %: 3.0
+2025-03-09 13:57:54,223 - DEBUG - Current Capital: 500.0, Trade Usage %: 4.0
+2025-03-09 13:57:54,224 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 13:57:54,233 - DEBUG - https://api.kraken.com:443 "POST /0/private/QueryOrders HTTP/1.1" 200 24
+2025-03-09 13:57:54,249 - DEBUG - https://api.kraken.com:443 "POST /0/private/QueryOrders HTTP/1.1" 200 None
+2025-03-09 13:57:54,250 - DEBUG - https://api.kraken.com:443 "POST /0/private/QueryOrders HTTP/1.1" 200 32
+2025-03-09 13:57:54,251 - ERROR - Error in stagecomplete: 'result'
+Traceback (most recent call last):
+  File "/home/ubuntu/stage_crypto_bot/python/app/controllers/bot_control.py", line 199, in process
+    orderDetail = Kraken.orderFillChecker(nextbuyOrder)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/stage_crypto_bot/python/app/exchanges/kerkaren/kraken.py", line 175, in orderFillChecker
+    if orderDetail["result"] != {}:
+       ~~~~~~~~~~~^^^^^^^^^^
+KeyError: 'result'
+2025-03-09 13:57:54,253 - INFO - Task Completed!
+2025-03-09 13:57:54,273 - DEBUG - https://api.kraken.com:443 "GET /0/public/Ticker?pair=XRPUSD HTTP/1.1" 200 None
+2025-03-09 13:57:54,275 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 13:57:54,276 - DEBUG - https://api.kraken.com:443 "POST /0/private/AddOrder HTTP/1.1" 200 None
+2025-03-09 13:57:54,278 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 13:57:54,281 - DEBUG - https://api.kraken.com:443 "POST /0/private/QueryOrders HTTP/1.1" 200 24
+2025-03-09 13:57:54,282 - DEBUG - https://api.kraken.com:443 "POST /0/private/AddOrder HTTP/1.1" 200 32
+2025-03-09 13:57:54,283 - DEBUG - https://api.kraken.com:443 "GET /0/public/Ticker?pair=XRPUSD HTTP/1.1" 200 None
+2025-03-09 13:57:54,284 - ERROR - Error in stagecomplete: 'result'
+Traceback (most recent call last):
+  File "/home/ubuntu/stage_crypto_bot/python/app/controllers/bot_control.py", line 197, in process
+    txid = nextbuyOrder["result"]["txid"][0]
+           ~~~~~~~~~~~~^^^^^^^^^^
+KeyError: 'result'
+2025-03-09 13:57:54,286 - DEBUG - https://api.kraken.com:443 "POST /0/private/AddOrder HTTP/1.1" 200 None
+2025-03-09 13:57:54,286 - INFO - Task Completed!
+2025-03-09 13:57:54,287 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 13:57:54,289 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 13:57:54,290 - DEBUG - https://api.kraken.com:443 "POST /0/private/QueryOrders HTTP/1.1" 200 None
+2025-03-09 13:57:54,300 - DEBUG - https://api.kraken.com:443 "POST /0/private/AddOrder HTTP/1.1" 200 None
+2025-03-09 13:57:54,302 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 13:57:54,308 - DEBUG - https://api.kraken.com:443 "POST /0/private/AddOrder HTTP/1.1" 200 32
+2025-03-09 13:57:54,310 - ERROR - Error in stagecomplete: 'result'
+Traceback (most recent call last):
+  File "/home/ubuntu/stage_crypto_bot/python/app/controllers/bot_control.py", line 197, in process
+    txid = nextbuyOrder["result"]["txid"][0]
+           ~~~~~~~~~~~~^^^^^^^^^^
+KeyError: 'result'
+2025-03-09 13:57:54,310 - INFO - Task Completed!
+2025-03-09 13:57:54,328 - DEBUG - https://api.kraken.com:443 "POST /0/private/QueryOrders HTTP/1.1" 200 32
+2025-03-09 13:57:54,329 - ERROR - Error in stagecomplete: 'result'
+Traceback (most recent call last):
+  File "/home/ubuntu/stage_crypto_bot/python/app/controllers/bot_control.py", line 199, in process
+    orderDetail = Kraken.orderFillChecker(nextbuyOrder)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/stage_crypto_bot/python/app/exchanges/kerkaren/kraken.py", line 175, in orderFillChecker
+    if orderDetail["result"] != {}:
+       ~~~~~~~~~~~^^^^^^^^^^
+KeyError: 'result'
+2025-03-09 13:57:54,330 - INFO - Task Completed!
+2025-03-09 13:57:54,375 - DEBUG - https://api.kraken.com:443 "POST /0/private/AddOrder HTTP/1.1" 200 None
+{'nonce': '1741528674090', 'ordertype': 'market', 'type': 'buy', 'volume': 9.08562291030673, 'pair': 'XRPUSD'}
+currentPrice response  {'error': [], 'result': {'XXRPZUSD': {'a': ['2.20048000', '60', '60.000'], 'b': ['2.20019000', '24', '24.000'], 'c': ['2.20128000', '41.99918600'], 'v': ['11351282.13686755', '17751838.32339999'], 'p': ['2.27044404', '2.29530477'], 't': [13033, 24122], 'l': ['2.19900000', '2.19900000'], 'h': ['2.34888000', '2.36559000'], 'o': '2.32496000'}}}
+{'nonce': '1741528674111', 'ordertype': 'market', 'type': 'buy', 'volume': 9.08562291030673, 'pair': 'XRPUSD'}
+{'error': ['EAPI:Invalid nonce']}
+{'error': [], 'result': {'txid': ['O4R36Q-GTEVV-QIT6HX'], 'descr': {'order': 'buy 9.08562291 XRPUSD @ market'}}}
+{'error': [], 'result': {'txid': ['OXIQMZ-JKQSS-AYK253'], 'descr': {'order': 'buy 9.08562291 XRPUSD @ market'}}}
+OXIQMZ-JKQSS-AYK253
+O4R36Q-GTEVV-QIT6HX
+{'error': [], 'result': {}}
+XRPUSDcurrentStage
+{'error': [], 'result': {}}
+1
+XRPUSDcurrentStage
+1
+XRPUSDcurrentStage
+1
+{'error': [], 'result': {'txid': ['O2UOGB-FH56Z-44ABHM'], 'descr': {'order': 'buy 9.08562291 XRPUSD @ market'}}}
+O2UOGB-FH56Z-44ABHM
+currentPrice response  {'error': [], 'result': {'XXRPZUSD': {'a': ['2.20048000', '60', '60.000'], 'b': ['2.20019000', '24', '24.000'], 'c': ['2.20128000', '41.99918600'], 'v': ['11351282.13686755', '17751838.32339999'], 'p': ['2.27044404', '2.29530477'], 't': [13033, 24122], 'l': ['2.19900000', '2.19900000'], 'h': ['2.34888000', '2.36559000'], 'o': '2.32496000'}}}
+{'error': ['EAPI:Invalid nonce']}
+{'nonce': '1741528674170', 'ordertype': 'market', 'type': 'buy', 'volume': 9.08562291030673, 'pair': 'XRPUSD'}
+currentPrice response  {'error': [], 'result': {'XXRPZUSD': {'a': ['2.20048000', '60', '60.000'], 'b': ['2.20019000', '24', '24.000'], 'c': ['2.20128000', '41.99918600'], 'v': ['11351282.13686755', '17751838.32339999'], 'p': ['2.27044404', '2.29530477'], 't': [13033, 24122], 'l': ['2.19900000', '2.19900000'], 'h': ['2.34888000', '2.36559000'], 'o': '2.32496000'}}}
+{'nonce': '1741528674173', 'ordertype': 'market', 'type': 'buy', 'volume': 9.08562291030673, 'pair': 'XRPUSD'}
+{'error': [], 'result': {'txid': ['O3T6K4-24NFW-NGHAAD'], 'descr': {'order': 'buy 9.08562291 XRPUSD @ market'}}}
+O3T6K4-24NFW-NGHAAD
+{'error': [], 'result': {'txid': ['OEGRMH-2EXMF-MRCCLQ'], 'descr': {'order': 'buy 9.08562291 XRPUSD @ market'}}}
+{'error': [], 'result': {}}
+OEGRMH-2EXMF-MRCCLQ
+{'error': [], 'result': {}}
+currentPrice response  {'error': [], 'result': {'XXRPZUSD': {'a': ['2.20048000', '60', '60.000'], 'b': ['2.20019000', '24', '24.000'], 'c': ['2.20128000', '41.99918600'], 'v': ['11351282.13686755', '17751838.32339999'], 'p': ['2.27044404', '2.29530477'], 't': [13033, 24122], 'l': ['2.19900000', '2.19900000'], 'h': ['2.34888000', '2.36559000'], 'o': '2.32496000'}}}
+XRPUSDcurrentStage
+1
+{'nonce': '1741528674197', 'ordertype': 'market', 'type': 'buy', 'volume': 9.08562291030673, 'pair': 'XRPUSD'}
+{'error': [], 'result': {'txid': ['ONXHG3-B6NSG-WXES53'], 'descr': {'order': 'buy 9.08562291 XRPUSD @ market'}}}
+ONXHG3-B6NSG-WXES53
+XRPUSDcurrentStage
+1
+currentPrice response  {'error': [], 'result': {'XXRPZUSD': {'a': ['2.20048000', '60', '60.000'], 'b': ['2.20019000', '24', '24.000'], 'c': ['2.20128000', '41.99918600'], 'v': ['11351282.13686755', '17751838.32339999'], 'p': ['2.27044404', '2.29530477'], 't': [13033, 24122], 'l': ['2.19900000', '2.19900000'], 'h': ['2.34888000', '2.36559000'], 'o': '2.32496000'}}}
+{'error': [], 'result': {}}
+{'error': [], 'result': {}}
+{'nonce': '1741528674218', 'ordertype': 'market', 'type': 'buy', 'volume': 9.08562291030673, 'pair': 'XRPUSD'}
+currentPrice response  {'error': [], 'result': {'XXRPZUSD': {'a': ['2.20048000', '60', '60.000'], 'b': ['2.20019000', '24', '24.000'], 'c': ['2.20128000', '41.99918600'], 'v': ['11351282.13686755', '17751838.32339999'], 'p': ['2.27044404', '2.29530477'], 't': [13033, 24122], 'l': ['2.19900000', '2.19900000'], 'h': ['2.34888000', '2.36559000'], 'o': '2.32496000'}}}
+{'nonce': '1741528674220', 'ordertype': 'market', 'type': 'buy', 'volume': 9.08562291030673, 'pair': 'XRPUSD'}
+{'error': [], 'result': {}}
+{'error': [], 'result': {}}
+{'error': ['EAPI:Invalid nonce']}
+{'error': ['EAPI:Invalid nonce']}
+{'error': [], 'result': {'O2UOGB-FH56Z-44ABHM': {'refid': None, 'userref': 0, 'status': 'open', 'opentm': 1741528674.122663, 'starttm': 0, 'expiretm': 0, 'descr': {'pair': 'XRPUSD', 'aclass': 'forex', 'type': 'buy', 'ordertype': 'market', 'price': '0', 'price2': '0', 'leverage': 'none', 'order': 'buy 9.08562291 XRPUSD @ market', 'close': ''}, 'vol': '9.08562291', 'vol_exec': '9.08562291', 'cost': '19.93294810', 'fee': '0.06976532', 'price': '2.19389', 'stopprice': '0.00000000', 'limitprice': '0.00000000', 'misc': '', 'oflags': 'fciq', 'reason': None}}}
+{'error': [], 'result': {'O2UOGB-FH56Z-44ABHM': {'refid': None, 'userref': 0, 'status': 'open', 'opentm': 1741528674.122663, 'starttm': 0, 'expiretm': 0, 'descr': {'pair': 'XRPUSD', 'aclass': 'forex', 'type': 'buy', 'ordertype': 'market', 'price': '0', 'price2': '0', 'leverage': 'none', 'order': 'buy 9.08562291 XRPUSD @ market', 'close': ''}, 'vol': '9.08562291', 'vol_exec': '9.08562291', 'cost': '19.93294810', 'fee': '0.06976532', 'price': '2.19389', 'stopprice': '0.00000000', 'limitprice': '0.00000000', 'misc': '', 'oflags': 'fciq', 'reason': None}}}
+*************************************
+currentPrice response  {'error': [], 'result': {'XXRPZUSD': {'a': ['2.20048000', '60', '60.000'], 'b': ['2.20019000', '24', '24.000'], 'c': ['2.20128000', '41.99918600'], 'v': ['11351282.13686755', '17751838.32339999'], 'p': ['2.27044404', '2.29530477'], 't': [13033, 24122], 'l': ['2.19900000', '2.19900000'], 'h': ['2.34888000', '2.36559000'], 'o': '2.32496000'}}}
+{'nonce': '1741528674274', 'ordertype': 'market', 'type': 'buy', 'volume': 9.08562291030673, 'pair': 'XRPUSD'}
+{'error': [], 'result': {'txid': ['OGFDKD-I3SOO-DGONSQ'], 'descr': {'order': 'buy 9.08562291 XRPUSD @ market'}}}
+OGFDKD-I3SOO-DGONSQ
+{'error': [], 'result': {}}
+{'error': ['EAPI:Invalid nonce']}
+{'error': [], 'result': {}}
+currentPrice response  {'error': [], 'result': {'XXRPZUSD': {'a': ['2.20048000', '60', '60.000'], 'b': ['2.20019000', '24', '24.000'], 'c': ['2.20128000', '41.99918600'], 'v': ['11351282.13686755', '17751838.32339999'], 'p': ['2.27044404', '2.29530477'], 't': [13033, 24122], 'l': ['2.19900000', '2.19900000'], 'h': ['2.34888000', '2.36559000'], 'o': '2.32496000'}}}
+{'nonce': '1741528674286', 'ordertype': 'market', 'type': 'buy', 'volume': 9.08562291030673, 'pair': 'XRPUSD'}
+{'error': [], 'result': {'txid': ['OBXEQ2-223PX-ELCPKB'], 'descr': {'order': 'buy 9.08562291 XRPUSD @ market'}}}
+OBXEQ2-223PX-ELCPKB
+{'error': [], 'result': {'OEGRMH-2EXMF-MRCCLQ': {'refid': None, 'userref': 0, 'status': 'open', 'opentm': 1741528674.153777, 'starttm': 0, 'expiretm': 0, 'descr': {'pair': 'XRPUSD', 'aclass': 'forex', 'type': 'buy', 'ordertype': 'market', 'price': '0', 'price2': '0', 'leverage': 'none', 'order': 'buy 9.08562291 XRPUSD @ market', 'close': ''}, 'vol': '9.08562291', 'vol_exec': '9.08562291', 'cost': '19.92767844', 'fee': '0.06974687', 'price': '2.19331', 'stopprice': '0.00000000', 'limitprice': '0.00000000', 'misc': '', 'oflags': 'fciq', 'reason': None}}}
+{'error': [], 'result': {'OEGRMH-2EXMF-MRCCLQ': {'refid': None, 'userref': 0, 'status': 'open', 'opentm': 1741528674.153777, 'starttm': 0, 'expiretm': 0, 'descr': {'pair': 'XRPUSD', 'aclass': 'forex', 'type': 'buy', 'ordertype': 'market', 'price': '0', 'price2': '0', 'leverage': 'none', 'order': 'buy 9.08562291 XRPUSD @ market', 'close': ''}, 'vol': '9.08562291', 'vol_exec': '9.08562291', 'cost': '19.92767844', 'fee': '0.06974687', 'price': '2.19331', 'stopprice': '0.00000000', 'limitprice': '0.00000000', 'misc': '', 'oflags': 'fciq', 'reason': None}}}
+*************************************
+{'error': [], 'result': {'txid': ['OQQBDY-4BHH6-DEENT5'], 'descr': {'order': 'buy 9.08562291 XRPUSD @ market'}}}
+OQQBDY-4BHH6-DEENT5
+{'error': ['EAPI:Invalid nonce']}
+{'error': ['EAPI:Invalid nonce']}
+{'error': ['EAPI:Invalid nonce']}
+2025-03-09 13:57:54,377 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 13:57:54,388 - DEBUG - https://api.kraken.com:443 "POST /0/private/QueryOrders HTTP/1.1" 200 None
+2025-03-09 13:57:54,436 - DEBUG - https://api.kraken.com:443 "POST /0/private/QueryOrders HTTP/1.1" 200 24
+2025-03-09 13:57:54,445 - DEBUG - https://api.kraken.com:443 "POST /0/private/AddOrder HTTP/1.1" 200 32
+2025-03-09 13:57:54,446 - ERROR - Error in stagecomplete: 'result'
+Traceback (most recent call last):
+  File "/home/ubuntu/stage_crypto_bot/python/app/controllers/bot_control.py", line 197, in process
+    txid = nextbuyOrder["result"]["txid"][0]
+           ~~~~~~~~~~~~^^^^^^^^^^
+KeyError: 'result'
+2025-03-09 13:57:54,446 - INFO - Task Completed!
+2025-03-09 13:57:54,459 - DEBUG - https://api.kraken.com:443 "POST /0/private/QueryOrders HTTP/1.1" 200 24
+2025-03-09 13:57:54,464 - DEBUG - https://api.kraken.com:443 "POST /0/private/QueryOrders HTTP/1.1" 200 32
+2025-03-09 13:57:54,465 - ERROR - Error in stagecomplete: 'result'
+Traceback (most recent call last):
+  File "/home/ubuntu/stage_crypto_bot/python/app/controllers/bot_control.py", line 199, in process
+    orderDetail = Kraken.orderFillChecker(nextbuyOrder)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/stage_crypto_bot/python/app/exchanges/kerkaren/kraken.py", line 175, in orderFillChecker
+    if orderDetail["result"] != {}:
+       ~~~~~~~~~~~^^^^^^^^^^
+KeyError: 'result'
+2025-03-09 13:57:54,466 - INFO - Task Completed!
+2025-03-09 13:57:54,841 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 13:57:54,937 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 13:57:55,007 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 13:57:55,017 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 13:57:55,024 - DEBUG - https://api.kraken.com:443 "POST /0/private/QueryOrders HTTP/1.1" 200 None
+2025-03-09 13:57:55,067 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 13:57:55,103 - DEBUG - https://api.kraken.com:443 "POST /0/private/QueryOrders HTTP/1.1" 200 None
+2025-03-09 13:57:55,105 - DEBUG - https://api.kraken.com:443 "POST /0/private/QueryOrders HTTP/1.1" 200 None
+2025-03-09 13:57:55,110 - DEBUG - https://api.kraken.com:443 "POST /0/private/QueryOrders HTTP/1.1" 200 32
+2025-03-09 13:57:55,111 - ERROR - Error in stagecomplete: 'result'
+Traceback (most recent call last):
+  File "/home/ubuntu/stage_crypto_bot/python/app/controllers/bot_control.py", line 199, in process
+    orderDetail = Kraken.orderFillChecker(nextbuyOrder)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/stage_crypto_bot/python/app/exchanges/kerkaren/kraken.py", line 175, in orderFillChecker
+    if orderDetail["result"] != {}:
+       ~~~~~~~~~~~^^^^^^^^^^
+KeyError: 'result'
+2025-03-09 13:57:55,113 - INFO - Task Completed!
+2025-03-09 13:57:55,135 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 13:57:55,189 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 13:57:55,218 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 13:57:55,228 - DEBUG - https://api.kraken.com:443 "POST /0/private/QueryOrders HTTP/1.1" 200 None
+{'error': [], 'result': {'txid': ['OZUPJH-AMTZP-UEHAO3'], 'descr': {'order': 'buy 9.08562291 XRPUSD @ market'}}}
+OZUPJH-AMTZP-UEHAO3
+{'error': [], 'result': {'OQQBDY-4BHH6-DEENT5': {'refid': None, 'userref': 0, 'status': 'open', 'opentm': 1741528674.278245, 'starttm': 0, 'expiretm': 0, 'descr': {'pair': 'XRPUSD', 'aclass': 'forex', 'type': 'buy', 'ordertype': 'market', 'price': '0', 'price2': '0', 'leverage': 'none', 'order': 'buy 9.08562291 XRPUSD @ market', 'close': ''}, 'vol': '9.08562291', 'vol_exec': '9.08562291', 'cost': '19.95884213', 'fee': '0.06985595', 'price': '2.19675', 'stopprice': '0.00000000', 'limitprice': '0.00000000', 'misc': '', 'oflags': 'fciq', 'reason': None}}}
+{'error': [], 'result': {'OQQBDY-4BHH6-DEENT5': {'refid': None, 'userref': 0, 'status': 'open', 'opentm': 1741528674.278245, 'starttm': 0, 'expiretm': 0, 'descr': {'pair': 'XRPUSD', 'aclass': 'forex', 'type': 'buy', 'ordertype': 'market', 'price': '0', 'price2': '0', 'leverage': 'none', 'order': 'buy 9.08562291 XRPUSD @ market', 'close': ''}, 'vol': '9.08562291', 'vol_exec': '9.08562291', 'cost': '19.95884213', 'fee': '0.06985595', 'price': '2.19675', 'stopprice': '0.00000000', 'limitprice': '0.00000000', 'misc': '', 'oflags': 'fciq', 'reason': None}}}
+*************************************
+{'error': [], 'result': {}}
+{'error': [], 'result': {}}
+{'error': ['EAPI:Invalid nonce']}
+{'error': [], 'result': {}}
+{'error': [], 'result': {}}
+{'error': ['EAPI:Invalid nonce']}
+{'error': ['EAPI:Invalid nonce']}
+OW3QSD-5PKWW-K36YMN
+OBYVD3-6NA2Q-XJ4CIA
+OQNM3D-SPKZT-APWF3L
+OOP267-LH263-WWEV6R
+{'error': [], 'result': {'OW3QSD-5PKWW-K36YMN': {'refid': None, 'userref': 0, 'status': 'closed', 'opentm': 1741528673.714614, 'starttm': 0, 'expiretm': 0, 'descr': {'pair': 'XRPUSD', 'aclass': 'forex', 'type': 'buy', 'ordertype': 'market', 'price': '0', 'price2': '0', 'leverage': 'none', 'order': 'buy 9.08562291 XRPUSD @ market', 'close': ''}, 'vol': '9.08562291', 'vol_exec': '9.08562291', 'cost': '19.92704245', 'fee': '0.06974465', 'price': '2.19325', 'stopprice': '0.00000000', 'limitprice': '0.00000000', 'misc': '', 'oflags': 'fciq', 'reason': None, 'closetm': 1741528673.714642}}}
+{'error': [], 'result': {'OW3QSD-5PKWW-K36YMN': {'refid': None, 'userref': 0, 'status': 'closed', 'opentm': 1741528673.714614, 'starttm': 0, 'expiretm': 0, 'descr': {'pair': 'XRPUSD', 'aclass': 'forex', 'type': 'buy', 'ordertype': 'market', 'price': '0', 'price2': '0', 'leverage': 'none', 'order': 'buy 9.08562291 XRPUSD @ market', 'close': ''}, 'vol': '9.08562291', 'vol_exec': '9.08562291', 'cost': '19.92704245', 'fee': '0.06974465', 'price': '2.19325', 'stopprice': '0.00000000', 'limitprice': '0.00000000', 'misc': '', 'oflags': 'fciq', 'reason': None, 'closetm': 1741528673.714642}}}
+*************************************
+{'OW3QSD-5PKWW-K36YMN': {'refid': None, 'userref': 0, 'status': 'closed', 'opentm': 1741528673.714614, 'starttm': 0, 'expiretm': 0, 'descr': {'pair': 'XRPUSD', 'aclass': 'forex', 'type': 'buy', 'ordertype': 'market', 'price': '0', 'price2': '0', 'leverage': 'none', 'order': 'buy 9.08562291 XRPUSD @ market', 'close': ''}, 'vol': '9.08562291', 'vol_exec': '9.08562291', 'cost': '19.92704245', 'fee': '0.06974465', 'price': '2.19325', 'stopprice': '0.00000000', 'limitprice': '0.00000000', 'misc': '', 'oflags': 'fciq', 'reason': None, 'closetm': 1741528673.714642}}
+Current Capital = 460.02269318000003 and cost = 19.92704245
+test2
+9.08562291
+<class 'float'>
+waiting for 10 secounds
+OSMOK2-BK333-ORYQMJ
+{'error': [], 'result': {'OOP267-LH263-WWEV6R': {'refid': None, 'userref': 0, 'status': 'closed', 'opentm': 1741528673.872409, 'starttm': 0, 'expiretm': 0, 'descr': {'pair': 'XRPUSD', 'aclass': 'forex', 'type': 'buy', 'ordertype': 'market', 'price': '0', 'price2': '0', 'leverage': 'none', 'order': 'buy 9.08562291 XRPUSD @ market', 'close': ''}, 'vol': '9.08562291', 'vol_exec': '9.08562291', 'cost': '19.92477104', 'fee': '0.06973670', 'price': '2.19299', 'stopprice': '0.00000000', 'limitprice': '0.00000000', 'misc': '', 'oflags': 'fciq', 'reason': None, 'closetm': 1741528673.872567}}}
+{'error': [], 'result': {'OOP267-LH263-WWEV6R': {'refid': None, 'userref': 0, 'status': 'closed', 'opentm': 1741528673.872409, 'starttm': 0, 'expiretm': 0, 'descr': {'pair': 'XRPUSD', 'aclass': 'forex', 'type': 'buy', 'ordertype': 'market', 'price': '0', 'price2': '0', 'leverage': 'none', 'order': 'buy 9.08562291 XRPUSD @ market', 'close': ''}, 'vol': '9.08562291', 'vol_exec': '9.08562291', 'cost': '19.92477104', 'fee': '0.06973670', 'price': '2.19299', 'stopprice': '0.00000000', 'limitprice': '0.00000000', 'misc': '', 'oflags': 'fciq', 'reason': None, 'closetm': 1741528673.872567}}}
+*************************************
+{'OOP267-LH263-WWEV6R': {'refid': None, 'userref': 0, 'status': 'closed', 'opentm': 1741528673.872409, 'starttm': 0, 'expiretm': 0, 'descr': {'pair': 'XRPUSD', 'aclass': 'forex', 'type': 'buy', 'ordertype': 'market', 'price': '0', 'price2': '0', 'leverage': 'none', 'order': 'buy 9.08562291 XRPUSD @ market', 'close': ''}, 'vol': '9.08562291', 'vol_exec': '9.08562291', 'cost': '19.92477104', 'fee': '0.06973670', 'price': '2.19299', 'stopprice': '0.00000000', 'limitprice': '0.00000000', 'misc': '', 'oflags': 'fciq', 'reason': None, 'closetm': 1741528673.872567}}
+{'error': [], 'result': {'OBYVD3-6NA2Q-XJ4CIA': {'refid': None, 'userref': 0, 'status': 'closed', 'opentm': 1741528673.79633, 'starttm': 0, 'expiretm': 0, 'descr': {'pair': 'XRPUSD', 'aclass': 'forex', 'type': 'buy', 'ordertype': 'market', 'price': '0', 'price2': '0', 'leverage': 'none', 'order': 'buy 9.08562291 XRPUSD @ market', 'close': ''}, 'vol': '9.08562291', 'vol_exec': '9.08562291', 'cost': '19.92704245', 'fee': '0.06974465', 'price': '2.19325', 'stopprice': '0.00000000', 'limitprice': '0.00000000', 'misc': '', 'oflags': 'fciq', 'reason': None, 'closetm': 1741528673.796359}}}
+{'error': [], 'result': {'OBYVD3-6NA2Q-XJ4CIA': {'refid': None, 'userref': 0, 'status': 'closed', 'opentm': 1741528673.79633, 'starttm': 0, 'expiretm': 0, 'descr': {'pair': 'XRPUSD', 'aclass': 'forex', 'type': 'buy', 'ordertype': 'market', 'price': '0', 'price2': '0', 'leverage': 'none', 'order': 'buy 9.08562291 XRPUSD @ market', 'close': ''}, 'vol': '9.08562291', 'vol_exec': '9.08562291', 'cost': '19.92704245', 'fee': '0.06974465', 'price': '2.19325', 'stopprice': '0.00000000', 'limitprice': '0.00000000', 'misc': '', 'oflags': 'fciq', 'reason': None, 'closetm': 1741528673.796359}}}
+*************************************
+{'OBYVD3-6NA2Q-XJ4CIA': {'refid': None, 'userref': 0, 'status': 'closed', 'opentm': 1741528673.79633, 'starttm': 0, 'expiretm': 0, 'descr': {'pair': 'XRPUSD', 'aclass': 'forex', 'type': 'buy', 'ordertype': 'market', 'price': '0', 'price2': '0', 'leverage': 'none', 'order': 'buy 9.08562291 XRPUSD @ market', 'close': ''}, 'vol': '9.08562291', 'vol_exec': '9.08562291', 'cost': '19.92704245', 'fee': '0.06974465', 'price': '2.19325', 'stopprice': '0.00000000', 'limitprice': '0.00000000', 'misc': '', 'oflags': 'fciq', 'reason': None, 'closetm': 1741528673.796359}}
+Current Capital = 440.09565073000005 and cost = 19.92477104
+{'error': ['EAPI:Invalid nonce']}
+{'error': ['EAPI:Invalid nonce']}
+Current Capital = 420.17087969000005 and cost = 19.92704245
+test2
+9.08562291
+<class 'float'>
+test2
+9.08562291
+<class 'float'>
+waiting for 10 secounds
+waiting for 10 secounds
+OYCHFJ-PRMU6-NHWUFD
+OLTPER-CPRD7-3K2G37
+OXIQMZ-JKQSS-AYK253
+{'error': [], 'result': {'OYCHFJ-PRMU6-NHWUFD': {'refid': None, 'userref': 0, 'status': 'closed', 'opentm': 1741528673.998279, 'starttm': 0, 'expiretm': 0, 'descr': {'pair': 'XRPUSD', 'aclass': 'forex', 'type': 'buy', 'ordertype': 'market', 'price': '0', 'price2': '0', 'leverage': 'none', 'order': 'buy 9.08562291 XRPUSD @ market', 'close': ''}, 'vol': '9.08562291', 'vol_exec': '9.08562291', 'cost': '19.92495275', 'fee': '0.06973733', 'price': '2.19301', 'stopprice': '0.00000000', 'limitprice': '0.00000000', 'misc': '', 'oflags': 'fciq', 'reason': None, 'closetm': 1741528673.998289}}}
+2025-03-09 13:57:55,235 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 13:57:55,250 - DEBUG - https://api.kraken.com:443 "POST /0/private/QueryOrders HTTP/1.1" 200 32
+2025-03-09 13:57:55,251 - ERROR - Error in stagecomplete: 'result'
+Traceback (most recent call last):
+  File "/home/ubuntu/stage_crypto_bot/python/app/controllers/bot_control.py", line 199, in process
+    orderDetail = Kraken.orderFillChecker(nextbuyOrder)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/stage_crypto_bot/python/app/exchanges/kerkaren/kraken.py", line 175, in orderFillChecker
+    if orderDetail["result"] != {}:
+       ~~~~~~~~~~~^^^^^^^^^^
+KeyError: 'result'
+2025-03-09 13:57:55,252 - INFO - Task Completed!
+2025-03-09 13:57:55,253 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 13:57:55,271 - DEBUG - https://api.kraken.com:443 "POST /0/private/QueryOrders HTTP/1.1" 200 None
+2025-03-09 13:57:55,285 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 13:57:55,293 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 13:57:55,310 - DEBUG - https://api.kraken.com:443 "POST /0/private/QueryOrders HTTP/1.1" 200 None
+2025-03-09 13:57:55,327 - DEBUG - https://api.kraken.com:443 "POST /0/private/QueryOrders HTTP/1.1" 200 None
+2025-03-09 13:57:55,330 - DEBUG - https://api.kraken.com:443 "POST /0/private/QueryOrders HTTP/1.1" 200 None
+{'error': [], 'result': {'OYCHFJ-PRMU6-NHWUFD': {'refid': None, 'userref': 0, 'status': 'closed', 'opentm': 1741528673.998279, 'starttm': 0, 'expiretm': 0, 'descr': {'pair': 'XRPUSD', 'aclass': 'forex', 'type': 'buy', 'ordertype': 'market', 'price': '0', 'price2': '0', 'leverage': 'none', 'order': 'buy 9.08562291 XRPUSD @ market', 'close': ''}, 'vol': '9.08562291', 'vol_exec': '9.08562291', 'cost': '19.92495275', 'fee': '0.06973733', 'price': '2.19301', 'stopprice': '0.00000000', 'limitprice': '0.00000000', 'misc': '', 'oflags': 'fciq', 'reason': None, 'closetm': 1741528673.998289}}}
+*************************************
+{'OYCHFJ-PRMU6-NHWUFD': {'refid': None, 'userref': 0, 'status': 'closed', 'opentm': 1741528673.998279, 'starttm': 0, 'expiretm': 0, 'descr': {'pair': 'XRPUSD', 'aclass': 'forex', 'type': 'buy', 'ordertype': 'market', 'price': '0', 'price2': '0', 'leverage': 'none', 'order': 'buy 9.08562291 XRPUSD @ market', 'close': ''}, 'vol': '9.08562291', 'vol_exec': '9.08562291', 'cost': '19.92495275', 'fee': '0.06973733', 'price': '2.19301', 'stopprice': '0.00000000', 'limitprice': '0.00000000', 'misc': '', 'oflags': 'fciq', 'reason': None, 'closetm': 1741528673.998289}}
+Current Capital = 400.24383724000006 and cost = 19.92495275
+O4R36Q-GTEVV-QIT6HX
+test2
+9.08562291
+<class 'float'>
+waiting for 10 secounds
+{'error': ['EAPI:Invalid nonce']}
+{'error': ['EAPI:Invalid nonce']}
+O2UOGB-FH56Z-44ABHM
+{'error': [], 'result': {'OLTPER-CPRD7-3K2G37': {'refid': None, 'userref': 0, 'status': 'closed', 'opentm': 1741528674.047602, 'starttm': 0, 'expiretm': 0, 'descr': {'pair': 'XRPUSD', 'aclass': 'forex', 'type': 'buy', 'ordertype': 'market', 'price': '0', 'price2': '0', 'leverage': 'none', 'order': 'buy 9.08562291 XRPUSD @ market', 'close': ''}, 'vol': '9.08562291', 'vol_exec': '9.08562291', 'cost': '19.93294810', 'fee': '0.06976532', 'price': '2.19389', 'stopprice': '0.00000000', 'limitprice': '0.00000000', 'misc': '', 'oflags': 'fciq', 'reason': None, 'closetm': 1741528674.047633}}}
+{'error': [], 'result': {'OLTPER-CPRD7-3K2G37': {'refid': None, 'userref': 0, 'status': 'closed', 'opentm': 1741528674.047602, 'starttm': 0, 'expiretm': 0, 'descr': {'pair': 'XRPUSD', 'aclass': 'forex', 'type': 'buy', 'ordertype': 'market', 'price': '0', 'price2': '0', 'leverage': 'none', 'order': 'buy 9.08562291 XRPUSD @ market', 'close': ''}, 'vol': '9.08562291', 'vol_exec': '9.08562291', 'cost': '19.93294810', 'fee': '0.06976532', 'price': '2.19389', 'stopprice': '0.00000000', 'limitprice': '0.00000000', 'misc': '', 'oflags': 'fciq', 'reason': None, 'closetm': 1741528674.047633}}}
+*************************************
+{'OLTPER-CPRD7-3K2G37': {'refid': None, 'userref': 0, 'status': 'closed', 'opentm': 1741528674.047602, 'starttm': 0, 'expiretm': 0, 'descr': {'pair': 'XRPUSD', 'aclass': 'forex', 'type': 'buy', 'ordertype': 'market', 'price': '0', 'price2': '0', 'leverage': 'none', 'order': 'buy 9.08562291 XRPUSD @ market', 'close': ''}, 'vol': '9.08562291', 'vol_exec': '9.08562291', 'cost': '19.93294810', 'fee': '0.06976532', 'price': '2.19389', 'stopprice': '0.00000000', 'limitprice': '0.00000000', 'misc': '', 'oflags': 'fciq', 'reason': None, 'closetm': 1741528674.047633}}
+Current Capital = 380.3188844900001 and cost = 19.9329481
+test2
+9.08562291
+<class 'float'>
+O3T6K4-24NFW-NGHAAD
+waiting for 10 secounds
+OEGRMH-2EXMF-MRCCLQ
+{'error': [], 'result': {'OXIQMZ-JKQSS-AYK253': {'refid': None, 'userref': 0, 'status': 'closed', 'opentm': 1741528674.099523, 'starttm': 0, 'expiretm': 0, 'descr': {'pair': 'XRPUSD', 'aclass': 'forex', 'type': 'buy', 'ordertype': 'market', 'price': '0', 'price2': '0', 'leverage': 'none', 'order': 'buy 9.08562291 XRPUSD @ market', 'close': ''}, 'vol': '9.08562291', 'vol_exec': '9.08562291', 'cost': '19.93294810', 'fee': '0.06976532', 'price': '2.19389', 'stopprice': '0.00000000', 'limitprice': '0.00000000', 'misc': '', 'oflags': 'fciq', 'reason': None, 'closetm': 1741528674.099538}}}
+{'error': [], 'result': {'OXIQMZ-JKQSS-AYK253': {'refid': None, 'userref': 0, 'status': 'closed', 'opentm': 1741528674.099523, 'starttm': 0, 'expiretm': 0, 'descr': {'pair': 'XRPUSD', 'aclass': 'forex', 'type': 'buy', 'ordertype': 'market', 'price': '0', 'price2': '0', 'leverage': 'none', 'order': 'buy 9.08562291 XRPUSD @ market', 'close': ''}, 'vol': '9.08562291', 'vol_exec': '9.08562291', 'cost': '19.93294810', 'fee': '0.06976532', 'price': '2.19389', 'stopprice': '0.00000000', 'limitprice': '0.00000000', 'misc': '', 'oflags': 'fciq', 'reason': None, 'closetm': 1741528674.099538}}}
+*************************************
+{'OXIQMZ-JKQSS-AYK253': {'refid': None, 'userref': 0, 'status': 'closed', 'opentm': 1741528674.099523, 'starttm': 0, 'expiretm': 0, 'descr': {'pair': 'XRPUSD', 'aclass': 'forex', 'type': 'buy', 'ordertype': 'market', 'price': '0', 'price2': '0', 'leverage': 'none', 'order': 'buy 9.08562291 XRPUSD @ market', 'close': ''}, 'vol': '9.08562291', 'vol_exec': '9.08562291', 'cost': '19.93294810', 'fee': '0.06976532', 'price': '2.19389', 'stopprice': '0.00000000', 'limitprice': '0.00000000', 'misc': '', 'oflags': 'fciq', 'reason': None, 'closetm': 1741528674.099538}}
+Current Capital = 360.3859363900001 and cost = 19.9329481
+test2
+9.08562291
+<class 'float'>
+{'error': [], 'result': {'O4R36Q-GTEVV-QIT6HX': {'refid': None, 'userref': 0, 'status': 'closed', 'opentm': 1741528674.096446, 'starttm': 0, 'expiretm': 0, 'descr': {'pair': 'XRPUSD', 'aclass': 'forex', 'type': 'buy', 'ordertype': 'market', 'price': '0', 'price2': '0', 'leverage': 'none', 'order': 'buy 9.08562291 XRPUSD @ market', 'close': ''}, 'vol': '9.08562291', 'vol_exec': '9.08562291', 'cost': '19.93294810', 'fee': '0.06976532', 'price': '2.19389', 'stopprice': '0.00000000', 'limitprice': '0.00000000', 'misc': '', 'oflags': 'fciq', 'reason': None, 'closetm': 1741528674.096463}}}
+{'error': [], 'result': {'O4R36Q-GTEVV-QIT6HX': {'refid': None, 'userref': 0, 'status': 'closed', 'opentm': 1741528674.096446, 'starttm': 0, 'expiretm': 0, 'descr': {'pair': 'XRPUSD', 'aclass': 'forex', 'type': 'buy', 'ordertype': 'market', 'price': '0', 'price2': '0', 'leverage': 'none', 'order': 'buy 9.08562291 XRPUSD @ market', 'close': ''}, 'vol': '9.08562291', 'vol_exec': '9.08562291', 'cost': '19.93294810', 'fee': '0.06976532', 'price': '2.19389', 'stopprice': '0.00000000', 'limitprice': '0.00000000', 'misc': '', 'oflags': 'fciq', 'reason': None, 'closetm': 1741528674.096463}}}
+*************************************
+{'O4R36Q-GTEVV-QIT6HX': {'refid': None, 'userref': 0, 'status': 'closed', 'opentm': 1741528674.096446, 'starttm': 0, 'expiretm': 0, 'descr': {'pair': 'XRPUSD', 'aclass': 'forex', 'type': 'buy', 'ordertype': 'market', 'price': '0', 'price2': '0', 'leverage': 'none', 'order': 'buy 9.08562291 XRPUSD @ market', 'close': ''}, 'vol': '9.08562291', 'vol_exec': '9.08562291', 'cost': '19.93294810', 'fee': '0.06976532', 'price': '2.19389', 'stopprice': '0.00000000', 'limitprice': '0.00000000', 'misc': '', 'oflags': 'fciq', 'reason': None, 'closetm': 1741528674.096463}}
+waiting for 10 secounds
+Current Capital = 340.4529882900001 and cost = 19.9329481
+{'error': [], 'result': {'O2UOGB-FH56Z-44ABHM': {'refid': None, 'userref': 0, 'status': 'closed', 'opentm': 1741528674.122663, 'starttm': 0, 'expiretm': 0, 'descr': {'pair': 'XRPUSD', 'aclass': 'forex', 'type': 'buy', 'ordertype': 'market', 'price': '0', 'price2': '0', 'leverage': 'none', 'order': 'buy 9.08562291 XRPUSD @ market', 'close': ''}, 'vol': '9.08562291', 'vol_exec': '9.08562291', 'cost': '19.93294810', 'fee': '0.06976532', 'price': '2.19389', 'stopprice': '0.00000000', 'limitprice': '0.00000000', 'misc': '', 'oflags': 'fciq', 'reason': None, 'closetm': 1741528674.122736}}}
+2025-03-09 13:57:55,371 - DEBUG - https://api.kraken.com:443 "POST /0/private/QueryOrders HTTP/1.1" 200 None
+2025-03-09 13:57:55,391 - DEBUG - https://api.kraken.com:443 "POST /0/private/QueryOrders HTTP/1.1" 200 None
+2025-03-09 13:57:55,392 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 13:57:55,438 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 13:57:55,461 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 13:57:55,489 - DEBUG - https://api.kraken.com:443 "POST /0/private/QueryOrders HTTP/1.1" 200 None
+2025-03-09 13:57:55,549 - DEBUG - https://api.kraken.com:443 "POST /0/private/QueryOrders HTTP/1.1" 200 None
+{'error': [], 'result': {'O2UOGB-FH56Z-44ABHM': {'refid': None, 'userref': 0, 'status': 'closed', 'opentm': 1741528674.122663, 'starttm': 0, 'expiretm': 0, 'descr': {'pair': 'XRPUSD', 'aclass': 'forex', 'type': 'buy', 'ordertype': 'market', 'price': '0', 'price2': '0', 'leverage': 'none', 'order': 'buy 9.08562291 XRPUSD @ market', 'close': ''}, 'vol': '9.08562291', 'vol_exec': '9.08562291', 'cost': '19.93294810', 'fee': '0.06976532', 'price': '2.19389', 'stopprice': '0.00000000', 'limitprice': '0.00000000', 'misc': '', 'oflags': 'fciq', 'reason': None, 'closetm': 1741528674.122736}}}
+*************************************
+{'O2UOGB-FH56Z-44ABHM': {'refid': None, 'userref': 0, 'status': 'closed', 'opentm': 1741528674.122663, 'starttm': 0, 'expiretm': 0, 'descr': {'pair': 'XRPUSD', 'aclass': 'forex', 'type': 'buy', 'ordertype': 'market', 'price': '0', 'price2': '0', 'leverage': 'none', 'order': 'buy 9.08562291 XRPUSD @ market', 'close': ''}, 'vol': '9.08562291', 'vol_exec': '9.08562291', 'cost': '19.93294810', 'fee': '0.06976532', 'price': '2.19389', 'stopprice': '0.00000000', 'limitprice': '0.00000000', 'misc': '', 'oflags': 'fciq', 'reason': None, 'closetm': 1741528674.122736}}
+Current Capital = 320.52004019000015 and cost = 19.9329481
+test2
+9.08562291
+<class 'float'>
+test2
+9.08562291
+<class 'float'>
+waiting for 10 secounds
+waiting for 10 secounds
+{'error': [], 'result': {'O3T6K4-24NFW-NGHAAD': {'refid': None, 'userref': 0, 'status': 'closed', 'opentm': 1741528674.138462, 'starttm': 0, 'expiretm': 0, 'descr': {'pair': 'XRPUSD', 'aclass': 'forex', 'type': 'buy', 'ordertype': 'market', 'price': '0', 'price2': '0', 'leverage': 'none', 'order': 'buy 9.08562291 XRPUSD @ market', 'close': ''}, 'vol': '9.08562291', 'vol_exec': '9.08562291', 'cost': '19.92767844', 'fee': '0.06974687', 'price': '2.19331', 'stopprice': '0.00000000', 'limitprice': '0.00000000', 'misc': '', 'oflags': 'fciq', 'reason': None, 'closetm': 1741528674.138487}}}
+{'error': [], 'result': {'O3T6K4-24NFW-NGHAAD': {'refid': None, 'userref': 0, 'status': 'closed', 'opentm': 1741528674.138462, 'starttm': 0, 'expiretm': 0, 'descr': {'pair': 'XRPUSD', 'aclass': 'forex', 'type': 'buy', 'ordertype': 'market', 'price': '0', 'price2': '0', 'leverage': 'none', 'order': 'buy 9.08562291 XRPUSD @ market', 'close': ''}, 'vol': '9.08562291', 'vol_exec': '9.08562291', 'cost': '19.92767844', 'fee': '0.06974687', 'price': '2.19331', 'stopprice': '0.00000000', 'limitprice': '0.00000000', 'misc': '', 'oflags': 'fciq', 'reason': None, 'closetm': 1741528674.138487}}}
+*************************************
+{'O3T6K4-24NFW-NGHAAD': {'refid': None, 'userref': 0, 'status': 'closed', 'opentm': 1741528674.138462, 'starttm': 0, 'expiretm': 0, 'descr': {'pair': 'XRPUSD', 'aclass': 'forex', 'type': 'buy', 'ordertype': 'market', 'price': '0', 'price2': '0', 'leverage': 'none', 'order': 'buy 9.08562291 XRPUSD @ market', 'close': ''}, 'vol': '9.08562291', 'vol_exec': '9.08562291', 'cost': '19.92767844', 'fee': '0.06974687', 'price': '2.19331', 'stopprice': '0.00000000', 'limitprice': '0.00000000', 'misc': '', 'oflags': 'fciq', 'reason': None, 'closetm': 1741528674.138487}}
+Current Capital = 300.58709209000017 and cost = 19.92767844
+test2
+9.08562291
+<class 'float'>
+OQQBDY-4BHH6-DEENT5
+waiting for 10 secounds
+{'error': [], 'result': {'OEGRMH-2EXMF-MRCCLQ': {'refid': None, 'userref': 0, 'status': 'closed', 'opentm': 1741528674.153777, 'starttm': 0, 'expiretm': 0, 'descr': {'pair': 'XRPUSD', 'aclass': 'forex', 'type': 'buy', 'ordertype': 'market', 'price': '0', 'price2': '0', 'leverage': 'none', 'order': 'buy 9.08562291 XRPUSD @ market', 'close': ''}, 'vol': '9.08562291', 'vol_exec': '9.08562291', 'cost': '19.92767844', 'fee': '0.06974687', 'price': '2.19331', 'stopprice': '0.00000000', 'limitprice': '0.00000000', 'misc': '', 'oflags': 'fciq', 'reason': None, 'closetm': 1741528674.15395}}}
+{'error': [], 'result': {'OEGRMH-2EXMF-MRCCLQ': {'refid': None, 'userref': 0, 'status': 'closed', 'opentm': 1741528674.153777, 'starttm': 0, 'expiretm': 0, 'descr': {'pair': 'XRPUSD', 'aclass': 'forex', 'type': 'buy', 'ordertype': 'market', 'price': '0', 'price2': '0', 'leverage': 'none', 'order': 'buy 9.08562291 XRPUSD @ market', 'close': ''}, 'vol': '9.08562291', 'vol_exec': '9.08562291', 'cost': '19.92767844', 'fee': '0.06974687', 'price': '2.19331', 'stopprice': '0.00000000', 'limitprice': '0.00000000', 'misc': '', 'oflags': 'fciq', 'reason': None, 'closetm': 1741528674.15395}}}
+*************************************
+{'OEGRMH-2EXMF-MRCCLQ': {'refid': None, 'userref': 0, 'status': 'closed', 'opentm': 1741528674.153777, 'starttm': 0, 'expiretm': 0, 'descr': {'pair': 'XRPUSD', 'aclass': 'forex', 'type': 'buy', 'ordertype': 'market', 'price': '0', 'price2': '0', 'leverage': 'none', 'order': 'buy 9.08562291 XRPUSD @ market', 'close': ''}, 'vol': '9.08562291', 'vol_exec': '9.08562291', 'cost': '19.92767844', 'fee': '0.06974687', 'price': '2.19331', 'stopprice': '0.00000000', 'limitprice': '0.00000000', 'misc': '', 'oflags': 'fciq', 'reason': None, 'closetm': 1741528674.15395}}
+Current Capital = 280.65941365000015 and cost = 19.92767844
+test2
+9.08562291
+<class 'float'>
+waiting for 10 secounds
+OGFDKD-I3SOO-DGONSQ
+OZUPJH-AMTZP-UEHAO3
+{'error': [], 'result': {'OQQBDY-4BHH6-DEENT5': {'refid': None, 'userref': 0, 'status': 'closed', 'opentm': 1741528674.278245, 'starttm': 0, 'expiretm': 0, 'descr': {'pair': 'XRPUSD', 'aclass': 'forex', 'type': 'buy', 'ordertype': 'market', 'price': '0', 'price2': '0', 'leverage': 'none', 'order': 'buy 9.08562291 XRPUSD @ market', 'close': ''}, 'vol': '9.08562291', 'vol_exec': '9.08562291', 'cost': '19.95884213', 'fee': '0.06985595', 'price': '2.19675', 'stopprice': '0.00000000', 'limitprice': '0.00000000', 'misc': '', 'oflags': 'fciq', 'reason': None, 'closetm': 1741528674.278255}}}
+{'error': [], 'result': {'OQQBDY-4BHH6-DEENT5': {'refid': None, 'userref': 0, 'status': 'closed', 'opentm': 1741528674.278245, 'starttm': 0, 'expiretm': 0, 'descr': {'pair': 'XRPUSD', 'aclass': 'forex', 'type': 'buy', 'ordertype': 'market', 'price': '0', 'price2': '0', 'leverage': 'none', 'order': 'buy 9.08562291 XRPUSD @ market', 'close': ''}, 'vol': '9.08562291', 'vol_exec': '9.08562291', 'cost': '19.95884213', 'fee': '0.06985595', 'price': '2.19675', 'stopprice': '0.00000000', 'limitprice': '0.00000000', 'misc': '', 'oflags': 'fciq', 'reason': None, 'closetm': 1741528674.278255}}}
+*************************************
+{'OQQBDY-4BHH6-DEENT5': {'refid': None, 'userref': 0, 'status': 'closed', 'opentm': 1741528674.278245, 'starttm': 0, 'expiretm': 0, 'descr': {'pair': 'XRPUSD', 'aclass': 'forex', 'type': 'buy', 'ordertype': 'market', 'price': '0', 'price2': '0', 'leverage': 'none', 'order': 'buy 9.08562291 XRPUSD @ market', 'close': ''}, 'vol': '9.08562291', 'vol_exec': '9.08562291', 'cost': '19.95884213', 'fee': '0.06985595', 'price': '2.19675', 'stopprice': '0.00000000', 'limitprice': '0.00000000', 'misc': '', 'oflags': 'fciq', 'reason': None, 'closetm': 1741528674.278255}}
+Current Capital = 260.7317352100001 and cost = 19.95884213
+test2
+9.08562291
+<class 'float'>
+waiting for 10 secounds
+{'error': [], 'result': {'OGFDKD-I3SOO-DGONSQ': {'refid': None, 'userref': 0, 'status': 'closed', 'opentm': 1741528674.252891, 'starttm': 0, 'expiretm': 0, 'descr': {'pair': 'XRPUSD', 'aclass': 'forex', 'type': 'buy', 'ordertype': 'market', 'price': '0', 'price2': '0', 'leverage': 'none', 'order': 'buy 9.08562291 XRPUSD @ market', 'close': ''}, 'vol': '9.08562291', 'vol_exec': '9.08562291', 'cost': '19.95884213', 'fee': '0.06985595', 'price': '2.19675', 'stopprice': '0.00000000', 'limitprice': '0.00000000', 'misc': '', 'oflags': 'fciq', 'reason': None, 'closetm': 1741528674.252899}}}
+2025-03-09 13:57:55,631 - DEBUG - https://api.kraken.com:443 "POST /0/private/QueryOrders HTTP/1.1" 200 None
+2025-03-09 13:58:05,050 - INFO - Stage completion process successful
+2025-03-09 13:58:05,050 - INFO - Task Completed!
+2025-03-09 13:58:05,125 - INFO - Stage completion process successful
+2025-03-09 13:58:05,126 - INFO - Task Completed!
+2025-03-09 13:58:05,129 - INFO - Stage completion process successful
+2025-03-09 13:58:05,129 - INFO - Task Completed!
+2025-03-09 13:58:05,247 - INFO - Stage completion process successful
+2025-03-09 13:58:05,248 - INFO - Task Completed!
+2025-03-09 13:58:05,290 - INFO - Stage completion process successful
+2025-03-09 13:58:05,290 - INFO - Task Completed!
+2025-03-09 13:58:05,332 - INFO - Stage completion process successful
+2025-03-09 13:58:05,333 - INFO - Task Completed!
+2025-03-09 13:58:05,353 - INFO - Stage completion process successful
+2025-03-09 13:58:05,354 - INFO - Task Completed!
+2025-03-09 13:58:05,359 - INFO - Stage completion process successful
+2025-03-09 13:58:05,359 - INFO - Task Completed!
+2025-03-09 13:58:05,392 - INFO - Stage completion process successful
+2025-03-09 13:58:05,392 - INFO - Task Completed!
+2025-03-09 13:58:05,411 - INFO - Stage completion process successful
+2025-03-09 13:58:05,411 - INFO - Task Completed!
+2025-03-09 13:58:05,507 - INFO - Stage completion process successful
+2025-03-09 13:58:05,508 - INFO - Task Completed!
+2025-03-09 13:58:05,573 - INFO - Stage completion process successful
+2025-03-09 13:58:05,573 - INFO - Task Completed!
+2025-03-09 13:58:05,649 - INFO - Stage completion process successful
+2025-03-09 13:58:05,649 - INFO - Task Completed!
+2025-03-09 17:01:31,234 - INFO - Received request at /stage-complete
+2025-03-09 17:01:31,234 - DEBUG - ***************************
+Request Data: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+
+
+2025-03-09 17:01:31,234 - INFO - Processing data in background: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+2025-03-09 17:01:31,234 - INFO - Received request at /stage-complete
+2025-03-09 17:01:31,234 - DEBUG - ***************************
+Request Data: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+
+
+2025-03-09 17:01:31,235 - DEBUG - Symbol: XRPUSD, Hit Type: rebuy
+2025-03-09 17:01:31,235 - INFO - 127.0.0.1 - - [09/Mar/2025 17:01:31] "POST /bot/stage-complete HTTP/1.1" 200 -
+2025-03-09 17:01:31,235 - DEBUG - Current Stage: 2
+2025-03-09 17:01:31,236 - DEBUG - StageKey: XRPUSD2, TRADING_PAIR_ID: 13
+2025-03-09 17:01:31,237 - DEBUG - Take Profit %: 3.0, Rebuy %: 3.0
+2025-03-09 17:01:31,237 - DEBUG - Current Capital: 500.0, Trade Usage %: 4.0
+2025-03-09 17:01:31,238 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 17:01:31,342 - DEBUG - https://api.kraken.com:443 "GET /0/public/Ticker?pair=XRPUSD HTTP/1.1" 200 None
+2025-03-09 17:01:31,344 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 17:01:31,424 - INFO - Received request at /stage-complete
+2025-03-09 17:01:31,424 - DEBUG - ***************************
+Request Data: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+
+
+2025-03-09 17:01:31,425 - INFO - Processing data in background: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+2025-03-09 17:01:31,425 - INFO - Received request at /stage-complete
+2025-03-09 17:01:31,425 - DEBUG - ***************************
+Request Data: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+
+
+2025-03-09 17:01:31,425 - INFO - 127.0.0.1 - - [09/Mar/2025 17:01:31] "POST /bot/stage-complete HTTP/1.1" 200 -
+2025-03-09 17:01:31,426 - DEBUG - https://api.kraken.com:443 "POST /0/private/AddOrder HTTP/1.1" 200 None
+2025-03-09 17:01:31,427 - DEBUG - Symbol: XRPUSD, Hit Type: rebuy
+2025-03-09 17:01:31,429 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 17:01:31,430 - DEBUG - Current Stage: 2
+2025-03-09 17:01:31,430 - DEBUG - StageKey: XRPUSD2, TRADING_PAIR_ID: 13
+2025-03-09 17:01:31,430 - DEBUG - Take Profit %: 3.0, Rebuy %: 3.0
+2025-03-09 17:01:31,431 - DEBUG - Current Capital: 500.0, Trade Usage %: 4.0
+2025-03-09 17:01:31,431 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 17:01:31,510 - DEBUG - https://api.kraken.com:443 "POST /0/private/QueryOrders HTTP/1.1" 200 24
+2025-03-09 17:01:31,540 - DEBUG - https://api.kraken.com:443 "GET /0/public/Ticker?pair=XRPUSD HTTP/1.1" 200 None
+2025-03-09 17:01:31,542 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 17:01:31,620 - INFO - Received request at /stage-complete
+2025-03-09 17:01:31,620 - DEBUG - https://api.kraken.com:443 "POST /0/private/AddOrder HTTP/1.1" 200 None
+2025-03-09 17:01:31,621 - DEBUG - ***************************
+Request Data: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+
+
+2025-03-09 17:01:31,621 - INFO - Processing data in background: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+2025-03-09 17:01:31,622 - INFO - 127.0.0.1 - - [09/Mar/2025 17:01:31] "POST /bot/stage-complete HTTP/1.1" 200 -
+2025-03-09 17:01:31,623 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 17:01:31,623 - INFO - Received request at /stage-complete
+2025-03-09 17:01:31,624 - DEBUG - ***************************
+Request Data: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+
+
+2025-03-09 17:01:31,625 - DEBUG - Symbol: XRPUSD, Hit Type: rebuy
+2025-03-09 17:01:31,625 - DEBUG - Current Stage: 2
+2025-03-09 17:01:31,625 - DEBUG - StageKey: XRPUSD2, TRADING_PAIR_ID: 13
+2025-03-09 17:01:31,626 - DEBUG - Take Profit %: 3.0, Rebuy %: 3.0
+2025-03-09 17:01:31,626 - DEBUG - Current Capital: 500.0, Trade Usage %: 4.0
+2025-03-09 17:01:31,627 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 17:01:31,698 - DEBUG - https://api.kraken.com:443 "GET /0/public/Ticker?pair=XRPUSD HTTP/1.1" 200 None
+2025-03-09 17:01:31,700 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 17:01:31,725 - DEBUG - https://api.kraken.com:443 "POST /0/private/QueryOrders HTTP/1.1" 200 24
+2025-03-09 17:01:31,796 - DEBUG - https://api.kraken.com:443 "POST /0/private/AddOrder HTTP/1.1" 200 None
+2025-03-09 17:01:31,797 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 17:01:31,800 - INFO - Received request at /stage-complete
+2025-03-09 17:01:31,801 - DEBUG - ***************************
+Request Data: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+
+
+2025-03-09 17:01:31,801 - INFO - Processing data in background: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+2025-03-09 17:01:31,801 - INFO - Received request at /stage-complete
+2025-03-09 17:01:31,801 - DEBUG - ***************************
+Request Data: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+
+
+2025-03-09 17:01:31,801 - INFO - 127.0.0.1 - - [09/Mar/2025 17:01:31] "POST /bot/stage-complete HTTP/1.1" 200 -
+2025-03-09 17:01:31,802 - DEBUG - Symbol: XRPUSD, Hit Type: rebuy
+2025-03-09 17:01:31,802 - DEBUG - Current Stage: 2
+2025-03-09 17:01:31,802 - DEBUG - StageKey: XRPUSD2, TRADING_PAIR_ID: 13
+2025-03-09 17:01:31,803 - DEBUG - Take Profit %: 3.0, Rebuy %: 3.0
+2025-03-09 17:01:31,803 - DEBUG - Current Capital: 500.0, Trade Usage %: 4.0
+2025-03-09 17:01:31,804 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 17:01:31,854 - DEBUG - https://api.kraken.com:443 "GET /0/public/Ticker?pair=XRPUSD HTTP/1.1" 200 None
+2025-03-09 17:01:31,856 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 17:01:31,861 - INFO - Received request at /stage-complete
+2025-03-09 17:01:31,862 - DEBUG - ***************************
+Request Data: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+
+
+2025-03-09 17:01:31,862 - INFO - Processing data in background: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+2025-03-09 17:01:31,862 - INFO - Received request at /stage-complete
+2025-03-09 17:01:31,863 - DEBUG - ***************************
+Request Data: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+
+
+2025-03-09 17:01:31,862 - INFO - 127.0.0.1 - - [09/Mar/2025 17:01:31] "POST /bot/stage-complete HTTP/1.1" 200 -
+2025-03-09 17:01:31,863 - DEBUG - Symbol: XRPUSD, Hit Type: rebuy
+2025-03-09 17:01:31,863 - DEBUG - Current Stage: 2
+2025-03-09 17:01:31,864 - DEBUG - StageKey: XRPUSD2, TRADING_PAIR_ID: 13
+2025-03-09 17:01:31,864 - DEBUG - Take Profit %: 3.0, Rebuy %: 3.0
+2025-03-09 17:01:31,864 - DEBUG - Current Capital: 500.0, Trade Usage %: 4.0
+2025-03-09 17:01:31,865 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 17:01:31,876 - INFO - Received request at /stage-complete
+2025-03-09 17:01:31,877 - DEBUG - ***************************
+Request Data: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+
+
+2025-03-09 17:01:31,877 - INFO - Processing data in background: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+2025-03-09 17:01:31,878 - INFO - Received request at /stage-complete
+2025-03-09 17:01:31,878 - DEBUG - ***************************
+Request Data: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+
+
+2025-03-09 17:01:31,879 - DEBUG - Symbol: XRPUSD, Hit Type: rebuy
+2025-03-09 17:01:31,879 - DEBUG - Current Stage: 2
+2025-03-09 17:01:31,878 - INFO - 127.0.0.1 - - [09/Mar/2025 17:01:31] "POST /bot/stage-complete HTTP/1.1" 200 -
+2025-03-09 17:01:31,880 - DEBUG - StageKey: XRPUSD2, TRADING_PAIR_ID: 13
+2025-03-09 17:01:31,881 - DEBUG - Take Profit %: 3.0, Rebuy %: 3.0
+2025-03-09 17:01:31,881 - DEBUG - Current Capital: 500.0, Trade Usage %: 4.0
+2025-03-09 17:01:31,882 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 17:01:31,887 - DEBUG - https://api.kraken.com:443 "POST /0/private/QueryOrders HTTP/1.1" 200 None
+2025-03-09 17:01:31,913 - DEBUG - https://api.kraken.com:443 "GET /0/public/Ticker?pair=XRPUSD HTTP/1.1" 200 None
+2025-03-09 17:01:31,915 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 17:01:31,928 - DEBUG - https://api.kraken.com:443 "GET /0/public/Ticker?pair=XRPUSD HTTP/1.1" 200 None
+{'error': [], 'result': {'OGFDKD-I3SOO-DGONSQ': {'refid': None, 'userref': 0, 'status': 'closed', 'opentm': 1741528674.252891, 'starttm': 0, 'expiretm': 0, 'descr': {'pair': 'XRPUSD', 'aclass': 'forex', 'type': 'buy', 'ordertype': 'market', 'price': '0', 'price2': '0', 'leverage': 'none', 'order': 'buy 9.08562291 XRPUSD @ market', 'close': ''}, 'vol': '9.08562291', 'vol_exec': '9.08562291', 'cost': '19.95884213', 'fee': '0.06985595', 'price': '2.19675', 'stopprice': '0.00000000', 'limitprice': '0.00000000', 'misc': '', 'oflags': 'fciq', 'reason': None, 'closetm': 1741528674.252899}}}
+*************************************
+{'OGFDKD-I3SOO-DGONSQ': {'refid': None, 'userref': 0, 'status': 'closed', 'opentm': 1741528674.252891, 'starttm': 0, 'expiretm': 0, 'descr': {'pair': 'XRPUSD', 'aclass': 'forex', 'type': 'buy', 'ordertype': 'market', 'price': '0', 'price2': '0', 'leverage': 'none', 'order': 'buy 9.08562291 XRPUSD @ market', 'close': ''}, 'vol': '9.08562291', 'vol_exec': '9.08562291', 'cost': '19.95884213', 'fee': '0.06985595', 'price': '2.19675', 'stopprice': '0.00000000', 'limitprice': '0.00000000', 'misc': '', 'oflags': 'fciq', 'reason': None, 'closetm': 1741528674.252899}}
+Current Capital = 240.77289308000013 and cost = 19.95884213
+test2
+9.08562291
+<class 'float'>
+waiting for 10 secounds
+{'error': [], 'result': {'OZUPJH-AMTZP-UEHAO3': {'refid': None, 'userref': 0, 'status': 'closed', 'opentm': 1741528674.351765, 'starttm': 0, 'expiretm': 0, 'descr': {'pair': 'XRPUSD', 'aclass': 'forex', 'type': 'buy', 'ordertype': 'market', 'price': '0', 'price2': '0', 'leverage': 'none', 'order': 'buy 9.08562291 XRPUSD @ market', 'close': ''}, 'vol': '9.08562291', 'vol_exec': '9.08562291', 'cost': '19.97510539', 'fee': '0.06991287', 'price': '2.19853', 'stopprice': '0.00000000', 'limitprice': '0.00000000', 'misc': '', 'oflags': 'fciq', 'reason': None, 'closetm': 1741528674.351778}}}
+{'error': [], 'result': {'OZUPJH-AMTZP-UEHAO3': {'refid': None, 'userref': 0, 'status': 'closed', 'opentm': 1741528674.351765, 'starttm': 0, 'expiretm': 0, 'descr': {'pair': 'XRPUSD', 'aclass': 'forex', 'type': 'buy', 'ordertype': 'market', 'price': '0', 'price2': '0', 'leverage': 'none', 'order': 'buy 9.08562291 XRPUSD @ market', 'close': ''}, 'vol': '9.08562291', 'vol_exec': '9.08562291', 'cost': '19.97510539', 'fee': '0.06991287', 'price': '2.19853', 'stopprice': '0.00000000', 'limitprice': '0.00000000', 'misc': '', 'oflags': 'fciq', 'reason': None, 'closetm': 1741528674.351778}}}
+*************************************
+{'OZUPJH-AMTZP-UEHAO3': {'refid': None, 'userref': 0, 'status': 'closed', 'opentm': 1741528674.351765, 'starttm': 0, 'expiretm': 0, 'descr': {'pair': 'XRPUSD', 'aclass': 'forex', 'type': 'buy', 'ordertype': 'market', 'price': '0', 'price2': '0', 'leverage': 'none', 'order': 'buy 9.08562291 XRPUSD @ market', 'close': ''}, 'vol': '9.08562291', 'vol_exec': '9.08562291', 'cost': '19.97510539', 'fee': '0.06991287', 'price': '2.19853', 'stopprice': '0.00000000', 'limitprice': '0.00000000', 'misc': '', 'oflags': 'fciq', 'reason': None, 'closetm': 1741528674.351778}}
+Current Capital = 220.81405095000014 and cost = 19.97510539
+test2
+9.08562291
+<class 'float'>
+waiting for 10 secounds
+wait complete for 10 secounds
+wait complete for 10 secounds
+wait complete for 10 secounds
+wait complete for 10 secounds
+wait complete for 10 secounds
+wait complete for 10 secounds
+wait complete for 10 secounds
+wait complete for 10 secounds
+wait complete for 10 secounds
+wait complete for 10 secounds
+wait complete for 10 secounds
+wait complete for 10 secounds
+wait complete for 10 secounds
+XRPUSDcurrentStage
+2
+currentPrice response  {'error': [], 'result': {'XXRPZUSD': {'a': ['2.13301000', '9069', '9069.000'], 'b': ['2.13300000', '50', '50.000'], 'c': ['2.13500000', '702.57611241'], 'v': ['20725797.97280197', '24116513.50100892'], 'p': ['2.22834327', '2.24396098'], 't': [21734, 28083], 'l': ['2.13301000', '2.13301000'], 'h': ['2.34888000', '2.36237000'], 'o': '2.32496000'}}}
+{'nonce': '1741539691343', 'ordertype': 'market', 'type': 'buy', 'volume': 9.367681498829041, 'pair': 'XRPUSD'}
+{'error': [], 'result': {'txid': ['O7PWU4-KUJAT-ATJUKH'], 'descr': {'order': 'buy 9.36768149 XRPUSD @ market'}}}
+O7PWU4-KUJAT-ATJUKH
+XRPUSDcurrentStage
+2
+{'error': [], 'result': {}}
+{'error': [], 'result': {}}
+currentPrice response  {'error': [], 'result': {'XXRPZUSD': {'a': ['2.13301000', '9069', '9069.000'], 'b': ['2.13300000', '50', '50.000'], 'c': ['2.13500000', '702.57611241'], 'v': ['20725797.97280197', '24116513.50100892'], 'p': ['2.22834327', '2.24396098'], 't': [21734, 28083], 'l': ['2.13301000', '2.13301000'], 'h': ['2.34888000', '2.36237000'], 'o': '2.32496000'}}}
+{'nonce': '1741539691541', 'ordertype': 'market', 'type': 'buy', 'volume': 9.367681498829041, 'pair': 'XRPUSD'}
+{'error': [], 'result': {'txid': ['OCZZVO-RSRXM-2QT32Z'], 'descr': {'order': 'buy 9.36768149 XRPUSD @ market'}}}
+OCZZVO-RSRXM-2QT32Z
+XRPUSDcurrentStage
+2
+currentPrice response  {'error': [], 'result': {'XXRPZUSD': {'a': ['2.13301000', '9069', '9069.000'], 'b': ['2.13300000', '50', '50.000'], 'c': ['2.13500000', '702.57611241'], 'v': ['20725797.97280197', '24116513.50100892'], 'p': ['2.22834327', '2.24396098'], 't': [21734, 28083], 'l': ['2.13301000', '2.13301000'], 'h': ['2.34888000', '2.36237000'], 'o': '2.32496000'}}}
+{'nonce': '1741539691700', 'ordertype': 'market', 'type': 'buy', 'volume': 9.367681498829041, 'pair': 'XRPUSD'}
+{'error': [], 'result': {}}
+{'error': [], 'result': {}}
+{'error': [], 'result': {'txid': ['O2MVOK-WEDUT-5MHBCM'], 'descr': {'order': 'buy 9.36768149 XRPUSD @ market'}}}
+O2MVOK-WEDUT-5MHBCM
+XRPUSDcurrentStage
+2
+currentPrice response  {'error': [], 'result': {'XXRPZUSD': {'a': ['2.13301000', '9069', '9069.000'], 'b': ['2.13300000', '50', '50.000'], 'c': ['2.13500000', '702.57611241'], 'v': ['20725797.97280197', '24116513.50100892'], 'p': ['2.22834327', '2.24396098'], 't': [21734, 28083], 'l': ['2.13301000', '2.13301000'], 'h': ['2.34888000', '2.36237000'], 'o': '2.32496000'}}}
+{'nonce': '1741539691855', 'ordertype': 'market', 'type': 'buy', 'volume': 9.367681498829041, 'pair': 'XRPUSD'}
+XRPUSDcurrentStage
+2
+XRPUSDcurrentStage
+2
+{'error': [], 'result': {'O2MVOK-WEDUT-5MHBCM': {'refid': None, 'userref': 0, 'status': 'open', 'opentm': 1741539691.7713, 'starttm': 0, 'expiretm': 0, 'descr': {'pair': 'XRPUSD', 'aclass': 'forex', 'type': 'buy', 'ordertype': 'market', 'price': '0', 'price2': '0', 'leverage': 'none', 'order': 'buy 9.36768149 XRPUSD @ market', 'close': ''}, 'vol': '9.36768149', 'vol_exec': '9.36768149', 'cost': '19.97451989', 'fee': '0.06991082', 'price': '2.13228', 'stopprice': '0.00000000', 'limitprice': '0.00000000', 'misc': '', 'oflags': 'fciq', 'reason': None}}}
+{'error': [], 'result': {'O2MVOK-WEDUT-5MHBCM': {'refid': None, 'userref': 0, 'status': 'open', 'opentm': 1741539691.7713, 'starttm': 0, 'expiretm': 0, 'descr': {'pair': 'XRPUSD', 'aclass': 'forex', 'type': 'buy', 'ordertype': 'market', 'price': '0', 'price2': '0', 'leverage': 'none', 'order': 'buy 9.36768149 XRPUSD @ market', 'close': ''}, 'vol': '9.36768149', 'vol_exec': '9.36768149', 'cost': '19.97451989', 'fee': '0.06991082', 'price': '2.13228', 'stopprice': '0.00000000', 'limitprice': '0.00000000', 'misc': '', 'oflags': 'fciq', 'reason': None}}}
+*************************************
+currentPrice response  {'error': [], 'result': {'XXRPZUSD': {'a': ['2.13301000', '9069', '9069.000'], 'b': ['2.13300000', '50', '50.000'], 'c': ['2.13500000', '702.57611241'], 'v': ['20725797.97280197', '24116513.50100892'], 'p': ['2.22834327', '2.24396098'], 't': [21734, 28083], 'l': ['2.13301000', '2.13301000'], 'h': ['2.34888000', '2.36237000'], 'o': '2.32496000'}}}
+{'nonce': '1741539691914', 'ordertype': 'market', 'type': 'buy', 'volume': 9.367681498829041, 'pair': 'XRPUSD'}
+currentPrice response  {'error': [], 'result': {'XXRPZUSD': {'a': ['2.13301000', '9069', '9069.000'], 'b': ['2.13300000', '50', '50.000'], 'c': ['2.13500000', '702.57611241'], 'v': ['20725797.97280197', '24116513.50100892'], 'p': ['2.22834327', '2.24396098'], 't': [21734, 28083], 'l': ['2.13301000', '2.13301000'], 'h': ['2.34888000', '2.36237000'], 'o': '2.32496000'}}}
+2025-03-09 17:01:31,931 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 17:01:31,939 - DEBUG - https://api.kraken.com:443 "POST /0/private/AddOrder HTTP/1.1" 200 None
+2025-03-09 17:01:31,940 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 17:01:31,942 - INFO - Received request at /stage-complete
+2025-03-09 17:01:31,942 - DEBUG - ***************************
+Request Data: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+
+
+2025-03-09 17:01:31,942 - INFO - Processing data in background: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+2025-03-09 17:01:31,943 - INFO - Received request at /stage-complete
+2025-03-09 17:01:31,943 - DEBUG - ***************************
+Request Data: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+
+
+2025-03-09 17:01:31,942 - INFO - 127.0.0.1 - - [09/Mar/2025 17:01:31] "POST /bot/stage-complete HTTP/1.1" 200 -
+2025-03-09 17:01:31,943 - DEBUG - Symbol: XRPUSD, Hit Type: rebuy
+2025-03-09 17:01:31,944 - DEBUG - Current Stage: 2
+2025-03-09 17:01:31,944 - DEBUG - StageKey: XRPUSD2, TRADING_PAIR_ID: 13
+2025-03-09 17:01:31,944 - DEBUG - Take Profit %: 3.0, Rebuy %: 3.0
+2025-03-09 17:01:31,944 - DEBUG - Current Capital: 500.0, Trade Usage %: 4.0
+2025-03-09 17:01:31,945 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 17:01:31,979 - DEBUG - https://api.kraken.com:443 "GET /0/public/Ticker?pair=XRPUSD HTTP/1.1" 200 None
+2025-03-09 17:01:31,981 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 17:01:32,001 - DEBUG - https://api.kraken.com:443 "POST /0/private/AddOrder HTTP/1.1" 200 None
+2025-03-09 17:01:32,002 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 17:01:32,005 - INFO - Received request at /stage-complete
+2025-03-09 17:01:32,005 - DEBUG - ***************************
+Request Data: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+
+
+2025-03-09 17:01:32,005 - INFO - Processing data in background: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+2025-03-09 17:01:32,006 - INFO - 127.0.0.1 - - [09/Mar/2025 17:01:32] "POST /bot/stage-complete HTTP/1.1" 200 -
+2025-03-09 17:01:32,006 - INFO - Received request at /stage-complete
+2025-03-09 17:01:32,006 - DEBUG - ***************************
+Request Data: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+
+
+2025-03-09 17:01:32,006 - DEBUG - Symbol: XRPUSD, Hit Type: rebuy
+2025-03-09 17:01:32,006 - DEBUG - Current Stage: 2
+2025-03-09 17:01:32,007 - DEBUG - StageKey: XRPUSD2, TRADING_PAIR_ID: 13
+2025-03-09 17:01:32,007 - DEBUG - Take Profit %: 3.0, Rebuy %: 3.0
+2025-03-09 17:01:32,007 - DEBUG - Current Capital: 500.0, Trade Usage %: 4.0
+2025-03-09 17:01:32,008 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 17:01:32,043 - DEBUG - https://api.kraken.com:443 "POST /0/private/QueryOrders HTTP/1.1" 200 24
+2025-03-09 17:01:32,051 - DEBUG - https://api.kraken.com:443 "POST /0/private/AddOrder HTTP/1.1" 200 32
+2025-03-09 17:01:32,052 - ERROR - Error in stagecomplete: 'result'
+Traceback (most recent call last):
+  File "/home/ubuntu/stage_crypto_bot/python/app/controllers/bot_control.py", line 197, in process
+    txid = nextbuyOrder["result"]["txid"][0]
+           ~~~~~~~~~~~~^^^^^^^^^^
+KeyError: 'result'
+2025-03-09 17:01:32,053 - INFO - Task Completed!
+2025-03-09 17:01:32,066 - INFO - Received request at /stage-complete
+2025-03-09 17:01:32,066 - DEBUG - ***************************
+Request Data: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+
+
+2025-03-09 17:01:32,067 - INFO - Processing data in background: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+2025-03-09 17:01:32,067 - INFO - 127.0.0.1 - - [09/Mar/2025 17:01:32] "POST /bot/stage-complete HTTP/1.1" 200 -
+2025-03-09 17:01:32,067 - INFO - Received request at /stage-complete
+2025-03-09 17:01:32,067 - DEBUG - ***************************
+Request Data: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+
+
+2025-03-09 17:01:32,068 - DEBUG - Symbol: XRPUSD, Hit Type: rebuy
+2025-03-09 17:01:32,068 - DEBUG - Current Stage: 2
+2025-03-09 17:01:32,068 - DEBUG - StageKey: XRPUSD2, TRADING_PAIR_ID: 13
+2025-03-09 17:01:32,069 - DEBUG - Take Profit %: 3.0, Rebuy %: 3.0
+2025-03-09 17:01:32,069 - DEBUG - Current Capital: 500.0, Trade Usage %: 4.0
+2025-03-09 17:01:32,070 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 17:01:32,072 - DEBUG - https://api.kraken.com:443 "POST /0/private/AddOrder HTTP/1.1" 200 None
+2025-03-09 17:01:32,074 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 17:01:32,123 - DEBUG - https://api.kraken.com:443 "GET /0/public/Ticker?pair=XRPUSD HTTP/1.1" 200 None
+2025-03-09 17:01:32,125 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 17:01:32,132 - DEBUG - https://api.kraken.com:443 "POST /0/private/QueryOrders HTTP/1.1" 200 24
+2025-03-09 17:01:32,150 - DEBUG - https://api.kraken.com:443 "POST /0/private/QueryOrders HTTP/1.1" 200 24
+2025-03-09 17:01:32,166 - DEBUG - https://api.kraken.com:443 "GET /0/public/Ticker?pair=XRPUSD HTTP/1.1" 200 None
+2025-03-09 17:01:32,169 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 17:01:32,241 - DEBUG - https://api.kraken.com:443 "POST /0/private/AddOrder HTTP/1.1" 200 None
+2025-03-09 17:01:32,243 - INFO - Received request at /stage-complete
+2025-03-09 17:01:32,243 - DEBUG - ***************************
+Request Data: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+
+
+2025-03-09 17:01:32,243 - INFO - Processing data in background: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+2025-03-09 17:01:32,244 - INFO - 127.0.0.1 - - [09/Mar/2025 17:01:32] "POST /bot/stage-complete HTTP/1.1" 200 -
+2025-03-09 17:01:32,245 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 17:01:32,245 - INFO - Received request at /stage-complete
+2025-03-09 17:01:32,246 - DEBUG - ***************************
+Request Data: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+
+
+2025-03-09 17:01:32,247 - DEBUG - Symbol: XRPUSD, Hit Type: rebuy
+2025-03-09 17:01:32,248 - DEBUG - https://api.kraken.com:443 "POST /0/private/AddOrder HTTP/1.1" 200 32
+2025-03-09 17:01:32,248 - DEBUG - Current Stage: 2
+2025-03-09 17:01:32,249 - ERROR - Error in stagecomplete: 'result'
+Traceback (most recent call last):
+  File "/home/ubuntu/stage_crypto_bot/python/app/controllers/bot_control.py", line 197, in process
+    txid = nextbuyOrder["result"]["txid"][0]
+           ~~~~~~~~~~~~^^^^^^^^^^
+KeyError: 'result'
+2025-03-09 17:01:32,250 - INFO - Task Completed!
+2025-03-09 17:01:32,250 - DEBUG - StageKey: XRPUSD2, TRADING_PAIR_ID: 13
+2025-03-09 17:01:32,251 - DEBUG - Take Profit %: 3.0, Rebuy %: 3.0
+2025-03-09 17:01:32,251 - DEBUG - Current Capital: 500.0, Trade Usage %: 4.0
+2025-03-09 17:01:32,251 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 17:01:32,292 - DEBUG - https://api.kraken.com:443 "GET /0/public/Ticker?pair=XRPUSD HTTP/1.1" 200 None
+2025-03-09 17:01:32,294 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 17:01:32,335 - DEBUG - https://api.kraken.com:443 "POST /0/private/QueryOrders HTTP/1.1" 200 24
+2025-03-09 17:01:32,378 - INFO - Received request at /stage-complete
+2025-03-09 17:01:32,379 - DEBUG - ***************************
+Request Data: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+
+
+2025-03-09 17:01:32,379 - INFO - Processing data in background: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+2025-03-09 17:01:32,379 - INFO - Received request at /stage-complete
+2025-03-09 17:01:32,379 - DEBUG - ***************************
+Request Data: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+
+
+2025-03-09 17:01:32,380 - INFO - 127.0.0.1 - - [09/Mar/2025 17:01:32] "POST /bot/stage-complete HTTP/1.1" 200 -
+2025-03-09 17:01:32,382 - DEBUG - Symbol: XRPUSD, Hit Type: rebuy
+2025-03-09 17:01:32,383 - DEBUG - Current Stage: 2
+2025-03-09 17:01:32,383 - DEBUG - StageKey: XRPUSD2, TRADING_PAIR_ID: 13
+2025-03-09 17:01:32,385 - DEBUG - https://api.kraken.com:443 "POST /0/private/AddOrder HTTP/1.1" 200 None
+2025-03-09 17:01:32,389 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 17:01:32,390 - DEBUG - Take Profit %: 3.0, Rebuy %: 3.0
+2025-03-09 17:01:32,390 - DEBUG - Current Capital: 500.0, Trade Usage %: 4.0
+2025-03-09 17:01:32,391 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 17:01:32,452 - DEBUG - https://api.kraken.com:443 "GET /0/public/Ticker?pair=XRPUSD HTTP/1.1" 200 None
+2025-03-09 17:01:32,455 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 17:01:32,512 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 17:01:32,554 - DEBUG - https://api.kraken.com:443 "POST /0/private/AddOrder HTTP/1.1" 200 None
+2025-03-09 17:01:32,557 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 17:01:32,559 - INFO - Received request at /stage-complete
+2025-03-09 17:01:32,562 - DEBUG - ***************************
+Request Data: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+
+
+2025-03-09 17:01:32,562 - INFO - Processing data in background: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+2025-03-09 17:01:32,562 - INFO - Received request at /stage-complete
+2025-03-09 17:01:32,563 - DEBUG - ***************************
+Request Data: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+
+
+2025-03-09 17:01:32,564 - INFO - 127.0.0.1 - - [09/Mar/2025 17:01:32] "POST /bot/stage-complete HTTP/1.1" 200 -
+2025-03-09 17:01:32,564 - DEBUG - Symbol: XRPUSD, Hit Type: rebuy
+2025-03-09 17:01:32,567 - DEBUG - Current Stage: 2
+2025-03-09 17:01:32,567 - DEBUG - StageKey: XRPUSD2, TRADING_PAIR_ID: 13
+2025-03-09 17:01:32,568 - DEBUG - Take Profit %: 3.0, Rebuy %: 3.0
+2025-03-09 17:01:32,568 - DEBUG - Current Capital: 500.0, Trade Usage %: 4.0
+2025-03-09 17:01:32,574 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 17:01:32,595 - DEBUG - https://api.kraken.com:443 "POST /0/private/QueryOrders HTTP/1.1" 200 32
+2025-03-09 17:01:32,596 - ERROR - Error in stagecomplete: 'result'
+Traceback (most recent call last):
+  File "/home/ubuntu/stage_crypto_bot/python/app/controllers/bot_control.py", line 199, in process
+    orderDetail = Kraken.orderFillChecker(nextbuyOrder)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/stage_crypto_bot/python/app/exchanges/kerkaren/kraken.py", line 175, in orderFillChecker
+    if orderDetail["result"] != {}:
+       ~~~~~~~~~~~^^^^^^^^^^
+KeyError: 'result'
+2025-03-09 17:01:32,596 - INFO - Task Completed!
+2025-03-09 17:01:32,618 - DEBUG - https://api.kraken.com:443 "POST /0/private/QueryOrders HTTP/1.1" 200 None
+2025-03-09 17:01:32,635 - DEBUG - https://api.kraken.com:443 "GET /0/public/Ticker?pair=XRPUSD HTTP/1.1" 200 None
+2025-03-09 17:01:32,637 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 17:01:32,671 - DEBUG - https://api.kraken.com:443 "POST /0/private/QueryOrders HTTP/1.1" 200 None
+2025-03-09 17:01:32,728 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 17:01:32,751 - DEBUG - https://api.kraken.com:443 "POST /0/private/AddOrder HTTP/1.1" 200 None
+{'nonce': '1741539691929', 'ordertype': 'market', 'type': 'buy', 'volume': 9.367681498829041, 'pair': 'XRPUSD'}
+{'error': [], 'result': {'txid': ['OACGOT-CJCYO-LGHBOI'], 'descr': {'order': 'buy 9.36768149 XRPUSD @ market'}}}
+OACGOT-CJCYO-LGHBOI
+XRPUSDcurrentStage
+2
+currentPrice response  {'error': [], 'result': {'XXRPZUSD': {'a': ['2.13301000', '9069', '9069.000'], 'b': ['2.13300000', '50', '50.000'], 'c': ['2.13500000', '702.57611241'], 'v': ['20725797.97280197', '24116513.50100892'], 'p': ['2.22834327', '2.24396098'], 't': [21734, 28083], 'l': ['2.13301000', '2.13301000'], 'h': ['2.34888000', '2.36237000'], 'o': '2.32496000'}}}
+{'nonce': '1741539691980', 'ordertype': 'market', 'type': 'buy', 'volume': 9.367681498829041, 'pair': 'XRPUSD'}
+{'error': [], 'result': {'txid': ['OQZGY4-M3XAQ-IXEZGP'], 'descr': {'order': 'buy 9.36768149 XRPUSD @ market'}}}
+OQZGY4-M3XAQ-IXEZGP
+XRPUSDcurrentStage
+2
+{'error': [], 'result': {}}
+{'error': [], 'result': {}}
+{'error': ['EAPI:Invalid nonce']}
+XRPUSDcurrentStage
+2
+{'error': [], 'result': {'txid': ['O4PAGE-I6ZX2-S2DR6Q'], 'descr': {'order': 'buy 9.36768149 XRPUSD @ market'}}}
+O4PAGE-I6ZX2-S2DR6Q
+currentPrice response  {'error': [], 'result': {'XXRPZUSD': {'a': ['2.13301000', '9069', '9069.000'], 'b': ['2.13300000', '50', '50.000'], 'c': ['2.13500000', '702.57611241'], 'v': ['20725797.97280197', '24116513.50100892'], 'p': ['2.22834327', '2.24396098'], 't': [21734, 28083], 'l': ['2.13301000', '2.13301000'], 'h': ['2.34888000', '2.36237000'], 'o': '2.32496000'}}}
+{'nonce': '1741539692124', 'ordertype': 'market', 'type': 'buy', 'volume': 9.367681498829041, 'pair': 'XRPUSD'}
+{'error': [], 'result': {}}
+{'error': [], 'result': {}}
+{'error': [], 'result': {}}
+{'error': [], 'result': {}}
+currentPrice response  {'error': [], 'result': {'XXRPZUSD': {'a': ['2.13301000', '9069', '9069.000'], 'b': ['2.13300000', '50', '50.000'], 'c': ['2.13500000', '702.57611241'], 'v': ['20725797.97280197', '24116513.50100892'], 'p': ['2.22834327', '2.24396098'], 't': [21734, 28083], 'l': ['2.13301000', '2.13301000'], 'h': ['2.34888000', '2.36237000'], 'o': '2.32496000'}}}
+{'nonce': '1741539692168', 'ordertype': 'market', 'type': 'buy', 'volume': 9.367681498829041, 'pair': 'XRPUSD'}
+{'error': [], 'result': {'txid': ['OMNQ3M-ODFO5-S6EGPA'], 'descr': {'order': 'buy 9.36768149 XRPUSD @ market'}}}
+OMNQ3M-ODFO5-S6EGPA
+XRPUSDcurrentStage
+2
+{'error': ['EAPI:Invalid nonce']}
+currentPrice response  {'error': [], 'result': {'XXRPZUSD': {'a': ['2.13301000', '9069', '9069.000'], 'b': ['2.13300000', '50', '50.000'], 'c': ['2.13500000', '702.57611241'], 'v': ['20725797.97280197', '24116513.50100892'], 'p': ['2.22834327', '2.24396098'], 't': [21734, 28083], 'l': ['2.13301000', '2.13301000'], 'h': ['2.34888000', '2.36237000'], 'o': '2.32496000'}}}
+{'nonce': '1741539692293', 'ordertype': 'market', 'type': 'buy', 'volume': 9.367681498829041, 'pair': 'XRPUSD'}
+{'error': [], 'result': {}}
+{'error': [], 'result': {}}
+XRPUSDcurrentStage
+2
+{'error': [], 'result': {'txid': ['OWEHJO-WGTOE-VMCR6A'], 'descr': {'order': 'buy 9.36768149 XRPUSD @ market'}}}
+OWEHJO-WGTOE-VMCR6A
+currentPrice response  {'error': [], 'result': {'XXRPZUSD': {'a': ['2.13301000', '9069', '9069.000'], 'b': ['2.13300000', '50', '50.000'], 'c': ['2.13500000', '702.57611241'], 'v': ['20725797.97280197', '24116513.50100892'], 'p': ['2.22834327', '2.24396098'], 't': [21734, 28083], 'l': ['2.13301000', '2.13301000'], 'h': ['2.34888000', '2.36237000'], 'o': '2.32496000'}}}
+{'nonce': '1741539692454', 'ordertype': 'market', 'type': 'buy', 'volume': 9.367681498829041, 'pair': 'XRPUSD'}
+O7PWU4-KUJAT-ATJUKH
+{'error': [], 'result': {'txid': ['ONSG4K-SQMYJ-KIN2MD'], 'descr': {'order': 'buy 9.36768149 XRPUSD @ market'}}}
+ONSG4K-SQMYJ-KIN2MD
+XRPUSDcurrentStage
+2
+{'error': ['EAPI:Invalid nonce']}
+{'error': ['EAPI:Invalid nonce']}
+{'error': [], 'result': {'O7PWU4-KUJAT-ATJUKH': {'refid': None, 'userref': 0, 'status': 'closed', 'opentm': 1741539691.396986, 'starttm': 0, 'expiretm': 0, 'descr': {'pair': 'XRPUSD', 'aclass': 'forex', 'type': 'buy', 'ordertype': 'market', 'price': '0', 'price2': '0', 'leverage': 'none', 'order': 'buy 9.36768149 XRPUSD @ market', 'close': ''}, 'vol': '9.36768149', 'vol_exec': '9.36768149', 'cost': '19.97451989', 'fee': '0.06991082', 'price': '2.13228', 'stopprice': '0.00000000', 'limitprice': '0.00000000', 'misc': '', 'oflags': 'fciq', 'reason': None, 'closetm': 1741539691.397024}}}
+{'error': [], 'result': {'O7PWU4-KUJAT-ATJUKH': {'refid': None, 'userref': 0, 'status': 'closed', 'opentm': 1741539691.396986, 'starttm': 0, 'expiretm': 0, 'descr': {'pair': 'XRPUSD', 'aclass': 'forex', 'type': 'buy', 'ordertype': 'market', 'price': '0', 'price2': '0', 'leverage': 'none', 'order': 'buy 9.36768149 XRPUSD @ market', 'close': ''}, 'vol': '9.36768149', 'vol_exec': '9.36768149', 'cost': '19.97451989', 'fee': '0.06991082', 'price': '2.13228', 'stopprice': '0.00000000', 'limitprice': '0.00000000', 'misc': '', 'oflags': 'fciq', 'reason': None, 'closetm': 1741539691.397024}}}
+*************************************
+{'O7PWU4-KUJAT-ATJUKH': {'refid': None, 'userref': 0, 'status': 'closed', 'opentm': 1741539691.396986, 'starttm': 0, 'expiretm': 0, 'descr': {'pair': 'XRPUSD', 'aclass': 'forex', 'type': 'buy', 'ordertype': 'market', 'price': '0', 'price2': '0', 'leverage': 'none', 'order': 'buy 9.36768149 XRPUSD @ market', 'close': ''}, 'vol': '9.36768149', 'vol_exec': '9.36768149', 'cost': '19.97451989', 'fee': '0.06991082', 'price': '2.13228', 'stopprice': '0.00000000', 'limitprice': '0.00000000', 'misc': '', 'oflags': 'fciq', 'reason': None, 'closetm': 1741539691.397024}}
+Current Capital = 200.83894556000013 and cost = 19.97451989
+test2
+9.36768149
+<class 'float'>
+currentPrice response  {'error': [], 'result': {'XXRPZUSD': {'a': ['2.13301000', '9069', '9069.000'], 'b': ['2.13300000', '50', '50.000'], 'c': ['2.13500000', '702.57611241'], 'v': ['20725797.97280197', '24116513.50100892'], 'p': ['2.22834327', '2.24396098'], 't': [21734, 28083], 'l': ['2.13301000', '2.13301000'], 'h': ['2.34888000', '2.36237000'], 'o': '2.32496000'}}}
+{'nonce': '1741539692637', 'ordertype': 'market', 'type': 'buy', 'volume': 9.367681498829041, 'pair': 'XRPUSD'}
+waiting for 10 secounds
+{'error': [], 'result': {'ONSG4K-SQMYJ-KIN2MD': {'refid': None, 'userref': 0, 'status': 'closed', 'opentm': 1741539692.52777, 'starttm': 0, 'expiretm': 0, 'descr': {'pair': 'XRPUSD', 'aclass': 'forex', 'type': 'buy', 'ordertype': 'market', 'price': '0', 'price2': '0', 'leverage': 'none', 'order': 'buy 9.36768149 XRPUSD @ market', 'close': ''}, 'vol': '9.36768149', 'vol_exec': '9.36768149', 'cost': '19.96149881', 'fee': '0.06986525', 'price': '2.13088', 'stopprice': '0.00000000', 'limitprice': '0.00000000', 'misc': '', 'oflags': 'fciq', 'reason': None, 'closetm': 1741539692.527779}}}
+{'error': [], 'result': {'ONSG4K-SQMYJ-KIN2MD': {'refid': None, 'userref': 0, 'status': 'closed', 'opentm': 1741539692.52777, 'starttm': 0, 'expiretm': 0, 'descr': {'pair': 'XRPUSD', 'aclass': 'forex', 'type': 'buy', 'ordertype': 'market', 'price': '0', 'price2': '0', 'leverage': 'none', 'order': 'buy 9.36768149 XRPUSD @ market', 'close': ''}, 'vol': '9.36768149', 'vol_exec': '9.36768149', 'cost': '19.96149881', 'fee': '0.06986525', 'price': '2.13088', 'stopprice': '0.00000000', 'limitprice': '0.00000000', 'misc': '', 'oflags': 'fciq', 'reason': None, 'closetm': 1741539692.527779}}}
+*************************************
+{'ONSG4K-SQMYJ-KIN2MD': {'refid': None, 'userref': 0, 'status': 'closed', 'opentm': 1741539692.52777, 'starttm': 0, 'expiretm': 0, 'descr': {'pair': 'XRPUSD', 'aclass': 'forex', 'type': 'buy', 'ordertype': 'market', 'price': '0', 'price2': '0', 'leverage': 'none', 'order': 'buy 9.36768149 XRPUSD @ market', 'close': ''}, 'vol': '9.36768149', 'vol_exec': '9.36768149', 'cost': '19.96149881', 'fee': '0.06986525', 'price': '2.13088', 'stopprice': '0.00000000', 'limitprice': '0.00000000', 'misc': '', 'oflags': 'fciq', 'reason': None, 'closetm': 1741539692.527779}}
+Current Capital = 180.86442567000012 and cost = 19.96149881
+test2
+9.36768149
+<class 'float'>
+waiting for 10 secounds
+OCZZVO-RSRXM-2QT32Z
+2025-03-09 17:01:32,754 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 17:01:32,839 - DEBUG - https://api.kraken.com:443 "POST /0/private/QueryOrders HTTP/1.1" 200 None
+2025-03-09 17:01:32,851 - DEBUG - https://api.kraken.com:443 "POST /0/private/QueryOrders HTTP/1.1" 200 None
+2025-03-09 17:01:32,890 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 17:01:32,978 - DEBUG - https://api.kraken.com:443 "POST /0/private/QueryOrders HTTP/1.1" 200 None
+2025-03-09 17:01:33,045 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 17:01:33,129 - DEBUG - https://api.kraken.com:443 "POST /0/private/QueryOrders HTTP/1.1" 200 None
+2025-03-09 17:01:33,134 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 17:01:33,153 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 17:01:33,243 - DEBUG - https://api.kraken.com:443 "POST /0/private/QueryOrders HTTP/1.1" 200 None
+{'error': [], 'result': {'txid': ['OXJR5G-VIUZU-ADD5TH'], 'descr': {'order': 'buy 9.36768149 XRPUSD @ market'}}}
+OXJR5G-VIUZU-ADD5TH
+{'error': [], 'result': {'OCZZVO-RSRXM-2QT32Z': {'refid': None, 'userref': 0, 'status': 'closed', 'opentm': 1741539691.595878, 'starttm': 0, 'expiretm': 0, 'descr': {'pair': 'XRPUSD', 'aclass': 'forex', 'type': 'buy', 'ordertype': 'market', 'price': '0', 'price2': '0', 'leverage': 'none', 'order': 'buy 9.36768149 XRPUSD @ market', 'close': ''}, 'vol': '9.36768149', 'vol_exec': '9.36768149', 'cost': '19.97451989', 'fee': '0.06991082', 'price': '2.13228', 'stopprice': '0.00000000', 'limitprice': '0.00000000', 'misc': '', 'oflags': 'fciq', 'reason': None, 'closetm': 1741539691.595935}}}
+{'error': [], 'result': {'OCZZVO-RSRXM-2QT32Z': {'refid': None, 'userref': 0, 'status': 'closed', 'opentm': 1741539691.595878, 'starttm': 0, 'expiretm': 0, 'descr': {'pair': 'XRPUSD', 'aclass': 'forex', 'type': 'buy', 'ordertype': 'market', 'price': '0', 'price2': '0', 'leverage': 'none', 'order': 'buy 9.36768149 XRPUSD @ market', 'close': ''}, 'vol': '9.36768149', 'vol_exec': '9.36768149', 'cost': '19.97451989', 'fee': '0.06991082', 'price': '2.13228', 'stopprice': '0.00000000', 'limitprice': '0.00000000', 'misc': '', 'oflags': 'fciq', 'reason': None, 'closetm': 1741539691.595935}}}
+*************************************
+{'OCZZVO-RSRXM-2QT32Z': {'refid': None, 'userref': 0, 'status': 'closed', 'opentm': 1741539691.595878, 'starttm': 0, 'expiretm': 0, 'descr': {'pair': 'XRPUSD', 'aclass': 'forex', 'type': 'buy', 'ordertype': 'market', 'price': '0', 'price2': '0', 'leverage': 'none', 'order': 'buy 9.36768149 XRPUSD @ market', 'close': ''}, 'vol': '9.36768149', 'vol_exec': '9.36768149', 'cost': '19.97451989', 'fee': '0.06991082', 'price': '2.13228', 'stopprice': '0.00000000', 'limitprice': '0.00000000', 'misc': '', 'oflags': 'fciq', 'reason': None, 'closetm': 1741539691.595935}}
+Current Capital = 160.90292686000012 and cost = 19.97451989
+{'error': [], 'result': {'OXJR5G-VIUZU-ADD5TH': {'refid': None, 'userref': 0, 'status': 'open', 'opentm': 1741539692.724711, 'starttm': 0, 'expiretm': 0, 'descr': {'pair': 'XRPUSD', 'aclass': 'forex', 'type': 'buy', 'ordertype': 'market', 'price': '0', 'price2': '0', 'leverage': 'none', 'order': 'buy 9.36768149 XRPUSD @ market', 'close': ''}, 'vol': '9.36768149', 'vol_exec': '9.36768149', 'cost': '19.96149881', 'fee': '0.06986525', 'price': '2.13088', 'stopprice': '0.00000000', 'limitprice': '0.00000000', 'misc': '', 'oflags': 'fciq', 'reason': None}}}
+{'error': [], 'result': {'OXJR5G-VIUZU-ADD5TH': {'refid': None, 'userref': 0, 'status': 'open', 'opentm': 1741539692.724711, 'starttm': 0, 'expiretm': 0, 'descr': {'pair': 'XRPUSD', 'aclass': 'forex', 'type': 'buy', 'ordertype': 'market', 'price': '0', 'price2': '0', 'leverage': 'none', 'order': 'buy 9.36768149 XRPUSD @ market', 'close': ''}, 'vol': '9.36768149', 'vol_exec': '9.36768149', 'cost': '19.96149881', 'fee': '0.06986525', 'price': '2.13088', 'stopprice': '0.00000000', 'limitprice': '0.00000000', 'misc': '', 'oflags': 'fciq', 'reason': None}}}
+*************************************
+test2
+9.36768149
+<class 'float'>
+waiting for 10 secounds
+O2MVOK-WEDUT-5MHBCM
+{'error': [], 'result': {'O2MVOK-WEDUT-5MHBCM': {'refid': None, 'userref': 0, 'status': 'closed', 'opentm': 1741539691.7713, 'starttm': 0, 'expiretm': 0, 'descr': {'pair': 'XRPUSD', 'aclass': 'forex', 'type': 'buy', 'ordertype': 'market', 'price': '0', 'price2': '0', 'leverage': 'none', 'order': 'buy 9.36768149 XRPUSD @ market', 'close': ''}, 'vol': '9.36768149', 'vol_exec': '9.36768149', 'cost': '19.97451989', 'fee': '0.06991082', 'price': '2.13228', 'stopprice': '0.00000000', 'limitprice': '0.00000000', 'misc': '', 'oflags': 'fciq', 'reason': None, 'closetm': 1741539691.771341}}}
+{'error': [], 'result': {'O2MVOK-WEDUT-5MHBCM': {'refid': None, 'userref': 0, 'status': 'closed', 'opentm': 1741539691.7713, 'starttm': 0, 'expiretm': 0, 'descr': {'pair': 'XRPUSD', 'aclass': 'forex', 'type': 'buy', 'ordertype': 'market', 'price': '0', 'price2': '0', 'leverage': 'none', 'order': 'buy 9.36768149 XRPUSD @ market', 'close': ''}, 'vol': '9.36768149', 'vol_exec': '9.36768149', 'cost': '19.97451989', 'fee': '0.06991082', 'price': '2.13228', 'stopprice': '0.00000000', 'limitprice': '0.00000000', 'misc': '', 'oflags': 'fciq', 'reason': None, 'closetm': 1741539691.771341}}}
+*************************************
+{'O2MVOK-WEDUT-5MHBCM': {'refid': None, 'userref': 0, 'status': 'closed', 'opentm': 1741539691.7713, 'starttm': 0, 'expiretm': 0, 'descr': {'pair': 'XRPUSD', 'aclass': 'forex', 'type': 'buy', 'ordertype': 'market', 'price': '0', 'price2': '0', 'leverage': 'none', 'order': 'buy 9.36768149 XRPUSD @ market', 'close': ''}, 'vol': '9.36768149', 'vol_exec': '9.36768149', 'cost': '19.97451989', 'fee': '0.06991082', 'price': '2.13228', 'stopprice': '0.00000000', 'limitprice': '0.00000000', 'misc': '', 'oflags': 'fciq', 'reason': None, 'closetm': 1741539691.771341}}
+Current Capital = 140.9284069700001 and cost = 19.97451989
+test2
+9.36768149
+<class 'float'>
+waiting for 10 secounds
+OACGOT-CJCYO-LGHBOI
+{'error': [], 'result': {'OACGOT-CJCYO-LGHBOI': {'refid': None, 'userref': 0, 'status': 'closed', 'opentm': 1741539691.91521, 'starttm': 0, 'expiretm': 0, 'descr': {'pair': 'XRPUSD', 'aclass': 'forex', 'type': 'buy', 'ordertype': 'market', 'price': '0', 'price2': '0', 'leverage': 'none', 'order': 'buy 9.36768149 XRPUSD @ market', 'close': ''}, 'vol': '9.36768149', 'vol_exec': '9.36768149', 'cost': '19.96149881', 'fee': '0.06986525', 'price': '2.13088', 'stopprice': '0.00000000', 'limitprice': '0.00000000', 'misc': '', 'oflags': 'fciq', 'reason': None, 'closetm': 1741539691.915227}}}
+{'error': [], 'result': {'OACGOT-CJCYO-LGHBOI': {'refid': None, 'userref': 0, 'status': 'closed', 'opentm': 1741539691.91521, 'starttm': 0, 'expiretm': 0, 'descr': {'pair': 'XRPUSD', 'aclass': 'forex', 'type': 'buy', 'ordertype': 'market', 'price': '0', 'price2': '0', 'leverage': 'none', 'order': 'buy 9.36768149 XRPUSD @ market', 'close': ''}, 'vol': '9.36768149', 'vol_exec': '9.36768149', 'cost': '19.96149881', 'fee': '0.06986525', 'price': '2.13088', 'stopprice': '0.00000000', 'limitprice': '0.00000000', 'misc': '', 'oflags': 'fciq', 'reason': None, 'closetm': 1741539691.915227}}}
+*************************************
+{'OACGOT-CJCYO-LGHBOI': {'refid': None, 'userref': 0, 'status': 'closed', 'opentm': 1741539691.91521, 'starttm': 0, 'expiretm': 0, 'descr': {'pair': 'XRPUSD', 'aclass': 'forex', 'type': 'buy', 'ordertype': 'market', 'price': '0', 'price2': '0', 'leverage': 'none', 'order': 'buy 9.36768149 XRPUSD @ market', 'close': ''}, 'vol': '9.36768149', 'vol_exec': '9.36768149', 'cost': '19.96149881', 'fee': '0.06986525', 'price': '2.13088', 'stopprice': '0.00000000', 'limitprice': '0.00000000', 'misc': '', 'oflags': 'fciq', 'reason': None, 'closetm': 1741539691.915227}}
+Current Capital = 120.95388708000011 and cost = 19.96149881
+OQZGY4-M3XAQ-IXEZGP
+test2
+9.36768149
+<class 'float'>
+waiting for 10 secounds
+O4PAGE-I6ZX2-S2DR6Q
+{'error': [], 'result': {'O4PAGE-I6ZX2-S2DR6Q': {'refid': None, 'userref': 0, 'status': 'closed', 'opentm': 1741539692.041446, 'starttm': 0, 'expiretm': 0, 'descr': {'pair': 'XRPUSD', 'aclass': 'forex', 'type': 'buy', 'ordertype': 'market', 'price': '0', 'price2': '0', 'leverage': 'none', 'order': 'buy 9.36768149 XRPUSD @ market', 'close': ''}, 'vol': '9.36768149', 'vol_exec': '9.36768149', 'cost': '19.96149881', 'fee': '0.06986525', 'price': '2.13088', 'stopprice': '0.00000000', 'limitprice': '0.00000000', 'misc': '', 'oflags': 'fciq', 'reason': None, 'closetm': 1741539692.041459}}}
+2025-03-09 17:01:33,318 - DEBUG - https://api.kraken.com:443 "POST /0/private/QueryOrders HTTP/1.1" 200 32
+2025-03-09 17:01:33,319 - ERROR - Error in stagecomplete: 'result'
+Traceback (most recent call last):
+  File "/home/ubuntu/stage_crypto_bot/python/app/controllers/bot_control.py", line 199, in process
+    orderDetail = Kraken.orderFillChecker(nextbuyOrder)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/stage_crypto_bot/python/app/exchanges/kerkaren/kraken.py", line 175, in orderFillChecker
+    if orderDetail["result"] != {}:
+       ~~~~~~~~~~~^^^^^^^^^^
+KeyError: 'result'
+2025-03-09 17:01:33,320 - INFO - Task Completed!
+2025-03-09 17:01:33,338 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 17:01:33,445 - DEBUG - https://api.kraken.com:443 "POST /0/private/QueryOrders HTTP/1.1" 200 None
+2025-03-09 17:01:33,854 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 17:01:33,942 - DEBUG - https://api.kraken.com:443 "POST /0/private/QueryOrders HTTP/1.1" 200 None
+2025-03-09 17:01:42,653 - INFO - Stage completion process successful
+2025-03-09 17:01:42,653 - INFO - Task Completed!
+2025-03-09 17:01:42,692 - INFO - Stage completion process successful
+2025-03-09 17:01:42,692 - INFO - Task Completed!
+2025-03-09 17:01:42,865 - INFO - Stage completion process successful
+2025-03-09 17:01:42,866 - INFO - Task Completed!
+2025-03-09 17:01:42,998 - INFO - Stage completion process successful
+2025-03-09 17:01:42,998 - INFO - Task Completed!
+2025-03-09 17:01:43,149 - INFO - Stage completion process successful
+2025-03-09 17:01:43,149 - INFO - Task Completed!
+2025-03-09 17:01:43,261 - INFO - Stage completion process successful
+2025-03-09 17:01:43,261 - INFO - Task Completed!
+2025-03-09 17:01:43,475 - INFO - Stage completion process successful
+2025-03-09 17:01:43,475 - INFO - Task Completed!
+2025-03-09 17:01:43,961 - INFO - Stage completion process successful
+2025-03-09 17:01:43,962 - INFO - Task Completed!
+2025-03-09 20:32:22,652 - INFO - Received request at /stage-complete
+2025-03-09 20:32:22,653 - DEBUG - ***************************
+Request Data: {'hitType': 'TakeProfit', 'symbol': 'XRPUSD'}
+
+
+2025-03-09 20:32:22,653 - INFO - Processing data in background: {'hitType': 'TakeProfit', 'symbol': 'XRPUSD'}
+2025-03-09 20:32:22,654 - INFO - Received request at /stage-complete
+2025-03-09 20:32:22,654 - DEBUG - ***************************
+Request Data: {'hitType': 'TakeProfit', 'symbol': 'XRPUSD'}
+
+
+2025-03-09 20:32:22,654 - INFO - 127.0.0.1 - - [09/Mar/2025 20:32:22] "POST /bot/stage-complete HTTP/1.1" 200 -
+2025-03-09 20:32:22,654 - DEBUG - Symbol: XRPUSD, Hit Type: TakeProfit
+2025-03-09 20:32:22,655 - DEBUG - Current Stage: 3
+2025-03-09 20:32:22,655 - DEBUG - StageKey: XRPUSD3, TRADING_PAIR_ID: 13
+2025-03-09 20:32:22,656 - DEBUG - Take Profit %: 3.0, Rebuy %: 3.0
+2025-03-09 20:32:22,656 - DEBUG - Current Capital: 500.0, Trade Usage %: 4.0
+2025-03-09 20:32:22,657 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 20:32:22,787 - INFO - Received request at /stage-complete
+2025-03-09 20:32:22,787 - DEBUG - https://api.kraken.com:443 "POST /0/private/AddOrder HTTP/1.1" 200 None
+2025-03-09 20:32:22,787 - DEBUG - ***************************
+Request Data: {'hitType': 'TakeProfit', 'symbol': 'XRPUSD'}
+
+
+2025-03-09 20:32:22,788 - INFO - Processing data in background: {'hitType': 'TakeProfit', 'symbol': 'XRPUSD'}
+2025-03-09 20:32:22,789 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 20:32:22,790 - INFO - 127.0.0.1 - - [09/Mar/2025 20:32:22] "POST /bot/stage-complete HTTP/1.1" 200 -
+2025-03-09 20:32:22,790 - INFO - Received request at /stage-complete
+2025-03-09 20:32:22,791 - DEBUG - ***************************
+Request Data: {'hitType': 'TakeProfit', 'symbol': 'XRPUSD'}
+
+
+2025-03-09 20:32:22,791 - DEBUG - Symbol: XRPUSD, Hit Type: TakeProfit
+2025-03-09 20:32:22,791 - DEBUG - Current Stage: 3
+2025-03-09 20:32:22,792 - DEBUG - StageKey: XRPUSD3, TRADING_PAIR_ID: 13
+2025-03-09 20:32:22,792 - DEBUG - Take Profit %: 3.0, Rebuy %: 3.0
+2025-03-09 20:32:22,792 - DEBUG - Current Capital: 500.0, Trade Usage %: 4.0
+2025-03-09 20:32:22,793 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 20:32:22,876 - INFO - Received request at /stage-complete
+2025-03-09 20:32:22,877 - DEBUG - https://api.kraken.com:443 "POST /0/private/AddOrder HTTP/1.1" 200 None
+2025-03-09 20:32:22,877 - DEBUG - ***************************
+Request Data: {'hitType': 'TakeProfit', 'symbol': 'XRPUSD'}
+
+
+2025-03-09 20:32:22,878 - INFO - Processing data in background: {'hitType': 'TakeProfit', 'symbol': 'XRPUSD'}
+2025-03-09 20:32:22,879 - INFO - Received request at /stage-complete
+2025-03-09 20:32:22,879 - DEBUG - ***************************
+Request Data: {'hitType': 'TakeProfit', 'symbol': 'XRPUSD'}
+
+
+2025-03-09 20:32:22,879 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 20:32:22,879 - INFO - 127.0.0.1 - - [09/Mar/2025 20:32:22] "POST /bot/stage-complete HTTP/1.1" 200 -
+2025-03-09 20:32:22,880 - DEBUG - Symbol: XRPUSD, Hit Type: TakeProfit
+2025-03-09 20:32:22,881 - DEBUG - Current Stage: 3
+2025-03-09 20:32:22,881 - DEBUG - StageKey: XRPUSD3, TRADING_PAIR_ID: 13
+2025-03-09 20:32:22,882 - DEBUG - Take Profit %: 3.0, Rebuy %: 3.0
+2025-03-09 20:32:22,882 - DEBUG - Current Capital: 500.0, Trade Usage %: 4.0
+2025-03-09 20:32:22,883 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 20:32:22,900 - DEBUG - https://api.kraken.com:443 "POST /0/private/QueryOrders HTTP/1.1" 200 32
+2025-03-09 20:32:22,901 - ERROR - Error in stagecomplete: 'result'
+Traceback (most recent call last):
+  File "/home/ubuntu/stage_crypto_bot/python/app/controllers/bot_control.py", line 159, in process
+    orderDetail = Kraken.orderFillChecker(tpOrder)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/stage_crypto_bot/python/app/exchanges/kerkaren/kraken.py", line 175, in orderFillChecker
+    if orderDetail["result"] != {}:
+       ~~~~~~~~~~~^^^^^^^^^^
+KeyError: 'result'
+2025-03-09 20:32:22,901 - INFO - Task Completed!
+2025-03-09 20:32:22,964 - INFO - Received request at /stage-complete
+2025-03-09 20:32:22,965 - DEBUG - ***************************
+Request Data: {'hitType': 'TakeProfit', 'symbol': 'XRPUSD'}
+
+
+2025-03-09 20:32:22,965 - INFO - Processing data in background: {'hitType': 'TakeProfit', 'symbol': 'XRPUSD'}
+2025-03-09 20:32:22,966 - INFO - Received request at /stage-complete
+2025-03-09 20:32:22,966 - DEBUG - ***************************
+Request Data: {'hitType': 'TakeProfit', 'symbol': 'XRPUSD'}
+
+
+2025-03-09 20:32:22,965 - INFO - 127.0.0.1 - - [09/Mar/2025 20:32:22] "POST /bot/stage-complete HTTP/1.1" 200 -
+2025-03-09 20:32:22,966 - DEBUG - Symbol: XRPUSD, Hit Type: TakeProfit
+2025-03-09 20:32:22,966 - DEBUG - Current Stage: 3
+2025-03-09 20:32:22,967 - DEBUG - StageKey: XRPUSD3, TRADING_PAIR_ID: 13
+2025-03-09 20:32:22,968 - DEBUG - https://api.kraken.com:443 "POST /0/private/QueryOrders HTTP/1.1" 200 32
+2025-03-09 20:32:22,968 - ERROR - Error in stagecomplete: 'result'
+Traceback (most recent call last):
+  File "/home/ubuntu/stage_crypto_bot/python/app/controllers/bot_control.py", line 159, in process
+    orderDetail = Kraken.orderFillChecker(tpOrder)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/stage_crypto_bot/python/app/exchanges/kerkaren/kraken.py", line 175, in orderFillChecker
+    if orderDetail["result"] != {}:
+       ~~~~~~~~~~~^^^^^^^^^^
+KeyError: 'result'
+2025-03-09 20:32:22,969 - INFO - Task Completed!
+2025-03-09 20:32:22,969 - DEBUG - Take Profit %: 3.0, Rebuy %: 3.0
+2025-03-09 20:32:22,969 - DEBUG - Current Capital: 500.0, Trade Usage %: 4.0
+2025-03-09 20:32:22,970 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 20:32:22,971 - DEBUG - https://api.kraken.com:443 "POST /0/private/AddOrder HTTP/1.1" 200 None
+2025-03-09 20:32:22,973 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 20:32:23,043 - INFO - Received request at /stage-complete
+2025-03-09 20:32:23,044 - DEBUG - ***************************
+Request Data: {'hitType': 'TakeProfit', 'symbol': 'XRPUSD'}
+
+
+2025-03-09 20:32:23,044 - INFO - Processing data in background: {'hitType': 'TakeProfit', 'symbol': 'XRPUSD'}
+2025-03-09 20:32:23,046 - INFO - Received request at /stage-complete
+2025-03-09 20:32:23,046 - DEBUG - ***************************
+Request Data: {'hitType': 'TakeProfit', 'symbol': 'XRPUSD'}
+
+
+2025-03-09 20:32:23,045 - INFO - 127.0.0.1 - - [09/Mar/2025 20:32:23] "POST /bot/stage-complete HTTP/1.1" 200 -
+2025-03-09 20:32:23,046 - DEBUG - Symbol: XRPUSD, Hit Type: TakeProfit
+2025-03-09 20:32:23,047 - DEBUG - Current Stage: 3
+2025-03-09 20:32:23,047 - DEBUG - StageKey: XRPUSD3, TRADING_PAIR_ID: 13
+2025-03-09 20:32:23,048 - DEBUG - Take Profit %: 3.0, Rebuy %: 3.0
+2025-03-09 20:32:23,048 - DEBUG - Current Capital: 500.0, Trade Usage %: 4.0
+2025-03-09 20:32:23,049 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 20:32:23,053 - DEBUG - https://api.kraken.com:443 "POST /0/private/AddOrder HTTP/1.1" 200 None
+2025-03-09 20:32:23,056 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 20:32:23,058 - DEBUG - https://api.kraken.com:443 "POST /0/private/QueryOrders HTTP/1.1" 200 None
+{'error': [], 'result': {'O4PAGE-I6ZX2-S2DR6Q': {'refid': None, 'userref': 0, 'status': 'closed', 'opentm': 1741539692.041446, 'starttm': 0, 'expiretm': 0, 'descr': {'pair': 'XRPUSD', 'aclass': 'forex', 'type': 'buy', 'ordertype': 'market', 'price': '0', 'price2': '0', 'leverage': 'none', 'order': 'buy 9.36768149 XRPUSD @ market', 'close': ''}, 'vol': '9.36768149', 'vol_exec': '9.36768149', 'cost': '19.96149881', 'fee': '0.06986525', 'price': '2.13088', 'stopprice': '0.00000000', 'limitprice': '0.00000000', 'misc': '', 'oflags': 'fciq', 'reason': None, 'closetm': 1741539692.041459}}}
+*************************************
+{'O4PAGE-I6ZX2-S2DR6Q': {'refid': None, 'userref': 0, 'status': 'closed', 'opentm': 1741539692.041446, 'starttm': 0, 'expiretm': 0, 'descr': {'pair': 'XRPUSD', 'aclass': 'forex', 'type': 'buy', 'ordertype': 'market', 'price': '0', 'price2': '0', 'leverage': 'none', 'order': 'buy 9.36768149 XRPUSD @ market', 'close': ''}, 'vol': '9.36768149', 'vol_exec': '9.36768149', 'cost': '19.96149881', 'fee': '0.06986525', 'price': '2.13088', 'stopprice': '0.00000000', 'limitprice': '0.00000000', 'misc': '', 'oflags': 'fciq', 'reason': None, 'closetm': 1741539692.041459}}
+Current Capital = 100.99238827000012 and cost = 19.96149881
+test2
+9.36768149
+<class 'float'>
+waiting for 10 secounds
+{'error': ['EAPI:Invalid nonce']}
+{'error': ['EAPI:Invalid nonce']}
+OMNQ3M-ODFO5-S6EGPA
+{'error': [], 'result': {'OMNQ3M-ODFO5-S6EGPA': {'refid': None, 'userref': 0, 'status': 'closed', 'opentm': 1741539692.218468, 'starttm': 0, 'expiretm': 0, 'descr': {'pair': 'XRPUSD', 'aclass': 'forex', 'type': 'buy', 'ordertype': 'market', 'price': '0', 'price2': '0', 'leverage': 'none', 'order': 'buy 9.36768149 XRPUSD @ market', 'close': ''}, 'vol': '9.36768149', 'vol_exec': '9.36768149', 'cost': '19.96149881', 'fee': '0.06986525', 'price': '2.13088', 'stopprice': '0.00000000', 'limitprice': '0.00000000', 'misc': '', 'oflags': 'fciq', 'reason': None, 'closetm': 1741539692.2185}}}
+{'error': [], 'result': {'OMNQ3M-ODFO5-S6EGPA': {'refid': None, 'userref': 0, 'status': 'closed', 'opentm': 1741539692.218468, 'starttm': 0, 'expiretm': 0, 'descr': {'pair': 'XRPUSD', 'aclass': 'forex', 'type': 'buy', 'ordertype': 'market', 'price': '0', 'price2': '0', 'leverage': 'none', 'order': 'buy 9.36768149 XRPUSD @ market', 'close': ''}, 'vol': '9.36768149', 'vol_exec': '9.36768149', 'cost': '19.96149881', 'fee': '0.06986525', 'price': '2.13088', 'stopprice': '0.00000000', 'limitprice': '0.00000000', 'misc': '', 'oflags': 'fciq', 'reason': None, 'closetm': 1741539692.2185}}}
+*************************************
+{'OMNQ3M-ODFO5-S6EGPA': {'refid': None, 'userref': 0, 'status': 'closed', 'opentm': 1741539692.218468, 'starttm': 0, 'expiretm': 0, 'descr': {'pair': 'XRPUSD', 'aclass': 'forex', 'type': 'buy', 'ordertype': 'market', 'price': '0', 'price2': '0', 'leverage': 'none', 'order': 'buy 9.36768149 XRPUSD @ market', 'close': ''}, 'vol': '9.36768149', 'vol_exec': '9.36768149', 'cost': '19.96149881', 'fee': '0.06986525', 'price': '2.13088', 'stopprice': '0.00000000', 'limitprice': '0.00000000', 'misc': '', 'oflags': 'fciq', 'reason': None, 'closetm': 1741539692.2185}}
+Current Capital = 81.03088946000013 and cost = 19.96149881
+test2
+9.36768149
+<class 'float'>
+waiting for 10 secounds
+OXJR5G-VIUZU-ADD5TH
+{'error': [], 'result': {'OXJR5G-VIUZU-ADD5TH': {'refid': None, 'userref': 0, 'status': 'closed', 'opentm': 1741539692.724711, 'starttm': 0, 'expiretm': 0, 'descr': {'pair': 'XRPUSD', 'aclass': 'forex', 'type': 'buy', 'ordertype': 'market', 'price': '0', 'price2': '0', 'leverage': 'none', 'order': 'buy 9.36768149 XRPUSD @ market', 'close': ''}, 'vol': '9.36768149', 'vol_exec': '9.36768149', 'cost': '19.96149881', 'fee': '0.06986525', 'price': '2.13088', 'stopprice': '0.00000000', 'limitprice': '0.00000000', 'misc': '', 'oflags': 'fciq', 'reason': None, 'closetm': 1741539692.724766}}}
+{'error': [], 'result': {'OXJR5G-VIUZU-ADD5TH': {'refid': None, 'userref': 0, 'status': 'closed', 'opentm': 1741539692.724711, 'starttm': 0, 'expiretm': 0, 'descr': {'pair': 'XRPUSD', 'aclass': 'forex', 'type': 'buy', 'ordertype': 'market', 'price': '0', 'price2': '0', 'leverage': 'none', 'order': 'buy 9.36768149 XRPUSD @ market', 'close': ''}, 'vol': '9.36768149', 'vol_exec': '9.36768149', 'cost': '19.96149881', 'fee': '0.06986525', 'price': '2.13088', 'stopprice': '0.00000000', 'limitprice': '0.00000000', 'misc': '', 'oflags': 'fciq', 'reason': None, 'closetm': 1741539692.724766}}}
+*************************************
+{'OXJR5G-VIUZU-ADD5TH': {'refid': None, 'userref': 0, 'status': 'closed', 'opentm': 1741539692.724711, 'starttm': 0, 'expiretm': 0, 'descr': {'pair': 'XRPUSD', 'aclass': 'forex', 'type': 'buy', 'ordertype': 'market', 'price': '0', 'price2': '0', 'leverage': 'none', 'order': 'buy 9.36768149 XRPUSD @ market', 'close': ''}, 'vol': '9.36768149', 'vol_exec': '9.36768149', 'cost': '19.96149881', 'fee': '0.06986525', 'price': '2.13088', 'stopprice': '0.00000000', 'limitprice': '0.00000000', 'misc': '', 'oflags': 'fciq', 'reason': None, 'closetm': 1741539692.724766}}
+Current Capital = 61.06939065000013 and cost = 19.96149881
+test2
+9.36768149
+<class 'float'>
+waiting for 10 secounds
+wait complete for 10 secounds
+wait complete for 10 secounds
+wait complete for 10 secounds
+wait complete for 10 secounds
+wait complete for 10 secounds
+wait complete for 10 secounds
+wait complete for 10 secounds
+wait complete for 10 secounds
+XRPUSDcurrentStage
+3
+{'nonce': '1741552342656', 'ordertype': 'market', 'type': 'sell', 'volume': 9.36768149, 'pair': 'XRPUSD'}
+{'error': [], 'result': {'txid': ['ONQKTZ-RB23C-SW5NTC'], 'descr': {'order': 'sell 9.36768149 XRPUSD @ market'}}}
+ONQKTZ-RB23C-SW5NTC
+XRPUSDcurrentStage
+3
+{'nonce': '1741552342792', 'ordertype': 'market', 'type': 'sell', 'volume': 9.36768149, 'pair': 'XRPUSD'}
+{'error': [], 'result': {'txid': ['OCSNJ6-HJI5X-4XBOFV'], 'descr': {'order': 'sell 9.36768149 XRPUSD @ market'}}}
+OCSNJ6-HJI5X-4XBOFV
+XRPUSDcurrentStage
+3
+{'nonce': '1741552342882', 'ordertype': 'market', 'type': 'sell', 'volume': 9.36768149, 'pair': 'XRPUSD'}
+{'error': ['EAPI:Invalid nonce']}
+{'error': ['EAPI:Invalid nonce']}
+XRPUSDcurrentStage
+3
+{'error': ['EAPI:Invalid nonce']}
+{'error': ['EAPI:Invalid nonce']}
+{'nonce': '1741552342970', 'ordertype': 'market', 'type': 'sell', 'volume': 9.36768149, 'pair': 'XRPUSD'}
+{'error': [], 'result': {'txid': ['ONR5T6-OA6HD-36GB34'], 'descr': {'order': 'sell 9.36768149 XRPUSD @ market'}}}
+ONR5T6-OA6HD-36GB34
+XRPUSDcurrentStage
+3
+{'nonce': '1741552343048', 'ordertype': 'market', 'type': 'sell', 'volume': 9.36768149, 'pair': 'XRPUSD'}
+{'error': [], 'result': {'txid': ['OJ5GIO-X5JGF-B73PEV'], 'descr': {'order': 'sell 9.36768149 XRPUSD @ market'}}}
+OJ5GIO-X5JGF-B73PEV
+{'error': [], 'result': {'ONR5T6-OA6HD-36GB34': {'refid': None, 'userref': 0, 'status': 'closed', 'opentm': 1741552342.940852, 'starttm': 0, 'expiretm': 0, 'descr': {'pair': 'XRPUSD', 'aclass': 'forex', 'type': 'sell', 'ordertype': 'market', 'price': '0', 'price2': '0', 'leverage': 'none', 'order': 'sell 9.36768149 XRPUSD @ market', 'close': ''}, 'vol': '9.36768149', 'vol_exec': '9.36768149', 'cost': '20.56384073', 'fee': '0.07197344', 'price': '2.19518', 'stopprice': '0.00000000', 'limitprice': '0.00000000', 'misc': '', 'oflags': 'fciq', 'reason': None, 'closetm': 1741552342.941354}}}
+{'error': [], 'result': {'ONR5T6-OA6HD-36GB34': {'refid': None, 'userref': 0, 'status': 'closed', 'opentm': 1741552342.940852, 'starttm': 0, 'expiretm': 0, 'descr': {'pair': 'XRPUSD', 'aclass': 'forex', 'type': 'sell', 'ordertype': 'market', 'price': '0', 'price2': '0', 'leverage': 'none', 'order': 'sell 9.36768149 XRPUSD @ market', 'close': ''}, 'vol': '9.36768149', 'vol_exec': '9.36768149', 'cost': '20.56384073', 'fee': '0.07197344', 'price': '2.19518', 'stopprice': '0.00000000', 'limitprice': '0.00000000', 'misc': '', 'oflags': 'fciq', 'reason': None, 'closetm': 1741552342.941354}}}
+*************************************
+2025-03-09 20:32:23,079 - INFO - Setting Cuurent Stage 3 to Close
+2025-03-09 20:32:23,170 - DEBUG - https://api.kraken.com:443 "POST /0/private/QueryOrders HTTP/1.1" 200 None
+2025-03-09 20:32:23,235 - DEBUG - https://api.kraken.com:443 "POST /0/private/AddOrder HTTP/1.1" 200 32
+2025-03-09 20:32:23,236 - ERROR - Error in stagecomplete: 'result'
+Traceback (most recent call last):
+  File "/home/ubuntu/stage_crypto_bot/python/app/controllers/bot_control.py", line 159, in process
+    orderDetail = Kraken.orderFillChecker(tpOrder)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/stage_crypto_bot/python/app/exchanges/kerkaren/kraken.py", line 166, in orderFillChecker
+    txid = data["result"]["txid"][0]  # Get the first transaction ID
+           ~~~~^^^^^^^^^^
+KeyError: 'result'
+2025-03-09 20:32:23,236 - INFO - Task Completed!
+2025-03-09 20:32:24,172 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 20:32:24,269 - DEBUG - https://api.kraken.com:443 "POST /0/private/QueryOrders HTTP/1.1" 200 None
+2025-03-09 20:32:24,280 - INFO - Setting Cuurent Stage 3 to Close
+2025-03-09 20:32:24,282 - ERROR - Error in stagecomplete: 'NoneType' object has no attribute 'buy_price'
+Traceback (most recent call last):
+  File "/home/ubuntu/stage_crypto_bot/python/app/controllers/bot_control.py", line 179, in process
+    PositionCRUD.create_old_position(currentStage , int( TRADING_PAIR_ID) )
+  File "/home/ubuntu/stage_crypto_bot/python/app/controllers/crud/positionCrud.py", line 82, in create_old_position
+    buy_price=Oldposition.buy_price,
+              ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'buy_price'
+2025-03-09 20:32:24,285 - INFO - Task Completed!
+2025-03-09 20:32:33,109 - INFO - Stage completion process successful
+2025-03-09 20:32:33,109 - INFO - Task Completed!
+2025-03-09 22:59:28,361 - INFO - Received request at /stage-complete
+2025-03-09 22:59:28,361 - DEBUG - ***************************
+Request Data: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+
+
+2025-03-09 22:59:28,361 - INFO - Processing data in background: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+2025-03-09 22:59:28,362 - INFO - Received request at /stage-complete
+2025-03-09 22:59:28,362 - DEBUG - ***************************
+Request Data: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+
+
+2025-03-09 22:59:28,362 - INFO - 127.0.0.1 - - [09/Mar/2025 22:59:28] "POST /bot/stage-complete HTTP/1.1" 200 -
+2025-03-09 22:59:28,362 - DEBUG - Symbol: XRPUSD, Hit Type: rebuy
+2025-03-09 22:59:28,363 - DEBUG - Current Stage: 2
+2025-03-09 22:59:28,363 - DEBUG - StageKey: XRPUSD2, TRADING_PAIR_ID: 13
+2025-03-09 22:59:28,364 - DEBUG - Take Profit %: 3.0, Rebuy %: 3.0
+2025-03-09 22:59:28,364 - DEBUG - Current Capital: 500.0, Trade Usage %: 4.0
+2025-03-09 22:59:28,364 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 22:59:28,442 - DEBUG - https://api.kraken.com:443 "GET /0/public/Ticker?pair=XRPUSD HTTP/1.1" 200 None
+2025-03-09 22:59:28,444 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 22:59:28,517 - DEBUG - https://api.kraken.com:443 "POST /0/private/AddOrder HTTP/1.1" 200 None
+2025-03-09 22:59:28,520 - INFO - Received request at /stage-complete
+2025-03-09 22:59:28,521 - DEBUG - ***************************
+Request Data: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+
+
+2025-03-09 22:59:28,522 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 22:59:28,522 - INFO - Processing data in background: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+2025-03-09 22:59:28,523 - INFO - Received request at /stage-complete
+2025-03-09 22:59:28,523 - INFO - 127.0.0.1 - - [09/Mar/2025 22:59:28] "POST /bot/stage-complete HTTP/1.1" 200 -
+2025-03-09 22:59:28,523 - DEBUG - ***************************
+Request Data: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+
+
+2025-03-09 22:59:28,524 - DEBUG - Symbol: XRPUSD, Hit Type: rebuy
+2025-03-09 22:59:28,524 - DEBUG - Current Stage: 2
+2025-03-09 22:59:28,524 - DEBUG - StageKey: XRPUSD2, TRADING_PAIR_ID: 13
+2025-03-09 22:59:28,525 - DEBUG - Take Profit %: 3.0, Rebuy %: 3.0
+2025-03-09 22:59:28,525 - DEBUG - Current Capital: 500.0, Trade Usage %: 4.0
+2025-03-09 22:59:28,525 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 22:59:28,565 - DEBUG - https://api.kraken.com:443 "GET /0/public/Ticker?pair=XRPUSD HTTP/1.1" 200 None
+2025-03-09 22:59:28,567 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 22:59:28,607 - DEBUG - https://api.kraken.com:443 "POST /0/private/QueryOrders HTTP/1.1" 200 None
+2025-03-09 22:59:28,650 - DEBUG - https://api.kraken.com:443 "POST /0/private/AddOrder HTTP/1.1" 200 None
+2025-03-09 22:59:28,652 - INFO - Received request at /stage-complete
+2025-03-09 22:59:28,652 - DEBUG - ***************************
+Request Data: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+
+
+2025-03-09 22:59:28,653 - INFO - Processing data in background: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+2025-03-09 22:59:28,653 - INFO - Received request at /stage-complete
+2025-03-09 22:59:28,653 - DEBUG - ***************************
+Request Data: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+
+
+2025-03-09 22:59:28,654 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 22:59:28,654 - DEBUG - Symbol: XRPUSD, Hit Type: rebuy
+2025-03-09 22:59:28,655 - INFO - 127.0.0.1 - - [09/Mar/2025 22:59:28] "POST /bot/stage-complete HTTP/1.1" 200 -
+2025-03-09 22:59:28,655 - DEBUG - Current Stage: 2
+2025-03-09 22:59:28,655 - DEBUG - StageKey: XRPUSD2, TRADING_PAIR_ID: 13
+2025-03-09 22:59:28,656 - DEBUG - Take Profit %: 3.0, Rebuy %: 3.0
+2025-03-09 22:59:28,656 - DEBUG - Current Capital: 500.0, Trade Usage %: 4.0
+2025-03-09 22:59:28,657 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 22:59:28,702 - DEBUG - https://api.kraken.com:443 "GET /0/public/Ticker?pair=XRPUSD HTTP/1.1" 200 None
+2025-03-09 22:59:28,704 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 22:59:28,730 - DEBUG - https://api.kraken.com:443 "POST /0/private/QueryOrders HTTP/1.1" 200 None
+{'ONR5T6-OA6HD-36GB34': {'refid': None, 'userref': 0, 'status': 'closed', 'opentm': 1741552342.940852, 'starttm': 0, 'expiretm': 0, 'descr': {'pair': 'XRPUSD', 'aclass': 'forex', 'type': 'sell', 'ordertype': 'market', 'price': '0', 'price2': '0', 'leverage': 'none', 'order': 'sell 9.36768149 XRPUSD @ market', 'close': ''}, 'vol': '9.36768149', 'vol_exec': '9.36768149', 'cost': '20.56384073', 'fee': '0.07197344', 'price': '2.19518', 'stopprice': '0.00000000', 'limitprice': '0.00000000', 'misc': '', 'oflags': 'fciq', 'reason': None, 'closetm': 1741552342.941354}}
+OLD COST 19.96149881
+test2
+current Stage in take profit 
+waiting for 10 secounds
+{'error': [], 'result': {'OJ5GIO-X5JGF-B73PEV': {'refid': None, 'userref': 0, 'status': 'open', 'opentm': 1741552343.019921, 'starttm': 0, 'expiretm': 0, 'descr': {'pair': 'XRPUSD', 'aclass': 'forex', 'type': 'sell', 'ordertype': 'market', 'price': '0', 'price2': '0', 'leverage': 'none', 'order': 'sell 9.36768149 XRPUSD @ market', 'close': ''}, 'vol': '9.36768149', 'vol_exec': '9.36768149', 'cost': '20.56384073', 'fee': '0.07197344', 'price': '2.19518', 'stopprice': '0.00000000', 'limitprice': '0.00000000', 'misc': '', 'oflags': 'fciq', 'reason': None}}}
+{'error': [], 'result': {'OJ5GIO-X5JGF-B73PEV': {'refid': None, 'userref': 0, 'status': 'open', 'opentm': 1741552343.019921, 'starttm': 0, 'expiretm': 0, 'descr': {'pair': 'XRPUSD', 'aclass': 'forex', 'type': 'sell', 'ordertype': 'market', 'price': '0', 'price2': '0', 'leverage': 'none', 'order': 'sell 9.36768149 XRPUSD @ market', 'close': ''}, 'vol': '9.36768149', 'vol_exec': '9.36768149', 'cost': '20.56384073', 'fee': '0.07197344', 'price': '2.19518', 'stopprice': '0.00000000', 'limitprice': '0.00000000', 'misc': '', 'oflags': 'fciq', 'reason': None}}}
+*************************************
+{'error': ['EAPI:Invalid nonce']}
+OJ5GIO-X5JGF-B73PEV
+{'error': [], 'result': {'OJ5GIO-X5JGF-B73PEV': {'refid': None, 'userref': 0, 'status': 'closed', 'opentm': 1741552343.019921, 'starttm': 0, 'expiretm': 0, 'descr': {'pair': 'XRPUSD', 'aclass': 'forex', 'type': 'sell', 'ordertype': 'market', 'price': '0', 'price2': '0', 'leverage': 'none', 'order': 'sell 9.36768149 XRPUSD @ market', 'close': ''}, 'vol': '9.36768149', 'vol_exec': '9.36768149', 'cost': '20.56384073', 'fee': '0.07197344', 'price': '2.19518', 'stopprice': '0.00000000', 'limitprice': '0.00000000', 'misc': '', 'oflags': 'fciq', 'reason': None, 'closetm': 1741552343.019956}}}
+{'error': [], 'result': {'OJ5GIO-X5JGF-B73PEV': {'refid': None, 'userref': 0, 'status': 'closed', 'opentm': 1741552343.019921, 'starttm': 0, 'expiretm': 0, 'descr': {'pair': 'XRPUSD', 'aclass': 'forex', 'type': 'sell', 'ordertype': 'market', 'price': '0', 'price2': '0', 'leverage': 'none', 'order': 'sell 9.36768149 XRPUSD @ market', 'close': ''}, 'vol': '9.36768149', 'vol_exec': '9.36768149', 'cost': '20.56384073', 'fee': '0.07197344', 'price': '2.19518', 'stopprice': '0.00000000', 'limitprice': '0.00000000', 'misc': '', 'oflags': 'fciq', 'reason': None, 'closetm': 1741552343.019956}}}
+*************************************
+{'OJ5GIO-X5JGF-B73PEV': {'refid': None, 'userref': 0, 'status': 'closed', 'opentm': 1741552343.019921, 'starttm': 0, 'expiretm': 0, 'descr': {'pair': 'XRPUSD', 'aclass': 'forex', 'type': 'sell', 'ordertype': 'market', 'price': '0', 'price2': '0', 'leverage': 'none', 'order': 'sell 9.36768149 XRPUSD @ market', 'close': ''}, 'vol': '9.36768149', 'vol_exec': '9.36768149', 'cost': '20.56384073', 'fee': '0.07197344', 'price': '2.19518', 'stopprice': '0.00000000', 'limitprice': '0.00000000', 'misc': '', 'oflags': 'fciq', 'reason': None, 'closetm': 1741552343.019956}}
+OLD COST 19.96149881
+wait complete for 10 secounds
+XRPUSDcurrentStage
+2
+currentPrice response  {'error': [], 'result': {'XXRPZUSD': {'a': ['2.13311000', '61415', '61415.000'], 'b': ['2.13310000', '5', '5.000'], 'c': ['2.13311000', '5.00000000'], 'v': ['44548725.25930361', '45007760.88781099'], 'p': ['2.18805658', '2.18946182'], 't': [40853, 41742], 'l': ['2.08169000', '2.08169000'], 'h': ['2.34888000', '2.34888000'], 'o': '2.32496000'}}}
+{'nonce': '1741561168443', 'ordertype': 'market', 'type': 'buy', 'volume': 9.94073622082312, 'pair': 'XRPUSD'}
+{'error': [], 'result': {'txid': ['OR4H52-KTYJ3-PZXCZ5'], 'descr': {'order': 'buy 9.94073622 XRPUSD @ market'}}}
+OR4H52-KTYJ3-PZXCZ5
+XRPUSDcurrentStage
+2
+currentPrice response  {'error': [], 'result': {'XXRPZUSD': {'a': ['2.13311000', '61415', '61415.000'], 'b': ['2.13310000', '5', '5.000'], 'c': ['2.13311000', '5.00000000'], 'v': ['44548725.25930361', '45007760.88781099'], 'p': ['2.18805658', '2.18946182'], 't': [40853, 41742], 'l': ['2.08169000', '2.08169000'], 'h': ['2.34888000', '2.34888000'], 'o': '2.32496000'}}}
+{'nonce': '1741561168566', 'ordertype': 'market', 'type': 'buy', 'volume': 9.94073622082312, 'pair': 'XRPUSD'}
+{'error': [], 'result': {'OR4H52-KTYJ3-PZXCZ5': {'refid': None, 'userref': 0, 'status': 'open', 'opentm': 1741561168.495014, 'starttm': 0, 'expiretm': 0, 'descr': {'pair': 'XRPUSD', 'aclass': 'forex', 'type': 'buy', 'ordertype': 'market', 'price': '0', 'price2': '0', 'leverage': 'none', 'order': 'buy 9.94073622 XRPUSD @ market', 'close': ''}, 'vol': '9.94073622', 'vol_exec': '0.00000000', 'cost': '0.00000000', 'fee': '0.00000000', 'price': '0.00000000', 'stopprice': '0.00000000', 'limitprice': '0.00000000', 'misc': '', 'oflags': 'fciq', 'reason': None}}}
+{'error': [], 'result': {'OR4H52-KTYJ3-PZXCZ5': {'refid': None, 'userref': 0, 'status': 'open', 'opentm': 1741561168.495014, 'starttm': 0, 'expiretm': 0, 'descr': {'pair': 'XRPUSD', 'aclass': 'forex', 'type': 'buy', 'ordertype': 'market', 'price': '0', 'price2': '0', 'leverage': 'none', 'order': 'buy 9.94073622 XRPUSD @ market', 'close': ''}, 'vol': '9.94073622', 'vol_exec': '0.00000000', 'cost': '0.00000000', 'fee': '0.00000000', 'price': '0.00000000', 'stopprice': '0.00000000', 'limitprice': '0.00000000', 'misc': '', 'oflags': 'fciq', 'reason': None}}}
+*************************************
+{'error': [], 'result': {'txid': ['O4ZAWH-X2ZZJ-TCXSUS'], 'descr': {'order': 'buy 9.94073622 XRPUSD @ market'}}}
+O4ZAWH-X2ZZJ-TCXSUS
+XRPUSDcurrentStage
+2
+currentPrice response  {'error': [], 'result': {'XXRPZUSD': {'a': ['2.13311000', '61415', '61415.000'], 'b': ['2.13310000', '5', '5.000'], 'c': ['2.13311000', '5.00000000'], 'v': ['44548725.25930361', '45007760.88781099'], 'p': ['2.18805658', '2.18946182'], 't': [40853, 41742], 'l': ['2.08169000', '2.08169000'], 'h': ['2.34888000', '2.34888000'], 'o': '2.32496000'}}}
+{'nonce': '1741561168703', 'ordertype': 'market', 'type': 'buy', 'volume': 9.94073622082312, 'pair': 'XRPUSD'}
+{'error': [], 'result': {'O4ZAWH-X2ZZJ-TCXSUS': {'refid': None, 'userref': 0, 'status': 'closed', 'opentm': 1741561168.628257, 'starttm': 0, 'expiretm': 0, 'descr': {'pair': 'XRPUSD', 'aclass': 'forex', 'type': 'buy', 'ordertype': 'market', 'price': '0', 'price2': '0', 'leverage': 'none', 'order': 'buy 9.94073622 XRPUSD @ market', 'close': ''}, 'vol': '9.94073622', 'vol_exec': '9.94073622', 'cost': '21.19732769', 'fee': '0.07419065', 'price': '2.13236', 'stopprice': '0.00000000', 'limitprice': '0.00000000', 'misc': '', 'oflags': 'fciq', 'reason': None, 'closetm': 1741561168.628265}}}
+{'error': [], 'result': {'O4ZAWH-X2ZZJ-TCXSUS': {'refid': None, 'userref': 0, 'status': 'closed', 'opentm': 1741561168.628257, 'starttm': 0, 'expiretm': 0, 'descr': {'pair': 'XRPUSD', 'aclass': 'forex', 'type': 'buy', 'ordertype': 'market', 'price': '0', 'price2': '0', 'leverage': 'none', 'order': 'buy 9.94073622 XRPUSD @ market', 'close': ''}, 'vol': '9.94073622', 'vol_exec': '9.94073622', 'cost': '21.19732769', 'fee': '0.07419065', 'price': '2.13236', 'stopprice': '0.00000000', 'limitprice': '0.00000000', 'misc': '', 'oflags': 'fciq', 'reason': None, 'closetm': 1741561168.628265}}}
+*************************************
+2025-03-09 22:59:28,782 - DEBUG - https://api.kraken.com:443 "POST /0/private/AddOrder HTTP/1.1" 200 None
+2025-03-09 22:59:28,784 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 22:59:28,866 - DEBUG - https://api.kraken.com:443 "POST /0/private/QueryOrders HTTP/1.1" 200 None
+2025-03-09 22:59:29,610 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-09 22:59:29,693 - DEBUG - https://api.kraken.com:443 "POST /0/private/QueryOrders HTTP/1.1" 200 None
+2025-03-09 22:59:38,756 - INFO - Stage completion process successful
+2025-03-09 22:59:38,756 - INFO - Task Completed!
+2025-03-09 22:59:38,888 - INFO - Stage completion process successful
+2025-03-09 22:59:38,888 - INFO - Task Completed!
+2025-03-09 22:59:39,719 - INFO - Stage completion process successful
+2025-03-09 22:59:39,719 - INFO - Task Completed!

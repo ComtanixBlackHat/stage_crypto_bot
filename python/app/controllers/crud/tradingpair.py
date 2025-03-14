@@ -1,7 +1,8 @@
 from datetime import datetime
 from app import db
+from sqlalchemy.sql import func
 from app.models import TradingPair
-from app.controllers.crud.positionCrud import PositionCRUD
+from app.controllers.crud.positionCrud import PositionCRUD , OldPosition
 from app.controllers.redisutil import RedisUtility
 from app.exchanges.kerkaren.kraken import Kraken
 
@@ -26,6 +27,8 @@ class TradingPairCrud:
         RedisUtility.set_key(name+"rebuy_percentage" , rebuy_percentage)
         RedisUtility.set_key(name+"status" , status)
         RedisUtility.set_key(name+"money" , initial_capital)
+        RedisUtility.set_key(name+"profit" , "0")
+        
         # RedisUtility.set_key(name+"takeProfitPrice" , status)
         # RedisUtility.set_key(name+"reBuyPrice" , status)
         RedisUtility.set_key(name+"trade_usage_percentage" , trade_usage_percentage)
@@ -103,6 +106,7 @@ class TradingPairCrud:
         new_trading_pair_id = new_trading_pair.id  
         RedisUtility.set_key(name+"trading_pair_id" , str(new_trading_pair_id)) 
         RedisUtility.set_hash_field("symbol" , symbol , "1")
+        RedisUtility.set_hash_field("symbol" , name , "1")
         RedisUtility.set_key("symbolChanged" , "1") 
         examount =float(orderDetail['result'][txid]['vol_exec'])
         PositionCRUD.create_position(
@@ -172,6 +176,9 @@ class TradingPairCrud:
             RedisUtility.set_key(pair.name+"current_capital" ,str(capital))
             pair.current_capital = capital  # Corrected assignment
             RedisUtility.set_key(pair.name+"money" ,str(capital))
+            RedisUtility.set_key(pair.name+"profit" , "0")
+            
+            pair.start_capital = capital  # Corrected assignment
             pair.initial_capital = capital  # Corrected assignment
             db.session.commit()
             db.session.commit()
@@ -304,7 +311,12 @@ class TradingPairCrud:
             print(f"Error deleting trading pair: {e}")
             return False
 
-
+    @staticmethod
+    def get_pln_sum(trading_pair_id: int) -> float:
+        """Returns the total PLN sum for a given trading_pair_id."""
+        return db.session.query(func.coalesce(func.sum(OldPosition.pln), 0)).filter(
+            OldPosition.trading_pair_id == trading_pair_id
+        ).scalar()
 
 
 # curl -X POST http://127.0.0.1:5000/bot/stage-complete      -H "Content-Type: application/json"      -d '{
@@ -317,3 +329,5 @@ class TradingPairCrud:
 # "symbol": "GALAUSD",
 # "hitType": "TakeProfit"
 #  }'
+
+

@@ -11,6 +11,7 @@
 #include "libs/apis/database/position.h"
 // Define a struct to hold OHLC data
 using json = nlohmann::json;
+int RedisConnectionChecker = 0;
 redisContext* redis_client = RedisConnection::get_client();
 struct OHLCData {
     std::string symbol;
@@ -75,39 +76,6 @@ void appendToFile(const std::string& filename, const std::string& content) {
     }
 }
 
-// void on_open(websocketpp::connection_hdl hdl, client* c) {
-//     std::cout << "WebSocket connection opened!" << std::endl;
-//     websocketpp::lib::error_code ec;
-//     client::connection_ptr con = c->get_con_from_hdl(hdl, ec);
-
-//     if (ec) {
-//         std::cout << "Failed to get connection pointer: " << ec.message() << std::endl;
-//         return;
-//     }
-
-//     // Corrected Kraken OHLC WebSocket subscription JSON
-//     json subscribe_msg = {
-//         for (const auto& pair : result) {
-//             // std::cout << "Field: " << pair.first << " Value: " << pair.second << std::endl;
-//             if (pair.second == "1") {
-//                 // Use push_back instead of append for vector
-//                 symbolList.push_back(pair.first);
-//             }
-//         }
-//         i want to su to the symbols which are found in symbolList
-//         {"method", "subscribe"},
-//         {"params", {
-//             {"channel", "ohlc"},
-//             {"symbol", {"ALGO/USD", "MATIC/USD"}},  // List of symbols to subscribe to
-//             {"interval", 5}  // Interval in minutes
-//         }}
-//     };
-
-//     // Send the subscription message
-//     c->send(con, subscribe_msg.dump(), websocketpp::frame::opcode::text);
-// }
-// // void on_message(websocketpp::connection_hdl, client::message_ptr msg) {
-
 void on_open(websocketpp::connection_hdl hdl, client* c) {
     std::cout << "WebSocket connection opened!" << std::endl;
     websocketpp::lib::error_code ec;
@@ -147,6 +115,25 @@ void on_open(websocketpp::connection_hdl hdl, client* c) {
 }
 
 void on_message(websocketpp::connection_hdl hdl, client::message_ptr msg, client* c) {
+    
+  
+    RedisConnectionChecker++;
+    if(RedisConnectionChecker > 25)
+    {
+        RedisConnectionChecker = 0;
+        redisReply* reply = (redisReply*)redisCommand(redis_client, "PING");
+        if (reply == nullptr) {
+            std::cerr << "Redis client is disconnected!" << std::endl;
+            close_connection(*c, hdl);
+            // Handle reconnection
+        } else {
+            // std::cout << "Redis client is connected: " << reply->str << std::endl;
+            
+            freeReplyObject(reply);
+        }
+            
+    }
+
     try {
         // std::cout << msg->get_payload() << "\n";
         // RedisUtility.set_key("symbolChanged" , "1")
@@ -156,6 +143,7 @@ void on_message(websocketpp::connection_hdl hdl, client::message_ptr msg, client
             close_connection(*c, hdl);
             return;
         }
+
         // Retrieve all fields and values from Redis
         auto result = RedisHelper::hgetall("symbol", redis_client);
 
@@ -183,6 +171,7 @@ void on_message(websocketpp::connection_hdl hdl, client::message_ptr msg, client
                 for (auto& candle : data) {
                     std::string symbol = candle["symbol"];
                     symbol.erase(std::remove(symbol.begin(), symbol.end(), '/'), symbol.end());
+                    
                     std::cout<<std::endl <<symbol<<std::endl; 
                     double open = candle["open"];
                     double high = candle["high"];
@@ -192,54 +181,80 @@ void on_message(websocketpp::connection_hdl hdl, client::message_ptr msg, client
                     std::string interval_begin = candle["interval_begin"];
                     
                     std::string currentStage = symbol+"currentStage";
-                    std::cout<<std::endl << currentStage<<std::endl;
+                    // std::cout<<std::endl << currentStage<<std::endl;
+
                     
                     bool exists = RedisHelper::exists(currentStage);
-                    std::cout<<std::endl <<exists<<std::endl;
+                    // std::cout<<std::endl <<exists<<std::endl;
                     
                     
                     if (exists) {
-                        // std::cout << "Key exists in Redis!" << std::endl;
+                        std::cout << "Key exists in Redis!" << std::endl;
                         
                         std::string stage = RedisHelper::get(currentStage, redis_client);
                         std::string StageKey = symbol+stage;
+                        
                         std::string buy_pricestr = RedisHelper::get(StageKey + "buy_price", redis_client);
-
                         std::string sell_pricestr = RedisHelper::get(StageKey + "sell_price", redis_client);
+                        
                         float buy_price = std::stof(buy_pricestr );
                         float sell_price  = std::stof(sell_pricestr);
                         
                         
-                        // std::cout<<"Current Stage = "<<currentStage<<" : "<<RedisHelper::get(currentStage, redis_client)<<std::endl;
-                        // std::cout << "Buy Price: " << buy_price << std::endl;
-                        // std::cout << "Symbol: " << symbol << std::endl;
-                        // std::cout <<"Current Price : " <<  close<< std::endl;
-                        // std::cout << "Sell Price: " << sell_price << std::endl;  
 
-
-                        if(close > sell_price ) //profit
-                        // std::cout << "Symbol: " << symbol << std::endl;
+                        if(RedisHelper::hget("symbol" , symbol) == "1")
                         {
-                            RedisHelper::hset("symbol" , symbol , "0");
-                            std::cout << "Buy Price: " << buy_price << std::endl;
-                            std::cout << "Symbol: " << symbol << std::endl;
+                            
 
-                            std::cout << "Sell Price: " << sell_price << std::endl;
-                            const std::string hitType = "TakeProfit";
-                            std::cout << "\n\n*****************Taking Profit *************\n\n";
-                            PositionApiClient::createPosition(hitType , symbol);
-                            return;
+                            std::cout << "Symbol is Enabled";
+                            std::string currentBalanceStr = RedisHelper::get(symbol + "money", redis_client);
+                            std::cout << "\ncurrent Balence " <<currentBalanceStr <<std::endl; 
+                            if (currentBalanceStr.empty()) {
+                                std::cerr << "No balance information found for " << symbol << ".\n";
+                                return;
+                            }
+                            
+                            try {
+                                float currentBalance = std::stof(currentBalanceStr);
+                                if (currentBalance < 1) {
+                                    std::cout << symbol << " balance is less than 1\n";
+                                    return;
+                                }
+                            } catch (const std::exception& e) {
+                                std::cerr << "Error converting balance to float for " << symbol 
+                                          << ". Received value: '" << currentBalanceStr 
+                                          << "'. Exception: " << e.what() << "\n";
+                                return;
+                            }  
+                            
+                            if(close > sell_price ) //profit
+                            // std::cout << "Symbol: " << symbol << std::endl;
+                            {
+    
+                                RedisHelper::hset("symbol" , symbol , "0");
+                                std::cout << "Buy Price: " << buy_price <<" Current Price = "<<close<< std::endl;
+                                std::cout << "Symbol: " << symbol << std::endl;
+    
+    
+                                const std::string hitType = "TakeProfit";
+                                std::cout << "\n\n*****************Taking Profit *************\n\n";
+                                PositionApiClient::createPosition(hitType , symbol);
+                                return;
+                            }
+                            else if(close <= buy_price)
+                            {
+                                RedisHelper::hset("symbol" , symbol , "0");
+                                const std::string hitType = "rebuy";
+                                std::cout << "Sell Price: " << sell_price <<" Current Price = "<<close<< std::endl;
+                                std::cout << "\n\n*****************Rebuy  *************\n\n";
+                                PositionApiClient::createPosition(hitType , symbol);
+                                return;
+                                // RedisHelper::hset("symbol" , symbol , "1");
+                            }                            
                         }
-                        else if(close <= buy_price)
-                        {
-                            RedisHelper::hset("symbol" , symbol , "0");
-                            const std::string hitType = "rebuy";
 
-                            std::cout << "\n\n*****************Rebuy  *************\n\n";
-                            PositionApiClient::createPosition(hitType , symbol);
-                            return;
-                            // RedisHelper::hset("symbol" , symbol , "1");
-                        }
+                        // nohup python3 app.py > App.log 2>&1 &
+
                         // Output the retrieved values
                         
                         // std::cout << "Amount: " << amount << std::endl;

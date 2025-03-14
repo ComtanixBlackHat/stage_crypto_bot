@@ -99,10 +99,10 @@ public:
             return "";
         }
     
-        // Debugging: print raw reply structure
-        std::cerr << "Raw Redis reply:" << std::endl;
-        std::cerr << "Type: " << reply->type << std::endl;
-        std::cerr << "Length: " << reply->len << std::endl;
+        // // Debugging: print raw reply structure
+        // std::cerr << "Raw Redis reply:" << std::endl;
+        // std::cerr << "Type: " << reply->type << std::endl;
+        // std::cerr << "Length: " << reply->len << std::endl;
     
         if (reply->type == REDIS_REPLY_STRING) {
             std::cerr << "Data: " << reply->str << std::endl;
@@ -210,3 +210,9 @@ private:
         return reply != nullptr && reply->type != REDIS_REPLY_ERROR;
     }
 };
+
+
+// curl -X POST http://127.0.0.1:2000/bot/stage-complete      -H "Content-Type: application/json"      -d '{
+//    "symbol": "BTCUSD",
+//            "hitType": "rebuy"
+//      }'

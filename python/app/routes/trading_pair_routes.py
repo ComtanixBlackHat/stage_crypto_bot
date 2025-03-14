@@ -57,6 +57,7 @@ def get_trading_pairs():
             "status": pair.status,
             "start_date": pair.start_date.strftime("%Y-%m-%d %H:%M:%S"),  # Format date
             "user_id": pair.user_id ,
+            "profit" : TradingPairCrud.get_pln_sum(pair.id),
             # "ispause" : "0" 
             "ispause": RedisUtility.get_hash_field(
                 "symbol", RedisUtility.get_key(pair.name + "StreamSymbol")

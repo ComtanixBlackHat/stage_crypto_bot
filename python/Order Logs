@@ -1,0 +1,695 @@
+2025-03-07 00:47:33,087 - WARNING -  * Debugger is active!
+2025-03-07 00:47:33,089 - INFO -  * Debugger PIN: 592-737-201
+2025-03-07 00:47:46,205 - INFO -  * Detected change in '/home/ubuntu/stage_crypto_bot/python/app/routes/botRoutes.py', reloading
+2025-03-07 00:47:47,147 - WARNING -  * Debugger is active!
+2025-03-07 00:47:47,150 - INFO -  * Debugger PIN: 592-737-201
+2025-03-07 00:47:55,201 - INFO -  * Detected change in '/home/ubuntu/stage_crypto_bot/python/app/routes/botRoutes.py', reloading
+2025-03-07 00:47:56,314 - WARNING -  * Debugger is active!
+2025-03-07 00:47:56,318 - INFO -  * Debugger PIN: 592-737-201
+2025-03-07 00:47:58,338 - INFO -  * Detected change in '/home/ubuntu/stage_crypto_bot/python/app/routes/botRoutes.py', reloading
+2025-03-07 00:47:59,207 - WARNING -  * Debugger is active!
+2025-03-07 00:47:59,210 - INFO -  * Debugger PIN: 592-737-201
+2025-03-07 00:48:50,285 - INFO - 73.61.122.2 - - [07/Mar/2025 00:48:50] "[32mGET / HTTP/1.1[0m" 302 -
+2025-03-07 00:48:50,558 - INFO - 73.61.122.2 - - [07/Mar/2025 00:48:50] "GET /login HTTP/1.1" 200 -
+2025-03-07 00:49:08,632 - INFO -  * Detected change in '/home/ubuntu/stage_crypto_bot/python/app/routes/botRoutes.py', reloading
+2025-03-07 00:49:09,723 - WARNING -  * Debugger is active!
+2025-03-07 00:49:09,726 - INFO -  * Debugger PIN: 592-737-201
+2025-03-07 00:49:11,764 - INFO -  * Detected change in '/home/ubuntu/stage_crypto_bot/python/app/routes/botRoutes.py', reloading
+2025-03-07 00:49:12,794 - WARNING -  * Debugger is active!
+2025-03-07 00:49:12,796 - INFO -  * Debugger PIN: 592-737-201
+2025-03-07 00:49:20,466 - INFO - 73.61.122.2 - - [07/Mar/2025 00:49:20] "POST /login HTTP/1.1" 200 -
+2025-03-07 00:49:21,024 - INFO - 73.61.122.2 - - [07/Mar/2025 00:49:21] "[32mGET /api/trading_pairs HTTP/1.1[0m" 308 -
+2025-03-07 00:49:21,173 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-07 00:49:21,226 - DEBUG - https://api.kraken.com:443 "GET /0/public/AssetPairs HTTP/1.1" 200 None
+2025-03-07 00:49:21,248 - INFO - 73.61.122.2 - - [07/Mar/2025 00:49:21] "GET /api/symbols/kraken HTTP/1.1" 200 -
+2025-03-07 00:49:21,349 - INFO - 73.61.122.2 - - [07/Mar/2025 00:49:21] "GET /api/trading_pairs/ HTTP/1.1" 200 -
+2025-03-07 00:49:28,554 - INFO - 73.61.122.2 - - [07/Mar/2025 00:49:28] "GET /detail?symbol=10 HTTP/1.1" 200 -
+2025-03-07 00:49:28,941 - INFO - 73.61.122.2 - - [07/Mar/2025 00:49:28] "[32mGET /api/positions?status=Waiting,Open&symbol=10 HTTP/1.1[0m" 308 -
+2025-03-07 00:49:29,084 - INFO - 73.61.122.2 - - [07/Mar/2025 00:49:29] "GET /api/trading_pairs/10 HTTP/1.1" 200 -
+2025-03-07 00:49:29,200 - INFO - 73.61.122.2 - - [07/Mar/2025 00:49:29] "GET /api/positions/?status=Waiting,Open&symbol=10 HTTP/1.1" 200 -
+2025-03-07 00:52:50,491 - INFO - 73.61.122.2 - - [07/Mar/2025 00:52:50] "GET /detail?symbol=8 HTTP/1.1" 200 -
+2025-03-07 00:52:50,847 - INFO - 73.61.122.2 - - [07/Mar/2025 00:52:50] "[32mGET /api/positions?status=Waiting,Open&symbol=8 HTTP/1.1[0m" 308 -
+2025-03-07 00:52:50,985 - INFO - 73.61.122.2 - - [07/Mar/2025 00:52:50] "GET /api/trading_pairs/8 HTTP/1.1" 200 -
+2025-03-07 00:52:51,126 - INFO - 73.61.122.2 - - [07/Mar/2025 00:52:51] "GET /api/positions/?status=Waiting,Open&symbol=8 HTTP/1.1" 200 -
+2025-03-07 00:54:11,645 - INFO -  * Detected change in '/home/ubuntu/stage_crypto_bot/python/app/routes/botRoutes.py', reloading
+2025-03-07 00:54:12,693 - WARNING -  * Debugger is active!
+2025-03-07 00:54:12,695 - INFO -  * Debugger PIN: 592-737-201
+2025-03-07 00:54:16,758 - INFO -  * Detected change in '/home/ubuntu/stage_crypto_bot/python/app/routes/botRoutes.py', reloading
+2025-03-07 00:54:17,811 - WARNING -  * Debugger is active!
+2025-03-07 00:54:17,820 - INFO -  * Debugger PIN: 592-737-201
+2025-03-07 00:54:24,906 - INFO -  * Detected change in '/home/ubuntu/stage_crypto_bot/python/app/routes/botRoutes.py', reloading
+2025-03-07 00:54:25,804 - WARNING -  * Debugger is active!
+2025-03-07 00:54:25,808 - INFO -  * Debugger PIN: 592-737-201
+2025-03-07 01:20:49,823 - INFO - 73.61.122.2 - - [07/Mar/2025 01:20:49] "GET /login HTTP/1.1" 200 -
+2025-03-07 01:20:59,235 - INFO - 73.61.122.2 - - [07/Mar/2025 01:20:59] "POST /login HTTP/1.1" 200 -
+2025-03-07 01:20:59,917 - INFO - 73.61.122.2 - - [07/Mar/2025 01:20:59] "[32mGET /api/trading_pairs HTTP/1.1[0m" 308 -
+2025-03-07 01:21:00,042 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-07 01:21:00,101 - DEBUG - https://api.kraken.com:443 "GET /0/public/AssetPairs HTTP/1.1" 200 None
+2025-03-07 01:21:00,129 - INFO - 73.61.122.2 - - [07/Mar/2025 01:21:00] "GET /api/symbols/kraken HTTP/1.1" 200 -
+2025-03-07 01:21:00,213 - INFO - 73.61.122.2 - - [07/Mar/2025 01:21:00] "GET /api/trading_pairs/ HTTP/1.1" 200 -
+2025-03-07 01:21:15,962 - INFO - 73.61.122.2 - - [07/Mar/2025 01:21:15] "GET /detail?symbol=11 HTTP/1.1" 200 -
+2025-03-07 01:21:16,502 - INFO - 73.61.122.2 - - [07/Mar/2025 01:21:16] "[32mGET /api/positions?status=Waiting,Open&symbol=11 HTTP/1.1[0m" 308 -
+2025-03-07 01:21:16,627 - INFO - 73.61.122.2 - - [07/Mar/2025 01:21:16] "GET /api/trading_pairs/11 HTTP/1.1" 200 -
+2025-03-07 01:21:16,774 - INFO - 73.61.122.2 - - [07/Mar/2025 01:21:16] "GET /api/positions/?status=Waiting,Open&symbol=11 HTTP/1.1" 200 -
+2025-03-07 01:22:02,761 - INFO - 73.61.122.2 - - [07/Mar/2025 01:22:02] "GET /detail?symbol=9 HTTP/1.1" 200 -
+2025-03-07 01:22:03,278 - INFO - 73.61.122.2 - - [07/Mar/2025 01:22:03] "[32mGET /api/positions?status=Waiting,Open&symbol=9 HTTP/1.1[0m" 308 -
+2025-03-07 01:22:03,421 - INFO - 73.61.122.2 - - [07/Mar/2025 01:22:03] "GET /api/trading_pairs/9 HTTP/1.1" 200 -
+2025-03-07 01:22:03,549 - INFO - 73.61.122.2 - - [07/Mar/2025 01:22:03] "GET /api/positions/?status=Waiting,Open&symbol=9 HTTP/1.1" 200 -
+2025-03-07 01:22:40,766 - INFO - 73.61.122.2 - - [07/Mar/2025 01:22:40] "GET /detail?symbol=8 HTTP/1.1" 200 -
+2025-03-07 01:22:41,189 - INFO - 73.61.122.2 - - [07/Mar/2025 01:22:41] "[32mGET /api/positions?status=Waiting,Open&symbol=8 HTTP/1.1[0m" 308 -
+2025-03-07 01:22:41,336 - INFO - 73.61.122.2 - - [07/Mar/2025 01:22:41] "GET /api/trading_pairs/8 HTTP/1.1" 200 -
+2025-03-07 01:22:41,460 - INFO - 73.61.122.2 - - [07/Mar/2025 01:22:41] "GET /api/positions/?status=Waiting,Open&symbol=8 HTTP/1.1" 200 -
+2025-03-07 01:41:08,694 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.31.17.14:5000
+2025-03-07 01:41:08,694 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-07 01:41:08,695 - INFO -  * Restarting with stat
+2025-03-07 01:41:09,714 - WARNING -  * Debugger is active!
+2025-03-07 01:41:09,717 - INFO -  * Debugger PIN: 592-737-201
+2025-03-07 01:41:17,831 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:2000
+2025-03-07 01:41:17,831 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-07 01:42:04,402 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.31.17.14:5000
+2025-03-07 01:42:04,402 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-07 01:42:04,403 - INFO -  * Restarting with stat
+2025-03-07 01:42:05,070 - WARNING -  * Debugger is active!
+2025-03-07 01:42:05,073 - INFO -  * Debugger PIN: 592-737-201
+2025-03-07 01:42:21,348 - INFO - 182.188.56.156 - - [07/Mar/2025 01:42:21] "GET /detail?symbol=10 HTTP/1.1" 200 -
+2025-03-07 01:42:21,613 - INFO - 182.188.56.156 - - [07/Mar/2025 01:42:21] "GET /api/trading_pairs/10 HTTP/1.1" 200 -
+2025-03-07 01:42:21,777 - INFO - 182.188.56.156 - - [07/Mar/2025 01:42:21] "GET /api/positions/?status=Waiting,Open&symbol=10 HTTP/1.1" 200 -
+2025-03-07 01:45:58,389 - INFO - 73.61.122.2 - - [07/Mar/2025 01:45:58] "[32mGET /detail?symbol=8 HTTP/1.1[0m" 302 -
+2025-03-07 01:45:58,820 - INFO - 73.61.122.2 - - [07/Mar/2025 01:45:58] "GET /login HTTP/1.1" 200 -
+2025-03-07 01:46:02,778 - INFO - 73.61.122.2 - - [07/Mar/2025 01:46:02] "POST /login HTTP/1.1" 200 -
+2025-03-07 01:46:03,491 - INFO - 73.61.122.2 - - [07/Mar/2025 01:46:03] "[32mGET /api/trading_pairs HTTP/1.1[0m" 308 -
+2025-03-07 01:46:03,624 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-07 01:46:03,704 - DEBUG - https://api.kraken.com:443 "GET /0/public/AssetPairs HTTP/1.1" 200 None
+2025-03-07 01:46:03,736 - INFO - 73.61.122.2 - - [07/Mar/2025 01:46:03] "GET /api/symbols/kraken HTTP/1.1" 200 -
+2025-03-07 01:46:03,781 - INFO - 73.61.122.2 - - [07/Mar/2025 01:46:03] "GET /api/trading_pairs/ HTTP/1.1" 200 -
+2025-03-07 01:46:06,458 - INFO - Received request at /stage-complete
+2025-03-07 01:46:06,458 - DEBUG - ***************************
+Request Data: {'hitType': 'TakeProfit', 'symbol': 'ADAUSD'}
+
+
+2025-03-07 01:46:06,461 - DEBUG - Symbol: ADAUSD, Hit Type: TakeProfit
+2025-03-07 01:46:06,462 - DEBUG - Current Stage: 3
+2025-03-07 01:46:06,463 - DEBUG - StageKey: ADAUSD3, TRADING_PAIR_ID: 9
+2025-03-07 01:46:06,463 - DEBUG - Take Profit %: 3.0, Rebuy %: 3.0
+2025-03-07 01:46:06,463 - DEBUG - Current Capital: 500.0, Trade Usage %: 4.0
+2025-03-07 01:46:06,467 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-07 01:46:06,554 - DEBUG - https://api.kraken.com:443 "POST /0/private/AddOrder HTTP/1.1" 200 None
+2025-03-07 01:46:06,557 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-07 01:46:06,638 - DEBUG - https://api.kraken.com:443 "POST /0/private/QueryOrders HTTP/1.1" 200 None
+2025-03-07 01:46:07,640 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-07 01:46:07,725 - DEBUG - https://api.kraken.com:443 "POST /0/private/QueryOrders HTTP/1.1" 200 None
+2025-03-07 01:46:07,756 - INFO - Setting Cuurent Stage 3 to Close
+2025-03-07 01:46:07,786 - INFO - Stage completion process successful
+2025-03-07 01:46:07,787 - INFO - 127.0.0.1 - - [07/Mar/2025 01:46:07] "POST /bot/stage-complete HTTP/1.1" 200 -
+2025-03-07 01:47:13,309 - INFO - 73.61.122.2 - - [07/Mar/2025 01:47:13] "GET /login HTTP/1.1" 200 -
+2025-03-07 01:47:17,236 - INFO - 73.61.122.2 - - [07/Mar/2025 01:47:17] "POST /login HTTP/1.1" 200 -
+2025-03-07 01:47:18,147 - INFO - 73.61.122.2 - - [07/Mar/2025 01:47:18] "[32mGET /api/trading_pairs HTTP/1.1[0m" 308 -
+2025-03-07 01:47:18,287 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-07 01:47:18,333 - DEBUG - https://api.kraken.com:443 "GET /0/public/AssetPairs HTTP/1.1" 200 None
+2025-03-07 01:47:18,354 - INFO - 73.61.122.2 - - [07/Mar/2025 01:47:18] "GET /api/symbols/kraken HTTP/1.1" 200 -
+2025-03-07 01:47:18,428 - INFO - 73.61.122.2 - - [07/Mar/2025 01:47:18] "GET /api/trading_pairs/ HTTP/1.1" 200 -
+2025-03-07 01:47:39,757 - INFO - 73.61.122.2 - - [07/Mar/2025 01:47:39] "POST /login HTTP/1.1" 200 -
+2025-03-07 01:47:40,362 - INFO - 73.61.122.2 - - [07/Mar/2025 01:47:40] "[32mGET /api/trading_pairs HTTP/1.1[0m" 308 -
+2025-03-07 01:47:40,505 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-07 01:47:40,550 - DEBUG - https://api.kraken.com:443 "GET /0/public/AssetPairs HTTP/1.1" 200 None
+2025-03-07 01:47:40,571 - INFO - 73.61.122.2 - - [07/Mar/2025 01:47:40] "GET /api/symbols/kraken HTTP/1.1" 200 -
+2025-03-07 01:47:40,642 - INFO - 73.61.122.2 - - [07/Mar/2025 01:47:40] "GET /api/trading_pairs/ HTTP/1.1" 200 -
+2025-03-07 02:11:14,058 - INFO - 73.61.122.2 - - [07/Mar/2025 02:11:14] "GET /login HTTP/1.1" 200 -
+2025-03-07 02:11:47,001 - INFO - 73.61.122.2 - - [07/Mar/2025 02:11:47] "POST /login HTTP/1.1" 200 -
+2025-03-07 02:11:47,632 - INFO - 73.61.122.2 - - [07/Mar/2025 02:11:47] "[32mGET /api/trading_pairs HTTP/1.1[0m" 308 -
+2025-03-07 02:11:47,763 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-07 02:11:47,907 - INFO - 73.61.122.2 - - [07/Mar/2025 02:11:47] "GET /api/trading_pairs/ HTTP/1.1" 200 -
+2025-03-07 02:11:47,918 - DEBUG - https://api.kraken.com:443 "GET /0/public/AssetPairs HTTP/1.1" 200 None
+2025-03-07 02:11:47,943 - INFO - 73.61.122.2 - - [07/Mar/2025 02:11:47] "GET /api/symbols/kraken HTTP/1.1" 200 -
+2025-03-07 02:12:14,040 - INFO - 73.61.122.2 - - [07/Mar/2025 02:12:14] "[33mGET /apple-touch-icon-precomposed.png HTTP/1.1[0m" 404 -
+2025-03-07 02:12:14,172 - INFO - 73.61.122.2 - - [07/Mar/2025 02:12:14] "[33mGET /apple-touch-icon.png HTTP/1.1[0m" 404 -
+2025-03-07 02:12:14,195 - INFO - 73.61.122.2 - - [07/Mar/2025 02:12:14] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-03-07 02:33:51,382 - INFO - 73.61.122.2 - - [07/Mar/2025 02:33:51] "GET /login HTTP/1.1" 200 -
+2025-03-07 02:33:54,666 - INFO - 73.61.122.2 - - [07/Mar/2025 02:33:54] "POST /login HTTP/1.1" 200 -
+2025-03-07 02:33:55,078 - INFO - 73.61.122.2 - - [07/Mar/2025 02:33:55] "[32mGET /api/trading_pairs HTTP/1.1[0m" 308 -
+2025-03-07 02:33:55,212 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-07 02:33:55,255 - DEBUG - https://api.kraken.com:443 "GET /0/public/AssetPairs HTTP/1.1" 200 None
+2025-03-07 02:33:55,279 - INFO - 73.61.122.2 - - [07/Mar/2025 02:33:55] "GET /api/symbols/kraken HTTP/1.1" 200 -
+2025-03-07 02:33:55,365 - INFO - 73.61.122.2 - - [07/Mar/2025 02:33:55] "GET /api/trading_pairs/ HTTP/1.1" 200 -
+2025-03-07 02:38:08,217 - INFO - 73.61.122.2 - - [07/Mar/2025 02:38:08] "[32mGET /apple-touch-icon-precomposed.png HTTP/1.1[0m" 302 -
+2025-03-07 02:38:08,294 - INFO - 73.61.122.2 - - [07/Mar/2025 02:38:08] "GET /login HTTP/1.1" 200 -
+2025-03-07 02:38:08,305 - INFO - 73.61.122.2 - - [07/Mar/2025 02:38:08] "GET /login HTTP/1.1" 200 -
+2025-03-07 02:38:08,408 - INFO - 73.61.122.2 - - [07/Mar/2025 02:38:08] "[32mGET /apple-touch-icon.png HTTP/1.1[0m" 302 -
+2025-03-07 02:38:08,413 - INFO - 73.61.122.2 - - [07/Mar/2025 02:38:08] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2025-03-07 02:38:08,511 - INFO - 73.61.122.2 - - [07/Mar/2025 02:38:08] "GET /login HTTP/1.1" 200 -
+2025-03-07 02:38:08,727 - INFO - 73.61.122.2 - - [07/Mar/2025 02:38:08] "GET /login HTTP/1.1" 200 -
+2025-03-07 02:38:08,743 - INFO - 73.61.122.2 - - [07/Mar/2025 02:38:08] "GET /login HTTP/1.1" 200 -
+2025-03-07 02:38:08,769 - INFO - 73.61.122.2 - - [07/Mar/2025 02:38:08] "[32mGET /apple-touch-icon-120x120-precomposed.png HTTP/1.1[0m" 302 -
+2025-03-07 02:38:09,053 - INFO - 73.61.122.2 - - [07/Mar/2025 02:38:09] "GET /login HTTP/1.1" 200 -
+2025-03-07 02:38:09,374 - INFO - 73.61.122.2 - - [07/Mar/2025 02:38:09] "[32mGET /apple-touch-icon-120x120.png HTTP/1.1[0m" 302 -
+2025-03-07 02:38:09,640 - INFO - 73.61.122.2 - - [07/Mar/2025 02:38:09] "GET /login HTTP/1.1" 200 -
+2025-03-07 02:38:09,919 - INFO - 73.61.122.2 - - [07/Mar/2025 02:38:09] "[32mGET /apple-touch-icon-precomposed.png HTTP/1.1[0m" 302 -
+2025-03-07 02:38:10,198 - INFO - 73.61.122.2 - - [07/Mar/2025 02:38:10] "GET /login HTTP/1.1" 200 -
+2025-03-07 02:38:10,483 - INFO - 73.61.122.2 - - [07/Mar/2025 02:38:10] "[32mGET /apple-touch-icon.png HTTP/1.1[0m" 302 -
+2025-03-07 02:38:10,745 - INFO - 73.61.122.2 - - [07/Mar/2025 02:38:10] "GET /login HTTP/1.1" 200 -
+2025-03-07 02:38:10,880 - INFO - 73.61.122.2 - - [07/Mar/2025 02:38:10] "GET /login HTTP/1.1" 200 -
+2025-03-07 02:38:11,022 - INFO - 73.61.122.2 - - [07/Mar/2025 02:38:11] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2025-03-07 02:38:11,332 - INFO - 73.61.122.2 - - [07/Mar/2025 02:38:11] "[32mGET /apple-touch-icon-120x120-precomposed.png HTTP/1.1[0m" 302 -
+2025-03-07 02:38:11,337 - INFO - 73.61.122.2 - - [07/Mar/2025 02:38:11] "GET /login HTTP/1.1" 200 -
+2025-03-07 02:38:11,602 - INFO - 73.61.122.2 - - [07/Mar/2025 02:38:11] "GET /login HTTP/1.1" 200 -
+2025-03-07 02:38:11,616 - INFO - 73.61.122.2 - - [07/Mar/2025 02:38:11] "[32mGET /apple-touch-icon-120x120-precomposed.png HTTP/1.1[0m" 302 -
+2025-03-07 02:38:11,866 - INFO - 73.61.122.2 - - [07/Mar/2025 02:38:11] "[32mGET /apple-touch-icon-120x120.png HTTP/1.1[0m" 302 -
+2025-03-07 02:38:11,891 - INFO - 73.61.122.2 - - [07/Mar/2025 02:38:11] "GET /login HTTP/1.1" 200 -
+2025-03-07 02:38:12,133 - INFO - 73.61.122.2 - - [07/Mar/2025 02:38:12] "GET /login HTTP/1.1" 200 -
+2025-03-07 02:38:12,185 - INFO - 73.61.122.2 - - [07/Mar/2025 02:38:12] "[32mGET /apple-touch-icon-120x120.png HTTP/1.1[0m" 302 -
+2025-03-07 02:38:12,406 - INFO - 73.61.122.2 - - [07/Mar/2025 02:38:12] "[32mGET /apple-touch-icon-precomposed.png HTTP/1.1[0m" 302 -
+2025-03-07 02:38:12,451 - INFO - 73.61.122.2 - - [07/Mar/2025 02:38:12] "GET /login HTTP/1.1" 200 -
+2025-03-07 02:38:12,668 - INFO - 73.61.122.2 - - [07/Mar/2025 02:38:12] "GET /login HTTP/1.1" 200 -
+2025-03-07 02:38:12,740 - INFO - 73.61.122.2 - - [07/Mar/2025 02:38:12] "[32mGET /apple-touch-icon-precomposed.png HTTP/1.1[0m" 302 -
+2025-03-07 02:38:12,931 - INFO - 73.61.122.2 - - [07/Mar/2025 02:38:12] "[32mGET /apple-touch-icon.png HTTP/1.1[0m" 302 -
+2025-03-07 02:38:13,023 - INFO - 73.61.122.2 - - [07/Mar/2025 02:38:13] "GET /login HTTP/1.1" 200 -
+2025-03-07 02:38:13,205 - INFO - 73.61.122.2 - - [07/Mar/2025 02:38:13] "GET /login HTTP/1.1" 200 -
+2025-03-07 02:38:13,289 - INFO - 73.61.122.2 - - [07/Mar/2025 02:38:13] "[32mGET /apple-touch-icon.png HTTP/1.1[0m" 302 -
+2025-03-07 02:38:13,562 - INFO - 73.61.122.2 - - [07/Mar/2025 02:38:13] "GET /login HTTP/1.1" 200 -
+2025-03-07 02:38:13,847 - INFO - 73.61.122.2 - - [07/Mar/2025 02:38:13] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2025-03-07 02:38:14,126 - INFO - 73.61.122.2 - - [07/Mar/2025 02:38:14] "GET /login HTTP/1.1" 200 -
+2025-03-07 02:39:26,549 - INFO - 73.61.122.2 - - [07/Mar/2025 02:39:26] "GET /login HTTP/1.1" 200 -
+2025-03-07 02:39:26,664 - INFO - 73.61.122.2 - - [07/Mar/2025 02:39:26] "[32mGET /apple-touch-icon-precomposed.png HTTP/1.1[0m" 302 -
+2025-03-07 02:39:26,824 - INFO - 73.61.122.2 - - [07/Mar/2025 02:39:26] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2025-03-07 02:39:26,825 - INFO - 73.61.122.2 - - [07/Mar/2025 02:39:26] "[32mGET /apple-touch-icon.png HTTP/1.1[0m" 302 -
+2025-03-07 02:39:26,938 - INFO - 73.61.122.2 - - [07/Mar/2025 02:39:26] "GET /login HTTP/1.1" 200 -
+2025-03-07 02:39:27,074 - INFO - 73.61.122.2 - - [07/Mar/2025 02:39:27] "GET /login HTTP/1.1" 200 -
+2025-03-07 02:39:27,095 - INFO - 73.61.122.2 - - [07/Mar/2025 02:39:27] "GET /login HTTP/1.1" 200 -
+2025-03-07 02:41:59,881 - INFO - Received request at /stage-complete
+2025-03-07 02:41:59,881 - DEBUG - ***************************
+Request Data: {'hitType': 'TakeProfit', 'symbol': 'XRPUSD'}
+
+
+2025-03-07 02:41:59,882 - DEBUG - Symbol: XRPUSD, Hit Type: TakeProfit
+2025-03-07 02:41:59,882 - DEBUG - Current Stage: 10
+2025-03-07 02:41:59,882 - DEBUG - StageKey: XRPUSD10, TRADING_PAIR_ID: 10
+2025-03-07 02:41:59,883 - DEBUG - Take Profit %: 3.0, Rebuy %: 3.0
+2025-03-07 02:41:59,883 - DEBUG - Current Capital: 500.0, Trade Usage %: 4.0
+2025-03-07 02:41:59,884 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-07 02:41:59,971 - DEBUG - https://api.kraken.com:443 "POST /0/private/AddOrder HTTP/1.1" 200 None
+2025-03-07 02:41:59,973 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-07 02:42:00,061 - DEBUG - https://api.kraken.com:443 "POST /0/private/QueryOrders HTTP/1.1" 200 None
+2025-03-07 02:42:00,083 - INFO - Setting Cuurent Stage 10 to Close
+2025-03-07 02:42:00,121 - INFO - Stage completion process successful
+2025-03-07 02:42:00,122 - INFO - 127.0.0.1 - - [07/Mar/2025 02:42:00] "POST /bot/stage-complete HTTP/1.1" 200 -
+2025-03-07 02:42:00,124 - INFO - Received request at /stage-complete
+2025-03-07 02:42:00,124 - DEBUG - ***************************
+Request Data: {'hitType': 'TakeProfit', 'symbol': 'XRPUSD'}
+
+
+2025-03-07 02:42:00,126 - DEBUG - Symbol: XRPUSD, Hit Type: TakeProfit
+2025-03-07 02:42:00,126 - DEBUG - Current Stage: 9
+2025-03-07 02:42:00,126 - DEBUG - StageKey: XRPUSD9, TRADING_PAIR_ID: 10
+2025-03-07 02:42:00,126 - DEBUG - Take Profit %: 3.0, Rebuy %: 3.0
+2025-03-07 02:42:00,126 - DEBUG - Current Capital: 500.0, Trade Usage %: 4.0
+2025-03-07 02:42:00,127 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-07 02:42:00,223 - DEBUG - https://api.kraken.com:443 "POST /0/private/AddOrder HTTP/1.1" 200 None
+2025-03-07 02:42:00,225 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-07 02:42:00,300 - DEBUG - https://api.kraken.com:443 "POST /0/private/QueryOrders HTTP/1.1" 200 24
+2025-03-07 02:42:01,302 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-07 02:42:01,381 - DEBUG - https://api.kraken.com:443 "POST /0/private/QueryOrders HTTP/1.1" 200 None
+2025-03-07 02:42:01,410 - INFO - Setting Cuurent Stage 9 to Close
+2025-03-07 02:42:01,442 - INFO - Stage completion process successful
+2025-03-07 02:42:01,445 - INFO - 127.0.0.1 - - [07/Mar/2025 02:42:01] "POST /bot/stage-complete HTTP/1.1" 200 -
+2025-03-07 02:42:01,451 - INFO - Received request at /stage-complete
+2025-03-07 02:42:01,451 - DEBUG - ***************************
+Request Data: {'hitType': 'TakeProfit', 'symbol': 'XRPUSD'}
+
+
+2025-03-07 02:42:01,452 - DEBUG - Symbol: XRPUSD, Hit Type: TakeProfit
+2025-03-07 02:42:01,454 - DEBUG - Current Stage: 8
+2025-03-07 02:42:01,454 - DEBUG - StageKey: XRPUSD8, TRADING_PAIR_ID: 10
+2025-03-07 02:42:01,464 - DEBUG - Take Profit %: 3.0, Rebuy %: 3.0
+2025-03-07 02:42:01,467 - DEBUG - Current Capital: 500.0, Trade Usage %: 4.0
+2025-03-07 02:42:01,472 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-07 02:42:01,554 - DEBUG - https://api.kraken.com:443 "POST /0/private/AddOrder HTTP/1.1" 200 None
+2025-03-07 02:42:01,556 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-07 02:42:01,639 - DEBUG - https://api.kraken.com:443 "POST /0/private/QueryOrders HTTP/1.1" 200 None
+2025-03-07 02:42:01,668 - INFO - Setting Cuurent Stage 8 to Close
+2025-03-07 02:42:01,730 - INFO - Stage completion process successful
+2025-03-07 02:42:01,731 - INFO - 127.0.0.1 - - [07/Mar/2025 02:42:01] "POST /bot/stage-complete HTTP/1.1" 200 -
+2025-03-07 02:42:01,738 - INFO - Received request at /stage-complete
+2025-03-07 02:42:01,738 - DEBUG - ***************************
+Request Data: {'hitType': 'TakeProfit', 'symbol': 'XRPUSD'}
+
+
+2025-03-07 02:42:01,739 - DEBUG - Symbol: XRPUSD, Hit Type: TakeProfit
+2025-03-07 02:42:01,739 - DEBUG - Current Stage: 7
+2025-03-07 02:42:01,739 - DEBUG - StageKey: XRPUSD7, TRADING_PAIR_ID: 10
+2025-03-07 02:42:01,740 - DEBUG - Take Profit %: 3.0, Rebuy %: 3.0
+2025-03-07 02:42:01,740 - DEBUG - Current Capital: 500.0, Trade Usage %: 4.0
+2025-03-07 02:42:01,741 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-07 02:42:01,816 - DEBUG - https://api.kraken.com:443 "POST /0/private/AddOrder HTTP/1.1" 200 None
+2025-03-07 02:42:01,818 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-07 02:42:01,939 - DEBUG - https://api.kraken.com:443 "POST /0/private/QueryOrders HTTP/1.1" 200 None
+2025-03-07 02:42:01,957 - INFO - Setting Cuurent Stage 7 to Close
+2025-03-07 02:42:01,990 - INFO - Stage completion process successful
+2025-03-07 02:42:01,990 - INFO - 127.0.0.1 - - [07/Mar/2025 02:42:01] "POST /bot/stage-complete HTTP/1.1" 200 -
+2025-03-07 02:42:01,997 - INFO - Received request at /stage-complete
+2025-03-07 02:42:01,997 - DEBUG - ***************************
+Request Data: {'hitType': 'TakeProfit', 'symbol': 'XRPUSD'}
+
+
+2025-03-07 02:42:01,999 - DEBUG - Symbol: XRPUSD, Hit Type: TakeProfit
+2025-03-07 02:42:01,999 - DEBUG - Current Stage: 6
+2025-03-07 02:42:02,000 - DEBUG - StageKey: XRPUSD6, TRADING_PAIR_ID: 10
+2025-03-07 02:42:02,002 - DEBUG - Take Profit %: 3.0, Rebuy %: 3.0
+2025-03-07 02:42:02,003 - DEBUG - Current Capital: 500.0, Trade Usage %: 4.0
+2025-03-07 02:42:02,006 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-07 02:42:02,086 - DEBUG - https://api.kraken.com:443 "POST /0/private/AddOrder HTTP/1.1" 200 None
+2025-03-07 02:42:02,088 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-07 02:42:02,185 - DEBUG - https://api.kraken.com:443 "POST /0/private/QueryOrders HTTP/1.1" 200 24
+2025-03-07 02:42:03,187 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-07 02:42:03,271 - DEBUG - https://api.kraken.com:443 "POST /0/private/QueryOrders HTTP/1.1" 200 None
+2025-03-07 02:42:03,291 - INFO - Setting Cuurent Stage 6 to Close
+2025-03-07 02:42:03,317 - INFO - Stage completion process successful
+2025-03-07 02:42:03,318 - INFO - 127.0.0.1 - - [07/Mar/2025 02:42:03] "POST /bot/stage-complete HTTP/1.1" 200 -
+2025-03-07 02:42:03,323 - INFO - Received request at /stage-complete
+2025-03-07 02:42:03,323 - DEBUG - ***************************
+Request Data: {'hitType': 'TakeProfit', 'symbol': 'XRPUSD'}
+
+
+2025-03-07 02:42:03,323 - DEBUG - Symbol: XRPUSD, Hit Type: TakeProfit
+2025-03-07 02:42:03,323 - DEBUG - Current Stage: 5
+2025-03-07 02:42:03,324 - DEBUG - StageKey: XRPUSD5, TRADING_PAIR_ID: 10
+2025-03-07 02:42:03,324 - DEBUG - Take Profit %: 3.0, Rebuy %: 3.0
+2025-03-07 02:42:03,324 - DEBUG - Current Capital: 500.0, Trade Usage %: 4.0
+2025-03-07 02:42:03,327 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-07 02:42:03,406 - DEBUG - https://api.kraken.com:443 "POST /0/private/AddOrder HTTP/1.1" 200 None
+2025-03-07 02:42:03,408 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-07 02:42:03,504 - DEBUG - https://api.kraken.com:443 "POST /0/private/QueryOrders HTTP/1.1" 200 None
+2025-03-07 02:42:04,506 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-07 02:42:04,595 - DEBUG - https://api.kraken.com:443 "POST /0/private/QueryOrders HTTP/1.1" 200 None
+2025-03-07 02:42:04,620 - INFO - Setting Cuurent Stage 5 to Close
+2025-03-07 02:42:04,645 - INFO - Stage completion process successful
+2025-03-07 02:42:04,646 - INFO - 127.0.0.1 - - [07/Mar/2025 02:42:04] "POST /bot/stage-complete HTTP/1.1" 200 -
+2025-03-07 02:42:06,469 - INFO - Received request at /stage-complete
+2025-03-07 02:42:06,470 - DEBUG - ***************************
+Request Data: {'hitType': 'TakeProfit', 'symbol': 'XRPUSD'}
+
+
+2025-03-07 02:42:06,470 - DEBUG - Symbol: XRPUSD, Hit Type: TakeProfit
+2025-03-07 02:42:06,470 - DEBUG - Current Stage: 4
+2025-03-07 02:42:06,470 - DEBUG - StageKey: XRPUSD4, TRADING_PAIR_ID: 10
+2025-03-07 02:42:06,471 - DEBUG - Take Profit %: 3.0, Rebuy %: 3.0
+2025-03-07 02:42:06,471 - DEBUG - Current Capital: 500.0, Trade Usage %: 4.0
+2025-03-07 02:42:06,472 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-07 02:42:06,552 - DEBUG - https://api.kraken.com:443 "POST /0/private/AddOrder HTTP/1.1" 200 None
+2025-03-07 02:42:06,554 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-07 02:42:06,641 - DEBUG - https://api.kraken.com:443 "POST /0/private/QueryOrders HTTP/1.1" 200 None
+2025-03-07 02:42:06,660 - INFO - Setting Cuurent Stage 4 to Close
+2025-03-07 02:42:06,684 - INFO - Stage completion process successful
+2025-03-07 02:42:06,684 - INFO - 127.0.0.1 - - [07/Mar/2025 02:42:06] "POST /bot/stage-complete HTTP/1.1" 200 -
+2025-03-07 02:42:06,687 - INFO - Received request at /stage-complete
+2025-03-07 02:42:06,687 - DEBUG - ***************************
+Request Data: {'hitType': 'TakeProfit', 'symbol': 'XRPUSD'}
+
+
+2025-03-07 02:42:06,687 - DEBUG - Symbol: XRPUSD, Hit Type: TakeProfit
+2025-03-07 02:42:06,688 - DEBUG - Current Stage: 3
+2025-03-07 02:42:06,688 - DEBUG - StageKey: XRPUSD3, TRADING_PAIR_ID: 10
+2025-03-07 02:42:06,689 - DEBUG - Take Profit %: 3.0, Rebuy %: 3.0
+2025-03-07 02:42:06,689 - DEBUG - Current Capital: 500.0, Trade Usage %: 4.0
+2025-03-07 02:42:06,690 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-07 02:42:06,761 - DEBUG - https://api.kraken.com:443 "POST /0/private/AddOrder HTTP/1.1" 200 None
+2025-03-07 02:42:06,763 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-07 02:42:06,837 - DEBUG - https://api.kraken.com:443 "POST /0/private/QueryOrders HTTP/1.1" 200 24
+2025-03-07 02:42:07,840 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-07 02:42:07,923 - DEBUG - https://api.kraken.com:443 "POST /0/private/QueryOrders HTTP/1.1" 200 None
+2025-03-07 02:42:07,940 - INFO - Setting Cuurent Stage 3 to Close
+2025-03-07 02:42:07,971 - INFO - Stage completion process successful
+2025-03-07 02:42:07,971 - INFO - 127.0.0.1 - - [07/Mar/2025 02:42:07] "POST /bot/stage-complete HTTP/1.1" 200 -
+2025-03-07 02:42:07,976 - INFO - Received request at /stage-complete
+2025-03-07 02:42:07,976 - DEBUG - ***************************
+Request Data: {'hitType': 'TakeProfit', 'symbol': 'XRPUSD'}
+
+
+2025-03-07 02:42:07,977 - DEBUG - Symbol: XRPUSD, Hit Type: TakeProfit
+2025-03-07 02:42:07,978 - DEBUG - Current Stage: 2
+2025-03-07 02:42:07,979 - DEBUG - StageKey: XRPUSD2, TRADING_PAIR_ID: 10
+2025-03-07 02:42:07,982 - DEBUG - Take Profit %: 3.0, Rebuy %: 3.0
+2025-03-07 02:42:07,982 - DEBUG - Current Capital: 500.0, Trade Usage %: 4.0
+2025-03-07 02:42:07,984 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-07 02:42:08,070 - DEBUG - https://api.kraken.com:443 "POST /0/private/AddOrder HTTP/1.1" 200 None
+2025-03-07 02:42:08,072 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-07 02:42:08,151 - DEBUG - https://api.kraken.com:443 "POST /0/private/QueryOrders HTTP/1.1" 200 None
+2025-03-07 02:42:09,153 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-07 02:42:09,231 - DEBUG - https://api.kraken.com:443 "POST /0/private/QueryOrders HTTP/1.1" 200 None
+2025-03-07 02:42:09,253 - INFO - Setting Cuurent Stage 2 to Close
+2025-03-07 02:42:09,280 - INFO - Stage completion process successful
+2025-03-07 02:42:09,280 - INFO - 127.0.0.1 - - [07/Mar/2025 02:42:09] "POST /bot/stage-complete HTTP/1.1" 200 -
+2025-03-07 02:55:06,651 - INFO - 73.61.122.2 - - [07/Mar/2025 02:55:06] "[32mGET / HTTP/1.1[0m" 302 -
+2025-03-07 02:55:06,936 - INFO - 73.61.122.2 - - [07/Mar/2025 02:55:06] "GET /login HTTP/1.1" 200 -
+2025-03-07 02:55:40,246 - INFO - 73.61.122.2 - - [07/Mar/2025 02:55:40] "POST /login HTTP/1.1" 200 -
+2025-03-07 02:55:40,929 - INFO - 73.61.122.2 - - [07/Mar/2025 02:55:40] "[32mGET /api/trading_pairs HTTP/1.1[0m" 308 -
+2025-03-07 02:55:41,077 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-07 02:55:41,158 - DEBUG - https://api.kraken.com:443 "GET /0/public/AssetPairs HTTP/1.1" 200 None
+2025-03-07 02:55:41,186 - INFO - 73.61.122.2 - - [07/Mar/2025 02:55:41] "GET /api/symbols/kraken HTTP/1.1" 200 -
+2025-03-07 02:55:41,215 - INFO - 73.61.122.2 - - [07/Mar/2025 02:55:41] "GET /api/trading_pairs/ HTTP/1.1" 200 -
+2025-03-07 03:14:46,740 - INFO - 73.61.122.2 - - [07/Mar/2025 03:14:46] "GET /detail?symbol=11 HTTP/1.1" 200 -
+2025-03-07 03:14:47,708 - INFO - 73.61.122.2 - - [07/Mar/2025 03:14:47] "[32mGET /api/positions?status=Waiting,Open&symbol=11 HTTP/1.1[0m" 308 -
+2025-03-07 03:14:47,844 - INFO - 73.61.122.2 - - [07/Mar/2025 03:14:47] "GET /api/trading_pairs/11 HTTP/1.1" 200 -
+2025-03-07 03:14:47,985 - INFO - 73.61.122.2 - - [07/Mar/2025 03:14:47] "GET /api/positions/?status=Waiting,Open&symbol=11 HTTP/1.1" 200 -
+2025-03-07 03:38:58,518 - INFO - 73.61.122.2 - - [07/Mar/2025 03:38:58] "GET /login HTTP/1.1" 200 -
+2025-03-07 03:39:01,436 - INFO - 73.61.122.2 - - [07/Mar/2025 03:39:01] "POST /login HTTP/1.1" 200 -
+2025-03-07 03:39:01,814 - INFO - 73.61.122.2 - - [07/Mar/2025 03:39:01] "[32mGET /api/trading_pairs HTTP/1.1[0m" 308 -
+2025-03-07 03:39:01,953 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-07 03:39:02,059 - DEBUG - https://api.kraken.com:443 "GET /0/public/AssetPairs HTTP/1.1" 200 None
+2025-03-07 03:39:02,094 - INFO - 73.61.122.2 - - [07/Mar/2025 03:39:02] "GET /api/symbols/kraken HTTP/1.1" 200 -
+2025-03-07 03:39:02,108 - INFO - 73.61.122.2 - - [07/Mar/2025 03:39:02] "GET /api/trading_pairs/ HTTP/1.1" 200 -
+2025-03-07 03:54:09,909 - INFO - 198.235.24.253 - - [07/Mar/2025 03:54:09] "[32mGET / HTTP/1.0[0m" 302 -
+2025-03-07 05:04:18,333 - INFO - 73.61.122.2 - - [07/Mar/2025 05:04:18] "GET /login HTTP/1.1" 200 -
+2025-03-07 06:32:03,264 - INFO - 52.167.144.225 - - [07/Mar/2025 06:32:03] "[32mGET / HTTP/1.1[0m" 302 -
+2025-03-07 06:32:04,154 - INFO - 52.167.144.225 - - [07/Mar/2025 06:32:04] "GET /login HTTP/1.1" 200 -
+2025-03-07 06:57:54,630 - ERROR - 18.97.5.8 - - [07/Mar/2025 06:57:54] code 400, message Bad request version ("ð\x93,¸\x8f!rÁO\x05»EhÙZ¡±\x81µC:\x87\x04ºÏö\xad¬`÷ÏG\x00V\x13\x02\x13\x03\x13\x01À,À0À+À/Ì©Ì¨\x00\x9f\x00\x9eÌªÀ¯À\xadÀ®À¬À$À(À#À'À")
+2025-03-07 06:57:54,630 - INFO - 18.97.5.8 - - [07/Mar/2025 06:57:54] "[31m[1m\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03E ùq<\x98\x1eáz ééwßF2ÅÃÞ!É\x09ÌÈS¶\x98\x18ö=%ë ð\x93,¸\x8f!rÁO\x05»EhÙZ¡±\x81µC:\x87\x04ºÏö­¬`÷ÏG\x00V\x13\x02\x13\x03\x13\x01À,À0À+À/Ì©Ì¨\x00\x9f\x00\x9eÌªÀ¯À­À®À¬À$À(À#À'À[0m" 400 -
+2025-03-07 06:57:54,855 - INFO - 18.97.5.8 - - [07/Mar/2025 06:57:54] "[32mGET / HTTP/1.1[0m" 302 -
+2025-03-07 06:57:55,090 - INFO - 18.97.5.8 - - [07/Mar/2025 06:57:55] "GET /login HTTP/1.1" 200 -
+2025-03-07 08:23:50,934 - INFO - 116.252.76.35 - - [07/Mar/2025 08:23:50] "[32mGET / HTTP/1.1[0m" 302 -
+2025-03-07 08:24:48,712 - INFO - 112.193.162.113 - - [07/Mar/2025 08:24:48] "[32mGET / HTTP/1.1[0m" 302 -
+2025-03-07 08:24:52,991 - INFO - 183.160.194.38 - - [07/Mar/2025 08:24:52] "GET /login HTTP/1.1" 200 -
+2025-03-07 08:24:56,214 - INFO - 183.95.158.36 - - [07/Mar/2025 08:24:56] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2025-03-07 08:56:20,775 - INFO - 182.188.56.156 - - [07/Mar/2025 08:56:20] "GET /detail?symbol=10 HTTP/1.1" 200 -
+2025-03-07 08:56:20,992 - INFO - 182.188.56.156 - - [07/Mar/2025 08:56:20] "GET /api/trading_pairs/10 HTTP/1.1" 200 -
+2025-03-07 08:56:21,167 - INFO - 182.188.56.156 - - [07/Mar/2025 08:56:21] "GET /api/positions/?status=Waiting,Open&symbol=10 HTTP/1.1" 200 -
+2025-03-07 08:56:28,331 - INFO - 182.188.56.156 - - [07/Mar/2025 08:56:28] "GET / HTTP/1.1" 200 -
+2025-03-07 08:56:28,561 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-07 08:56:28,652 - DEBUG - https://api.kraken.com:443 "GET /0/public/AssetPairs HTTP/1.1" 200 None
+2025-03-07 08:56:28,680 - INFO - 182.188.56.156 - - [07/Mar/2025 08:56:28] "GET /api/symbols/kraken HTTP/1.1" 200 -
+2025-03-07 08:56:28,747 - INFO - 182.188.56.156 - - [07/Mar/2025 08:56:28] "GET /api/trading_pairs/ HTTP/1.1" 200 -
+2025-03-07 08:56:37,115 - INFO - 182.188.56.156 - - [07/Mar/2025 08:56:37] "GET /detail?symbol=10 HTTP/1.1" 200 -
+2025-03-07 08:56:37,332 - INFO - 182.188.56.156 - - [07/Mar/2025 08:56:37] "GET /api/trading_pairs/10 HTTP/1.1" 200 -
+2025-03-07 08:56:37,506 - INFO - 182.188.56.156 - - [07/Mar/2025 08:56:37] "GET /api/positions/?status=Waiting,Open&symbol=10 HTTP/1.1" 200 -
+2025-03-07 08:56:38,679 - INFO - 182.188.56.156 - - [07/Mar/2025 08:56:38] "GET /history?symbol=10 HTTP/1.1" 200 -
+2025-03-07 08:56:38,893 - INFO - 182.188.56.156 - - [07/Mar/2025 08:56:38] "GET /api/positions/closed?status=Closed&symbol=10 HTTP/1.1" 200 -
+2025-03-07 08:57:04,371 - INFO - 182.188.56.156 - - [07/Mar/2025 08:57:04] "GET / HTTP/1.1" 200 -
+2025-03-07 08:57:04,608 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-07 08:57:04,651 - DEBUG - https://api.kraken.com:443 "GET /0/public/AssetPairs HTTP/1.1" 200 None
+2025-03-07 08:57:04,681 - INFO - 182.188.56.156 - - [07/Mar/2025 08:57:04] "GET /api/symbols/kraken HTTP/1.1" 200 -
+2025-03-07 08:57:04,796 - INFO - 182.188.56.156 - - [07/Mar/2025 08:57:04] "GET /api/trading_pairs/ HTTP/1.1" 200 -
+2025-03-07 08:57:08,285 - INFO - 182.188.56.156 - - [07/Mar/2025 08:57:08] "GET /detail?symbol=8 HTTP/1.1" 200 -
+2025-03-07 08:57:08,495 - INFO - 182.188.56.156 - - [07/Mar/2025 08:57:08] "GET /api/trading_pairs/8 HTTP/1.1" 200 -
+2025-03-07 08:57:08,672 - INFO - 182.188.56.156 - - [07/Mar/2025 08:57:08] "GET /api/positions/?status=Waiting,Open&symbol=8 HTTP/1.1" 200 -
+2025-03-07 08:57:21,113 - INFO - 182.188.56.156 - - [07/Mar/2025 08:57:21] "GET /detail?symbol=10 HTTP/1.1" 200 -
+2025-03-07 08:57:21,318 - INFO - 182.188.56.156 - - [07/Mar/2025 08:57:21] "GET /api/trading_pairs/10 HTTP/1.1" 200 -
+2025-03-07 08:57:21,499 - INFO - 182.188.56.156 - - [07/Mar/2025 08:57:21] "GET /api/positions/?status=Waiting,Open&symbol=10 HTTP/1.1" 200 -
+2025-03-07 08:57:28,746 - INFO - 182.188.56.156 - - [07/Mar/2025 08:57:28] "GET /history?symbol=10 HTTP/1.1" 200 -
+2025-03-07 08:57:28,951 - INFO - 182.188.56.156 - - [07/Mar/2025 08:57:28] "GET /api/positions/closed?status=Closed&symbol=10 HTTP/1.1" 200 -
+2025-03-07 08:57:45,629 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-07 08:57:45,637 - INFO - 182.188.56.156 - - [07/Mar/2025 08:57:45] "GET /api/trading_pairs/ HTTP/1.1" 200 -
+2025-03-07 08:57:45,685 - DEBUG - https://api.kraken.com:443 "GET /0/public/AssetPairs HTTP/1.1" 200 None
+2025-03-07 08:57:45,708 - INFO - 182.188.56.156 - - [07/Mar/2025 08:57:45] "GET /api/symbols/kraken HTTP/1.1" 200 -
+2025-03-07 08:57:48,988 - INFO - 182.188.56.156 - - [07/Mar/2025 08:57:48] "GET / HTTP/1.1" 200 -
+2025-03-07 08:57:49,201 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-07 08:57:49,301 - DEBUG - https://api.kraken.com:443 "GET /0/public/AssetPairs HTTP/1.1" 200 None
+2025-03-07 08:57:49,322 - INFO - 182.188.56.156 - - [07/Mar/2025 08:57:49] "GET /api/symbols/kraken HTTP/1.1" 200 -
+2025-03-07 08:57:49,385 - INFO - 182.188.56.156 - - [07/Mar/2025 08:57:49] "GET /api/trading_pairs/ HTTP/1.1" 200 -
+2025-03-07 08:57:51,857 - INFO - 182.188.56.156 - - [07/Mar/2025 08:57:51] "GET /detail?symbol=11 HTTP/1.1" 200 -
+2025-03-07 08:57:52,068 - INFO - 182.188.56.156 - - [07/Mar/2025 08:57:52] "GET /api/trading_pairs/11 HTTP/1.1" 200 -
+2025-03-07 08:57:52,247 - INFO - 182.188.56.156 - - [07/Mar/2025 08:57:52] "GET /api/positions/?status=Waiting,Open&symbol=11 HTTP/1.1" 200 -
+2025-03-07 08:57:55,324 - INFO - 182.188.56.156 - - [07/Mar/2025 08:57:55] "GET /history?symbol=11 HTTP/1.1" 200 -
+2025-03-07 08:57:55,598 - INFO - 182.188.56.156 - - [07/Mar/2025 08:57:55] "GET /api/positions/closed?status=Closed&symbol=11 HTTP/1.1" 200 -
+2025-03-07 08:57:56,929 - INFO - 182.188.56.156 - - [07/Mar/2025 08:57:56] "GET /detail?symbol=11 HTTP/1.1" 200 -
+2025-03-07 08:57:57,138 - INFO - 182.188.56.156 - - [07/Mar/2025 08:57:57] "GET /api/trading_pairs/11 HTTP/1.1" 200 -
+2025-03-07 08:57:57,318 - INFO - 182.188.56.156 - - [07/Mar/2025 08:57:57] "GET /api/positions/?status=Waiting,Open&symbol=11 HTTP/1.1" 200 -
+2025-03-07 08:57:57,922 - INFO - 182.188.56.156 - - [07/Mar/2025 08:57:57] "GET / HTTP/1.1" 200 -
+2025-03-07 08:57:58,131 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-07 08:57:58,176 - DEBUG - https://api.kraken.com:443 "GET /0/public/AssetPairs HTTP/1.1" 200 None
+2025-03-07 08:57:58,204 - INFO - 182.188.56.156 - - [07/Mar/2025 08:57:58] "GET /api/symbols/kraken HTTP/1.1" 200 -
+2025-03-07 08:57:58,319 - INFO - 182.188.56.156 - - [07/Mar/2025 08:57:58] "GET /api/trading_pairs/ HTTP/1.1" 200 -
+2025-03-07 12:05:39,453 - INFO - 40.77.167.116 - - [07/Mar/2025 12:05:39] "[32mGET /forgot-password HTTP/1.1[0m" 302 -
+2025-03-07 12:05:40,486 - INFO - 40.77.167.116 - - [07/Mar/2025 12:05:40] "GET /login HTTP/1.1" 200 -
+2025-03-07 12:14:35,472 - INFO - 73.61.122.2 - - [07/Mar/2025 12:14:35] "[32mGET / HTTP/1.1[0m" 302 -
+2025-03-07 12:14:35,744 - INFO - 73.61.122.2 - - [07/Mar/2025 12:14:35] "GET /login HTTP/1.1" 200 -
+2025-03-07 12:56:42,512 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-07 12:56:42,514 - INFO - 182.188.56.156 - - [07/Mar/2025 12:56:42] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-03-07 12:56:42,617 - DEBUG - https://api.kraken.com:443 "GET /0/public/AssetPairs HTTP/1.1" 200 None
+2025-03-07 12:56:42,645 - INFO - 182.188.56.156 - - [07/Mar/2025 12:56:42] "GET /api/symbols/kraken HTTP/1.1" 200 -
+2025-03-07 12:56:42,702 - INFO - 182.188.56.156 - - [07/Mar/2025 12:56:42] "GET /api/trading_pairs/ HTTP/1.1" 200 -
+2025-03-07 12:56:51,083 - INFO - 182.188.56.156 - - [07/Mar/2025 12:56:51] "GET / HTTP/1.1" 200 -
+2025-03-07 12:56:51,327 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-07 12:56:51,505 - DEBUG - https://api.kraken.com:443 "GET /0/public/AssetPairs HTTP/1.1" 200 None
+2025-03-07 12:56:51,555 - INFO - 182.188.56.156 - - [07/Mar/2025 12:56:51] "GET /api/symbols/kraken HTTP/1.1" 200 -
+2025-03-07 12:56:51,562 - INFO - 182.188.56.156 - - [07/Mar/2025 12:56:51] "GET /api/trading_pairs/ HTTP/1.1" 200 -
+2025-03-07 13:04:36,381 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-07 13:04:36,383 - INFO - 182.188.56.156 - - [07/Mar/2025 13:04:36] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-03-07 13:04:36,466 - DEBUG - https://api.kraken.com:443 "GET /0/public/AssetPairs HTTP/1.1" 200 None
+2025-03-07 13:04:36,493 - INFO - 182.188.56.156 - - [07/Mar/2025 13:04:36] "GET /api/symbols/kraken HTTP/1.1" 200 -
+2025-03-07 13:04:36,583 - INFO - 182.188.56.156 - - [07/Mar/2025 13:04:36] "GET /api/trading_pairs/ HTTP/1.1" 200 -
+2025-03-07 14:06:17,859 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-07 14:06:17,861 - INFO - 182.188.56.156 - - [07/Mar/2025 14:06:17] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-03-07 14:06:17,870 - INFO - 182.188.56.156 - - [07/Mar/2025 14:06:17] "GET /api/trading_pairs/ HTTP/1.1" 200 -
+2025-03-07 14:06:17,952 - DEBUG - https://api.kraken.com:443 "GET /0/public/AssetPairs HTTP/1.1" 200 None
+2025-03-07 14:06:17,977 - INFO - 182.188.56.156 - - [07/Mar/2025 14:06:17] "GET /api/symbols/kraken HTTP/1.1" 200 -
+2025-03-07 14:15:48,001 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-07 14:15:48,002 - INFO - 182.188.56.156 - - [07/Mar/2025 14:15:48] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-03-07 14:15:48,095 - INFO - 182.188.56.156 - - [07/Mar/2025 14:15:48] "GET /api/trading_pairs/ HTTP/1.1" 200 -
+2025-03-07 14:15:48,099 - DEBUG - https://api.kraken.com:443 "GET /0/public/AssetPairs HTTP/1.1" 200 None
+2025-03-07 14:15:48,118 - INFO - 182.188.56.156 - - [07/Mar/2025 14:15:48] "GET /api/symbols/kraken HTTP/1.1" 200 -
+2025-03-07 14:29:17,986 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-07 14:29:17,988 - INFO - 182.188.56.156 - - [07/Mar/2025 14:29:17] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-03-07 14:29:17,996 - INFO - 182.188.56.156 - - [07/Mar/2025 14:29:17] "GET /api/trading_pairs/ HTTP/1.1" 200 -
+2025-03-07 14:29:18,174 - DEBUG - https://api.kraken.com:443 "GET /0/public/AssetPairs HTTP/1.1" 200 None
+2025-03-07 14:29:18,240 - INFO - 182.188.56.156 - - [07/Mar/2025 14:29:18] "GET /api/symbols/kraken HTTP/1.1" 200 -
+2025-03-07 14:39:39,746 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-07 14:39:39,748 - INFO - 182.188.56.156 - - [07/Mar/2025 14:39:39] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-03-07 14:39:39,840 - DEBUG - https://api.kraken.com:443 "GET /0/public/AssetPairs HTTP/1.1" 200 None
+2025-03-07 14:39:39,860 - INFO - 182.188.56.156 - - [07/Mar/2025 14:39:39] "GET /api/symbols/kraken HTTP/1.1" 200 -
+2025-03-07 14:39:39,867 - INFO - 182.188.56.156 - - [07/Mar/2025 14:39:39] "GET /api/trading_pairs/ HTTP/1.1" 200 -
+2025-03-07 15:12:41,255 - INFO - 182.188.56.156 - - [07/Mar/2025 15:12:41] "GET / HTTP/1.1" 200 -
+2025-03-07 15:12:41,469 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-07 15:12:41,532 - DEBUG - https://api.kraken.com:443 "GET /0/public/AssetPairs HTTP/1.1" 200 None
+2025-03-07 15:12:41,552 - INFO - 182.188.56.156 - - [07/Mar/2025 15:12:41] "GET /api/symbols/kraken HTTP/1.1" 200 -
+2025-03-07 15:12:41,651 - INFO - 182.188.56.156 - - [07/Mar/2025 15:12:41] "GET /api/trading_pairs/ HTTP/1.1" 200 -
+2025-03-07 18:45:47,775 - ERROR - 120.211.115.3 - - [07/Mar/2025 18:45:47] code 400, message Bad request syntax ('\x03\x00\x00\x13\x0eà\x00\x00\x00\x00\x00\x01\x00\x08\x00\x03\x00\x00\x00')
+2025-03-07 18:45:47,775 - INFO - 120.211.115.3 - - [07/Mar/2025 18:45:47] "[31m[1m\x03\x00\x00\x13\x0eà\x00\x00\x00\x00\x00\x01\x00\x08\x00\x03\x00\x00\x00[0m" 400 -
+2025-03-07 19:27:51,774 - ERROR - 85.215.220.92 - - [07/Mar/2025 19:27:51] code 400, message Bad request syntax ('\x03\x00\x00\x13\x0eà\x00\x00\x00\x00\x00\x01\x00\x08\x00\x03\x00\x00\x00')
+2025-03-07 19:27:51,775 - INFO - 85.215.220.92 - - [07/Mar/2025 19:27:51] "[31m[1m\x03\x00\x00\x13\x0eà\x00\x00\x00\x00\x00\x01\x00\x08\x00\x03\x00\x00\x00[0m" 400 -
+2025-03-07 21:28:56,209 - INFO - 20.65.193.123 - - [07/Mar/2025 21:28:56] "[32mGET /v2/ HTTP/1.1[0m" 302 -
+2025-03-07 22:15:49,549 - INFO - 73.61.122.2 - - [07/Mar/2025 22:15:49] "[32mGET / HTTP/1.1[0m" 302 -
+2025-03-07 22:15:49,855 - INFO - 73.61.122.2 - - [07/Mar/2025 22:15:49] "GET /login HTTP/1.1" 200 -
+2025-03-07 22:16:17,843 - INFO - 73.61.122.2 - - [07/Mar/2025 22:16:17] "POST /login HTTP/1.1" 200 -
+2025-03-07 22:16:18,428 - INFO - 73.61.122.2 - - [07/Mar/2025 22:16:18] "[32mGET /api/trading_pairs HTTP/1.1[0m" 308 -
+2025-03-07 22:16:18,575 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-07 22:16:18,689 - DEBUG - https://api.kraken.com:443 "GET /0/public/AssetPairs HTTP/1.1" 200 None
+2025-03-07 22:16:18,728 - INFO - 73.61.122.2 - - [07/Mar/2025 22:16:18] "GET /api/symbols/kraken HTTP/1.1" 200 -
+2025-03-07 22:16:18,743 - INFO - 73.61.122.2 - - [07/Mar/2025 22:16:18] "GET /api/trading_pairs/ HTTP/1.1" 200 -
+2025-03-07 22:33:54,033 - INFO - 73.61.122.2 - - [07/Mar/2025 22:33:54] "GET /login HTTP/1.1" 200 -
+2025-03-07 22:33:57,426 - INFO - 73.61.122.2 - - [07/Mar/2025 22:33:57] "POST /login HTTP/1.1" 200 -
+2025-03-07 22:33:57,816 - INFO - 73.61.122.2 - - [07/Mar/2025 22:33:57] "[32mGET /api/trading_pairs HTTP/1.1[0m" 308 -
+2025-03-07 22:33:57,946 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-07 22:33:58,028 - DEBUG - https://api.kraken.com:443 "GET /0/public/AssetPairs HTTP/1.1" 200 None
+2025-03-07 22:33:58,070 - INFO - 73.61.122.2 - - [07/Mar/2025 22:33:58] "GET /api/symbols/kraken HTTP/1.1" 200 -
+2025-03-07 22:33:58,125 - INFO - 73.61.122.2 - - [07/Mar/2025 22:33:58] "GET /api/trading_pairs/ HTTP/1.1" 200 -
+2025-03-07 22:52:42,500 - INFO - 118.193.65.212 - - [07/Mar/2025 22:52:42] "[32mGET / HTTP/1.1[0m" 302 -
+2025-03-07 22:52:43,081 - ERROR - 118.193.65.212 - - [07/Mar/2025 22:52:43] code 400, message Bad request version ('À\x13À')
+2025-03-07 22:52:43,081 - INFO - 118.193.65.212 - - [07/Mar/2025 22:52:43] "[31m[1m\x16\x03\x01\x00ò\x01\x00\x00î\x03\x03ú§C¬ESb©c\x8d\x83\x9c\x87\x15òSX7q¿\x17ç\x1a)\x7fÏ.zHéuD ¤\x02¦ÏQu³×æ\x9fIë)\x9b`lZ\x93­¿\x9eä9s\x9a\x01K÷\x01<öÚ\x00&À+À/À,À0Ì©Ì¨À\x09À\x13À[0m" 400 -
+2025-03-07 22:52:43,200 - ERROR - 118.193.65.212 - - [07/Mar/2025 22:52:43] code 400, message Bad HTTP/0.9 request type ('t3')
+2025-03-07 22:52:43,200 - INFO - 118.193.65.212 - - [07/Mar/2025 22:52:43] "[31m[1mt3 12.1.2[0m" 400 -
+2025-03-07 22:53:57,844 - INFO - 165.154.206.222 - - [07/Mar/2025 22:53:57] "[32mGET / HTTP/1.1[0m" 302 -
+2025-03-07 22:53:58,172 - INFO - 165.154.206.222 - - [07/Mar/2025 22:53:58] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2025-03-07 22:53:58,978 - INFO - 165.154.206.222 - - [07/Mar/2025 22:53:58] "GET /login HTTP/1.1" 200 -
+2025-03-07 22:53:59,307 - INFO - 165.154.206.222 - - [07/Mar/2025 22:53:59] "[33mGET /login/robots.txt HTTP/1.1[0m" 404 -
+2025-03-07 22:53:59,312 - INFO - 165.154.206.222 - - [07/Mar/2025 22:53:59] "[33mGET /login/sitemap.xml HTTP/1.1[0m" 404 -
+2025-03-07 22:54:00,455 - INFO - 165.154.206.222 - - [07/Mar/2025 22:54:00] "GET /login HTTP/1.1" 200 -
+2025-03-07 22:54:00,787 - INFO - 165.154.206.222 - - [07/Mar/2025 22:54:00] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2025-03-07 22:54:01,129 - INFO - 165.154.206.222 - - [07/Mar/2025 22:54:01] "GET /login HTTP/1.1" 200 -
+2025-03-07 22:54:01,456 - INFO - 165.154.206.222 - - [07/Mar/2025 22:54:01] "[33mGET /login/robots.txt HTTP/1.1[0m" 404 -
+2025-03-07 22:54:01,470 - INFO - 165.154.206.222 - - [07/Mar/2025 22:54:01] "[33mGET /login/sitemap.xml HTTP/1.1[0m" 404 -
+2025-03-07 23:04:14,737 - INFO - 182.188.56.156 - - [07/Mar/2025 23:04:14] "GET / HTTP/1.1" 200 -
+2025-03-07 23:04:14,990 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-07 23:04:15,081 - DEBUG - https://api.kraken.com:443 "GET /0/public/AssetPairs HTTP/1.1" 200 None
+2025-03-07 23:04:15,103 - INFO - 182.188.56.156 - - [07/Mar/2025 23:04:15] "GET /api/symbols/kraken HTTP/1.1" 200 -
+2025-03-07 23:04:15,175 - INFO - 182.188.56.156 - - [07/Mar/2025 23:04:15] "GET /api/trading_pairs/ HTTP/1.1" 200 -
+2025-03-07 23:04:17,791 - INFO - 182.188.56.156 - - [07/Mar/2025 23:04:17] "GET / HTTP/1.1" 200 -
+2025-03-07 23:04:18,007 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-07 23:04:18,096 - DEBUG - https://api.kraken.com:443 "GET /0/public/AssetPairs HTTP/1.1" 200 None
+2025-03-07 23:04:18,136 - INFO - 182.188.56.156 - - [07/Mar/2025 23:04:18] "GET /api/symbols/kraken HTTP/1.1" 200 -
+2025-03-07 23:04:18,221 - INFO - 182.188.56.156 - - [07/Mar/2025 23:04:18] "GET /api/trading_pairs/ HTTP/1.1" 200 -
+2025-03-07 23:04:20,491 - INFO - 182.188.56.156 - - [07/Mar/2025 23:04:20] "GET /detail?symbol=8 HTTP/1.1" 200 -
+2025-03-07 23:04:20,736 - INFO - 182.188.56.156 - - [07/Mar/2025 23:04:20] "GET /api/trading_pairs/8 HTTP/1.1" 200 -
+2025-03-07 23:04:20,917 - INFO - 182.188.56.156 - - [07/Mar/2025 23:04:20] "GET /api/positions/?status=Waiting,Open&symbol=8 HTTP/1.1" 200 -
+2025-03-07 23:04:24,791 - INFO - 182.188.56.156 - - [07/Mar/2025 23:04:24] "GET /history?symbol=8 HTTP/1.1" 200 -
+2025-03-07 23:04:24,992 - INFO - 182.188.56.156 - - [07/Mar/2025 23:04:24] "GET /api/positions/closed?status=Closed&symbol=8 HTTP/1.1" 200 -
+2025-03-07 23:04:30,716 - INFO - 182.188.56.156 - - [07/Mar/2025 23:04:30] "GET /detail?symbol=11 HTTP/1.1" 200 -
+2025-03-07 23:04:30,931 - INFO - 182.188.56.156 - - [07/Mar/2025 23:04:30] "GET /api/trading_pairs/11 HTTP/1.1" 200 -
+2025-03-07 23:04:31,113 - INFO - 182.188.56.156 - - [07/Mar/2025 23:04:31] "GET /api/positions/?status=Waiting,Open&symbol=11 HTTP/1.1" 200 -
+2025-03-07 23:25:45,850 - INFO - 182.188.56.156 - - [07/Mar/2025 23:25:45] "GET / HTTP/1.1" 200 -
+2025-03-07 23:25:46,078 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-07 23:25:46,156 - DEBUG - https://api.kraken.com:443 "GET /0/public/AssetPairs HTTP/1.1" 200 None
+2025-03-07 23:25:46,187 - INFO - 182.188.56.156 - - [07/Mar/2025 23:25:46] "GET /api/symbols/kraken HTTP/1.1" 200 -
+2025-03-07 23:25:46,263 - INFO - 182.188.56.156 - - [07/Mar/2025 23:25:46] "GET /api/trading_pairs/ HTTP/1.1" 200 -
+2025-03-07 23:27:42,860 - INFO - 52.167.144.200 - - [07/Mar/2025 23:27:42] "[32mGET /forgot-password HTTP/1.1[0m" 302 -
+2025-03-07 23:27:43,815 - INFO - 52.167.144.200 - - [07/Mar/2025 23:27:43] "GET /login HTTP/1.1" 200 -
+2025-03-07 23:32:35,124 - INFO - 73.61.122.2 - - [07/Mar/2025 23:32:35] "POST /login HTTP/1.1" 200 -
+2025-03-07 23:32:35,773 - INFO - 73.61.122.2 - - [07/Mar/2025 23:32:35] "[32mGET /api/trading_pairs HTTP/1.1[0m" 308 -
+2025-03-07 23:32:35,908 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-07 23:32:35,989 - DEBUG - https://api.kraken.com:443 "GET /0/public/AssetPairs HTTP/1.1" 200 None
+2025-03-07 23:32:36,009 - INFO - 73.61.122.2 - - [07/Mar/2025 23:32:36] "GET /api/symbols/kraken HTTP/1.1" 200 -
+2025-03-07 23:32:36,058 - INFO - 73.61.122.2 - - [07/Mar/2025 23:32:36] "GET /api/trading_pairs/ HTTP/1.1" 200 -
+2025-03-07 23:36:27,581 - INFO - 73.61.122.2 - - [07/Mar/2025 23:36:27] "POST /login HTTP/1.1" 200 -
+2025-03-07 23:36:28,280 - INFO - 73.61.122.2 - - [07/Mar/2025 23:36:28] "[32mGET /api/trading_pairs HTTP/1.1[0m" 308 -
+2025-03-07 23:36:28,486 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-07 23:36:28,576 - DEBUG - https://api.kraken.com:443 "GET /0/public/AssetPairs HTTP/1.1" 200 None
+2025-03-07 23:36:28,596 - INFO - 73.61.122.2 - - [07/Mar/2025 23:36:28] "GET /api/symbols/kraken HTTP/1.1" 200 -
+2025-03-07 23:36:28,618 - INFO - 73.61.122.2 - - [07/Mar/2025 23:36:28] "GET /api/trading_pairs/ HTTP/1.1" 200 -
+2025-03-07 23:36:53,680 - INFO - 73.61.122.2 - - [07/Mar/2025 23:36:53] "GET /detail?symbol=11 HTTP/1.1" 200 -
+2025-03-07 23:36:54,601 - INFO - 73.61.122.2 - - [07/Mar/2025 23:36:54] "[32mGET /api/positions?status=Waiting,Open&symbol=11 HTTP/1.1[0m" 308 -
+2025-03-07 23:36:54,748 - INFO - 73.61.122.2 - - [07/Mar/2025 23:36:54] "GET /api/trading_pairs/11 HTTP/1.1" 200 -
+2025-03-07 23:36:54,888 - INFO - 73.61.122.2 - - [07/Mar/2025 23:36:54] "GET /api/positions/?status=Waiting,Open&symbol=11 HTTP/1.1" 200 -
+2025-03-07 23:37:47,445 - INFO - 73.61.122.2 - - [07/Mar/2025 23:37:47] "GET /detail?symbol=11 HTTP/1.1" 200 -
+2025-03-07 23:37:48,045 - INFO - 73.61.122.2 - - [07/Mar/2025 23:37:48] "[32mGET /api/positions?status=Waiting,Open&symbol=11 HTTP/1.1[0m" 308 -
+2025-03-07 23:37:48,264 - INFO - 73.61.122.2 - - [07/Mar/2025 23:37:48] "GET /api/trading_pairs/11 HTTP/1.1" 200 -
+2025-03-07 23:37:48,528 - INFO - 73.61.122.2 - - [07/Mar/2025 23:37:48] "GET /api/positions/?status=Waiting,Open&symbol=11 HTTP/1.1" 200 -
+2025-03-08 00:05:07,434 - INFO - 40.77.167.71 - - [08/Mar/2025 00:05:07] "GET /login HTTP/1.1" 200 -
+2025-03-08 00:10:47,062 - INFO - 182.188.56.156 - - [08/Mar/2025 00:10:47] "GET /detail?symbol=11 HTTP/1.1" 200 -
+2025-03-08 00:10:47,282 - INFO - 182.188.56.156 - - [08/Mar/2025 00:10:47] "GET /api/trading_pairs/11 HTTP/1.1" 200 -
+2025-03-08 00:10:47,474 - INFO - 182.188.56.156 - - [08/Mar/2025 00:10:47] "GET /api/positions/?status=Waiting,Open&symbol=11 HTTP/1.1" 200 -
+2025-03-08 00:17:34,975 - INFO - Received request at /stage-complete
+2025-03-08 00:17:34,976 - DEBUG - ***************************
+Request Data: {'hitType': 'rebuy', 'symbol': 'XRPUSD'}
+
+
+2025-03-08 00:17:34,977 - DEBUG - Symbol: XRPUSD, Hit Type: rebuy
+2025-03-08 00:17:34,977 - DEBUG - Current Stage: 1
+2025-03-08 00:17:34,977 - DEBUG - StageKey: XRPUSD1, TRADING_PAIR_ID: 10
+2025-03-08 00:17:34,978 - DEBUG - Take Profit %: 3.0, Rebuy %: 3.0
+2025-03-08 00:17:34,978 - DEBUG - Current Capital: 500.0, Trade Usage %: 4.0
+2025-03-08 00:17:34,979 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-08 00:17:35,073 - DEBUG - https://api.kraken.com:443 "GET /0/public/Ticker?pair=XRPUSD HTTP/1.1" 200 None
+2025-03-08 00:17:35,075 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-08 00:17:35,187 - DEBUG - https://api.kraken.com:443 "POST /0/private/AddOrder HTTP/1.1" 200 None
+2025-03-08 00:17:35,188 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-08 00:17:35,270 - DEBUG - https://api.kraken.com:443 "POST /0/private/QueryOrders HTTP/1.1" 200 None
+2025-03-08 00:17:35,374 - INFO - Stage completion process successful
+2025-03-08 00:17:35,375 - INFO - 127.0.0.1 - - [08/Mar/2025 00:17:35] "POST /bot/stage-complete HTTP/1.1" 200 -
+2025-03-08 00:18:33,344 - INFO - 182.188.56.156 - - [08/Mar/2025 00:18:33] "GET / HTTP/1.1" 200 -
+2025-03-08 00:18:33,580 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-08 00:18:33,724 - DEBUG - https://api.kraken.com:443 "GET /0/public/AssetPairs HTTP/1.1" 200 None
+2025-03-08 00:18:33,746 - INFO - 182.188.56.156 - - [08/Mar/2025 00:18:33] "GET /api/symbols/kraken HTTP/1.1" 200 -
+2025-03-08 00:18:33,765 - INFO - 182.188.56.156 - - [08/Mar/2025 00:18:33] "GET /api/trading_pairs/ HTTP/1.1" 200 -
+2025-03-08 00:18:36,414 - INFO - 182.188.56.156 - - [08/Mar/2025 00:18:36] "GET /detail?symbol=10 HTTP/1.1" 200 -
+2025-03-08 00:18:36,625 - INFO - 182.188.56.156 - - [08/Mar/2025 00:18:36] "GET /api/trading_pairs/10 HTTP/1.1" 200 -
+2025-03-08 00:18:36,807 - INFO - 182.188.56.156 - - [08/Mar/2025 00:18:36] "GET /api/positions/?status=Waiting,Open&symbol=10 HTTP/1.1" 200 -
+2025-03-08 00:18:39,337 - INFO - 182.188.56.156 - - [08/Mar/2025 00:18:39] "GET /history?symbol=10 HTTP/1.1" 200 -
+2025-03-08 00:18:39,563 - INFO - 182.188.56.156 - - [08/Mar/2025 00:18:39] "GET /api/positions/closed?status=Closed&symbol=10 HTTP/1.1" 200 -
+2025-03-08 00:18:46,760 - INFO - 182.188.56.156 - - [08/Mar/2025 00:18:46] "GET /detail?symbol=10 HTTP/1.1" 200 -
+2025-03-08 00:18:46,965 - INFO - 182.188.56.156 - - [08/Mar/2025 00:18:46] "GET /api/trading_pairs/10 HTTP/1.1" 200 -
+2025-03-08 00:18:47,151 - INFO - 182.188.56.156 - - [08/Mar/2025 00:18:47] "GET /api/positions/?status=Waiting,Open&symbol=10 HTTP/1.1" 200 -
+2025-03-08 00:21:25,814 - INFO - 182.188.56.156 - - [08/Mar/2025 00:21:25] "GET / HTTP/1.1" 200 -
+2025-03-08 00:21:26,048 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-08 00:21:26,141 - DEBUG - https://api.kraken.com:443 "GET /0/public/AssetPairs HTTP/1.1" 200 None
+2025-03-08 00:21:26,161 - INFO - 182.188.56.156 - - [08/Mar/2025 00:21:26] "GET /api/symbols/kraken HTTP/1.1" 200 -
+2025-03-08 00:21:26,254 - INFO - 182.188.56.156 - - [08/Mar/2025 00:21:26] "GET /api/trading_pairs/ HTTP/1.1" 200 -
+2025-03-08 00:21:33,651 - INFO - 182.188.56.156 - - [08/Mar/2025 00:21:33] "GET /detail?symbol=9 HTTP/1.1" 200 -
+2025-03-08 00:21:33,883 - INFO - 182.188.56.156 - - [08/Mar/2025 00:21:33] "GET /api/trading_pairs/9 HTTP/1.1" 200 -
+2025-03-08 00:21:34,074 - INFO - 182.188.56.156 - - [08/Mar/2025 00:21:34] "GET /api/positions/?status=Waiting,Open&symbol=9 HTTP/1.1" 200 -
+2025-03-08 00:58:45,179 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:2000
+2025-03-08 00:58:45,179 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-08 01:22:30,410 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:2000
+2025-03-08 01:22:30,410 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-08 01:23:40,582 - INFO - Received request at /stage-complete
+2025-03-08 01:23:40,582 - DEBUG - ***************************
+Request Data: {'symbol': 'BTCUSD', 'hitType': 'rebuy'}
+
+
+2025-03-08 01:23:40,582 - INFO - Received request at /stage-complete
+2025-03-08 01:23:40,582 - DEBUG - ***************************
+Request Data: {'symbol': 'BTCUSD', 'hitType': 'rebuy'}
+
+
+2025-03-08 01:23:40,583 - DEBUG - Symbol: BTCUSD, Hit Type: rebuy
+2025-03-08 01:23:40,583 - DEBUG - Current Stage: 3
+2025-03-08 01:23:40,584 - DEBUG - StageKey: BTCUSD3, TRADING_PAIR_ID: 8
+2025-03-08 01:23:40,584 - DEBUG - Take Profit %: 3.0, Rebuy %: 3.0
+2025-03-08 01:23:40,584 - DEBUG - Current Capital: 499.9856, Trade Usage %: 4.0
+2025-03-08 01:23:40,586 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-08 01:23:40,619 - DEBUG - https://api.kraken.com:443 "GET /0/public/Ticker?pair=BTCUSD HTTP/1.1" 200 None
+2025-03-08 01:23:40,622 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-08 01:23:40,707 - DEBUG - https://api.kraken.com:443 "POST /0/private/AddOrder HTTP/1.1" 200 None
+2025-03-08 01:23:40,709 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-08 01:23:40,796 - DEBUG - https://api.kraken.com:443 "POST /0/private/QueryOrders HTTP/1.1" 200 24
+2025-03-08 01:23:41,798 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-08 01:23:41,881 - DEBUG - https://api.kraken.com:443 "POST /0/private/QueryOrders HTTP/1.1" 200 None
+2025-03-08 01:23:41,936 - INFO - Stage completion process successful
+2025-03-08 01:23:41,936 - INFO - Received request at /stage-complete
+2025-03-08 01:23:41,937 - INFO - 127.0.0.1 - - [08/Mar/2025 01:23:41] "[35m[1mPOST /bot/stage-complete HTTP/1.1[0m" 202 -
+2025-03-08 01:23:41,937 - ERROR - Error in stagecomplete: Working outside of request context.
+
+This typically means that you attempted to use functionality that needed
+an active HTTP request. Consult the documentation on testing for
+information about how to avoid this problem.
+Traceback (most recent call last):
+  File "/home/ubuntu/stage_crypto_bot/python/app/routes/botRoutes.py", line 27, in process
+    data = request.get_json()
+           ^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/stage_crypto_bot/python/myenv/lib/python3.12/site-packages/werkzeug/local.py", line 318, in __get__
+    obj = instance._get_current_object()
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/stage_crypto_bot/python/myenv/lib/python3.12/site-packages/werkzeug/local.py", line 519, in _get_current_object
+    raise RuntimeError(unbound_message) from None
+RuntimeError: Working outside of request context.
+
+This typically means that you attempted to use functionality that needed
+an active HTTP request. Consult the documentation on testing for
+information about how to avoid this problem.
+2025-03-08 01:31:20,657 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:2000
+2025-03-08 01:31:20,657 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-08 01:31:22,593 - INFO - Received request at /stage-complete
+2025-03-08 01:31:22,598 - DEBUG - ***************************
+Request Data: {'symbol': 'BTCUSD', 'hitType': 'rebuy'}
+
+
+2025-03-08 01:31:22,603 - DEBUG - Symbol: BTCUSD, Hit Type: rebuy
+2025-03-08 01:31:22,609 - DEBUG - Current Stage: 4
+2025-03-08 01:31:22,609 - DEBUG - StageKey: BTCUSD4, TRADING_PAIR_ID: 8
+2025-03-08 01:31:22,612 - DEBUG - Take Profit %: 3.0, Rebuy %: 3.0
+2025-03-08 01:31:22,612 - DEBUG - Current Capital: 499.9856, Trade Usage %: 4.0
+2025-03-08 01:31:22,632 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-08 01:31:22,737 - DEBUG - https://api.kraken.com:443 "GET /0/public/Ticker?pair=BTCUSD HTTP/1.1" 200 None
+2025-03-08 01:31:22,745 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-08 01:31:22,838 - DEBUG - https://api.kraken.com:443 "POST /0/private/AddOrder HTTP/1.1" 200 None
+2025-03-08 01:31:22,843 - DEBUG - Starting new HTTPS connection (1): api.kraken.com:443
+2025-03-08 01:31:22,924 - DEBUG - https://api.kraken.com:443 "POST /0/private/QueryOrders HTTP/1.1" 200 None
+2025-03-08 01:31:22,965 - INFO - Stage completion process successful
+2025-03-08 01:31:22,966 - INFO - 127.0.0.1 - - [08/Mar/2025 01:31:22] "POST /bot/stage-complete HTTP/1.1" 200 -
+2025-03-08 01:32:17,205 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:2000
+2025-03-08 01:32:17,206 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-08 01:32:21,577 - INFO - Received request at /stage-complete
+2025-03-08 01:32:21,579 - DEBUG - ***************************
+Request Data: {'symbol': 'BTCUSD', 'hitType': 'rebuy'}
+
+
+2025-03-08 01:32:21,579 - ERROR - Error in stagecomplete: cannot access local variable 'e' where it is not associated with a value
+Traceback (most recent call last):
+  File "/home/ubuntu/stage_crypto_bot/python/app/routes/botRoutes.py", line 29, in stagecomplete
+    return jsonify({"error": str(e)}), 500
+                                 ^
+UnboundLocalError: cannot access local variable 'e' where it is not associated with a value
+2025-03-08 01:32:21,580 - INFO - 127.0.0.1 - - [08/Mar/2025 01:32:21] "[35m[1mPOST /bot/stage-complete HTTP/1.1[0m" 500 -
+2025-03-08 01:32:58,787 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:2000
+2025-03-08 01:32:58,787 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-08 01:33:00,882 - INFO - Received request at /stage-complete
+2025-03-08 01:33:00,882 - DEBUG - ***************************
+Request Data: {'symbol': 'BTCUSD', 'hitType': 'rebuy'}
+
+
+2025-03-08 01:33:00,883 - INFO - 127.0.0.1 - - [08/Mar/2025 01:33:00] "POST /bot/stage-complete HTTP/1.1" 200 -
+2025-03-08 01:34:13,993 - INFO - Received request at /stage-complete
+2025-03-08 01:34:13,994 - DEBUG - ***************************
+Request Data: {'symbol': 'BTCUSD', 'hitType': 'rebuy'}
+
+
+2025-03-08 01:34:13,994 - INFO - 127.0.0.1 - - [08/Mar/2025 01:34:13] "POST /bot/stage-complete HTTP/1.1" 200 -

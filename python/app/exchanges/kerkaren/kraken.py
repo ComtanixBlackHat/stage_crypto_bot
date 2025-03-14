@@ -160,26 +160,27 @@ class Kraken:
 
     @staticmethod
     def orderFillChecker(data):
-        while True:
-                        # print(data)
-            # data = {'error': [], 'result': {'txid': ['ODLRQD-FQPCC-T7WVUE'], 'descr': {'order': 'buy 12.30593539 ADAUSD @ market'}}}
+        for _ in range(10):  # Run the loop 10 times
             txid = data["result"]["txid"][0]  # Get the first transaction ID
             print(txid)
-            trades = data.get('trades', False)  # Whether or not to include trades related to the position
-            userref = data.get('userref', None)  # Optional user reference ID
-            consolidate_taker = data.get('consolidate_taker', True)  # Whether or not to consolidate taker trades
-            # orderDetail = Kraken.query_orders(txid)
-            orderDetail  = Kraken.query_orders(txid, trades, userref, consolidate_taker)
+
+            trades = data.get('trades', False)
+            userref = data.get('userref', None)
+            consolidate_taker = data.get('consolidate_taker', True)
+
+            orderDetail = Kraken.query_orders(txid, trades, userref, consolidate_taker)
             print(orderDetail)
-            # orderDetail  = {'error': [], 'result': {}}
-            if orderDetail["result"] != {}:
-                
+
+            if orderDetail["result"]:
                 print("*************************************")
                 if orderDetail["result"][txid]["status"] == "closed":
                     print(orderDetail["result"])
                     return orderDetail
-            # print("sleeping for some time")
-            time.sleep(1)
+
+            time.sleep(3)  # Wait before the next check
+
+        print("Order not filled within 10 attempts.")
+        return None  # Return None if the order is not filled after 10 tries
 
 
 # curl -X POST http://127.0.0.1:5000/bot/stage-complete      -H "Content-Type: application/json"      -d '{
